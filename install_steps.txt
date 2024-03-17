@@ -1,0 +1,37 @@
+The following are the steps to get the example.py demo working from the vima repo
+(I'm running this on my local machine in wsl2 on Ubuntu 22.04.2 LTS)
+Note: example.py cannot work on a headless machine since it uses a PyBullet GUI
+
+
+conda create -n vima python=3.9
+conda activate vima
+
+cd vima
+pip install git+https://github.com/vimalabs/VIMA
+git clone https://github.com/vimalabs/VimaBench && cd VimaBench
+
+# https://github.com/openai/gym/issues/3176#issuecomment-1408598628
+pip3 install setuptools==65.5.0
+
+# https://github.com/freqtrade/freqtrade/issues/8376#issuecomment-1519257211
+pip install --upgrade pip wheel==0.38.4
+
+# in vima bench repo
+pip install -e .
+
+# There was some error where the VIMA repo is trying to import a checkpoint function
+# But that function isnt available in the LST version of transformers
+# This version is from July 2022, so im using that (since the paper came out around then)
+pip install transformers==4.31.0 
+
+# I got this exact error from this reddit thread. Below is the fix
+# https://www.reddit.com/r/opengl/comments/15qpdqd/failed_to_create_opengl_context_on_wsl2/
+conda install -c conda-forge gcc=12.1.0 
+
+# replace the numpy 'bool' to 'bool_' in example.py since bool is depricated
+
+# download the vima model checkpoint here
+https://huggingface.co/VIMA/VIMA/tree/main
+
+# then the example script should run from the vima repo
+python3 scripts/example.py --ckpt=200M.ckpt --partition=placement_generalization --task=follow_order
