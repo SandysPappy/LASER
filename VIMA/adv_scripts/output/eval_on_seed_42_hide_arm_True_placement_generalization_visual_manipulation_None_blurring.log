@@ -1,0 +1,904 @@
+2024-03-24 17:03:09,254 adv_eval.py 103  INFO  cfg: {'partition': 'placement_generalization', 'task': 'visual_manipulation', 'rephrasings': 'None', 'vis_atk': 'blurring', 'device': 'cuda', 'reuse': False, 'save_dir': 'adv_scripts/output', 'ckpt': 'models/VIMA/200M.ckpt', 'debug_flag': True, 'hide_arm': True, 'seed': 42}
+2024-03-24 17:03:15,303 adv_eval.py 161  INFO  ==================Task 1=========================
+2024-03-24 17:03:15,303 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:03:15,303 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl block into the purple container .
+2024-03-24 17:03:15,303 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:03:15,675 adv_eval.py 219  INFO  Cosine similarity: 1.000000238418579
+2024-03-24 17:03:16,075 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:03:16,440 adv_eval.py 161  INFO  ==================Task 2=========================
+2024-03-24 17:03:16,440 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:03:16,440 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley flower into the green and purple stripe square .
+2024-03-24 17:03:16,440 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:03:16,461 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:03:16,916 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:03:17,359 adv_eval.py 161  INFO  ==================Task 3=========================
+2024-03-24 17:03:17,359 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:03:17,359 adv_eval.py 172  INFO  The rephrasing intention: Put the granite letter E into the green and purple polka dot frame .
+2024-03-24 17:03:17,359 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:03:17,380 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:03:17,809 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:03:18,172 adv_eval.py 161  INFO  ==================Task 4=========================
+2024-03-24 17:03:18,172 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:03:18,172 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl letter M into the wooden container .
+2024-03-24 17:03:18,172 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:03:18,194 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:14,889 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:15,337 adv_eval.py 161  INFO  ==================Task 5=========================
+2024-03-24 17:07:15,337 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:15,337 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot letter V into the blue paisley frame .
+2024-03-24 17:07:15,337 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:15,364 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:15,778 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:16,339 adv_eval.py 161  INFO  ==================Task 6=========================
+2024-03-24 17:07:16,339 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:16,339 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot letter M into the blue and purple polka dot bowl .
+2024-03-24 17:07:16,339 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:16,360 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:16,751 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:17,273 adv_eval.py 161  INFO  ==================Task 7=========================
+2024-03-24 17:07:17,273 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:17,273 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot block into the wooden square .
+2024-03-24 17:07:17,273 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:17,294 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:17,696 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:18,143 adv_eval.py 161  INFO  ==================Task 8=========================
+2024-03-24 17:07:18,143 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:18,143 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl letter G into the yellow and purple polka dot frame .
+2024-03-24 17:07:18,143 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:18,165 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:07:18,566 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:19,033 adv_eval.py 161  INFO  ==================Task 9=========================
+2024-03-24 17:07:19,033 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:19,034 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow polka dot block into the wooden container .
+2024-03-24 17:07:19,034 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:19,055 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:19,457 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:19,861 adv_eval.py 161  INFO  ==================Task 10=========================
+2024-03-24 17:07:19,861 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:19,861 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot letter E into the cyan container .
+2024-03-24 17:07:19,861 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:19,882 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:20,301 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:20,617 adv_eval.py 161  INFO  ==================Task 11=========================
+2024-03-24 17:07:20,617 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:20,617 adv_eval.py 172  INFO  The rephrasing intention: Put the red block into the red and purple stripe frame .
+2024-03-24 17:07:20,617 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:20,639 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:20,993 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:21,265 adv_eval.py 161  INFO  ==================Task 12=========================
+2024-03-24 17:07:21,265 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:21,265 adv_eval.py 172  INFO  The rephrasing intention: Put the green letter M into the purple square .
+2024-03-24 17:07:21,265 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:21,286 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:21,697 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:22,053 adv_eval.py 161  INFO  ==================Task 13=========================
+2024-03-24 17:07:22,053 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:22,053 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot triangle into the blue swirl square .
+2024-03-24 17:07:22,053 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:22,075 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:22,497 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:22,800 adv_eval.py 161  INFO  ==================Task 14=========================
+2024-03-24 17:07:22,800 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:22,801 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow letter G into the blue and purple stripe container .
+2024-03-24 17:07:22,801 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:22,822 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:23,203 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:23,560 adv_eval.py 161  INFO  ==================Task 15=========================
+2024-03-24 17:07:23,560 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:23,560 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley triangle into the blue swirl square .
+2024-03-24 17:07:23,560 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:23,581 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:23,986 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:24,271 adv_eval.py 161  INFO  ==================Task 16=========================
+2024-03-24 17:07:24,271 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:24,271 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow paisley cross into the cyan bowl .
+2024-03-24 17:07:24,271 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:24,293 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:24,711 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:25,131 adv_eval.py 161  INFO  ==================Task 17=========================
+2024-03-24 17:07:25,131 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:25,131 adv_eval.py 172  INFO  The rephrasing intention: Put the red letter G into the red and purple stripe frame .
+2024-03-24 17:07:25,131 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:25,154 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:25,604 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:26,092 adv_eval.py 161  INFO  ==================Task 18=========================
+2024-03-24 17:07:26,092 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:26,092 adv_eval.py 172  INFO  The rephrasing intention: Put the red and blue polka dot L-shaped block into the blue swirl square .
+2024-03-24 17:07:26,092 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:26,114 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:26,603 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:27,046 adv_eval.py 161  INFO  ==================Task 19=========================
+2024-03-24 17:07:27,046 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:27,046 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow letter V into the yellow and purple polka dot frame .
+2024-03-24 17:07:27,046 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:27,067 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:27,519 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:28,032 adv_eval.py 161  INFO  ==================Task 20=========================
+2024-03-24 17:07:28,032 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:28,032 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow polka dot cross into the red and purple stripe square .
+2024-03-24 17:07:28,032 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:28,053 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:28,508 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:29,039 adv_eval.py 161  INFO  ==================Task 21=========================
+2024-03-24 17:07:29,039 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:29,039 adv_eval.py 172  INFO  The rephrasing intention: Put the red and blue polka dot letter G into the red and purple stripe bowl .
+2024-03-24 17:07:29,039 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:29,060 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:29,464 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:29,921 adv_eval.py 161  INFO  ==================Task 22=========================
+2024-03-24 17:07:29,921 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:29,921 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot letter T into the cyan frame .
+2024-03-24 17:07:29,921 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:29,942 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:30,345 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:30,772 adv_eval.py 161  INFO  ==================Task 23=========================
+2024-03-24 17:07:30,772 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:30,772 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley heart into the blue and purple stripe bowl .
+2024-03-24 17:07:30,772 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:30,793 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:31,230 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:31,747 adv_eval.py 161  INFO  ==================Task 24=========================
+2024-03-24 17:07:31,747 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:31,748 adv_eval.py 172  INFO  The rephrasing intention: Put the red and green polka dot flower into the wooden bowl .
+2024-03-24 17:07:31,748 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:31,770 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:32,154 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:32,658 adv_eval.py 161  INFO  ==================Task 25=========================
+2024-03-24 17:07:32,658 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:32,658 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot letter A into the wooden square .
+2024-03-24 17:07:32,658 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:32,678 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:07:33,098 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:33,652 adv_eval.py 161  INFO  ==================Task 26=========================
+2024-03-24 17:07:33,652 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:33,652 adv_eval.py 172  INFO  The rephrasing intention: Put the red and green polka dot letter A into the blue and purple stripe container .
+2024-03-24 17:07:33,652 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:33,673 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:34,142 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:34,618 adv_eval.py 161  INFO  ==================Task 27=========================
+2024-03-24 17:07:34,618 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:34,618 adv_eval.py 172  INFO  The rephrasing intention: Put the granite L-shaped block into the green and purple polka dot frame .
+2024-03-24 17:07:34,618 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:34,639 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:35,058 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:35,470 adv_eval.py 161  INFO  ==================Task 28=========================
+2024-03-24 17:07:35,470 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:35,470 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley L-shaped block into the blue swirl bowl .
+2024-03-24 17:07:35,470 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:35,491 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:35,894 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:36,463 adv_eval.py 161  INFO  ==================Task 29=========================
+2024-03-24 17:07:36,463 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:36,463 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot flower into the yellow and purple stripe container .
+2024-03-24 17:07:36,463 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:36,486 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:36,921 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:37,312 adv_eval.py 161  INFO  ==================Task 30=========================
+2024-03-24 17:07:37,313 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:37,313 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow stripe cross into the blue swirl frame .
+2024-03-24 17:07:37,313 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:37,334 adv_eval.py 219  INFO  Cosine similarity: 1.000000238418579
+2024-03-24 17:07:37,770 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:38,156 adv_eval.py 161  INFO  ==================Task 31=========================
+2024-03-24 17:07:38,156 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:38,156 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow L-shaped block into the red and purple stripe container .
+2024-03-24 17:07:38,156 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:38,178 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:38,614 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:38,982 adv_eval.py 161  INFO  ==================Task 32=========================
+2024-03-24 17:07:38,982 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:38,982 adv_eval.py 172  INFO  The rephrasing intention: Put the green swirl letter A into the olive square .
+2024-03-24 17:07:38,982 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:39,003 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:39,439 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:39,731 adv_eval.py 161  INFO  ==================Task 33=========================
+2024-03-24 17:07:39,731 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:39,731 adv_eval.py 172  INFO  The rephrasing intention: Put the green letter M into the blue frame .
+2024-03-24 17:07:39,731 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:39,754 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:40,183 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:40,558 adv_eval.py 161  INFO  ==================Task 34=========================
+2024-03-24 17:07:40,559 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:40,559 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow L-shaped block into the yellow and blue stripe square .
+2024-03-24 17:07:40,559 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:40,579 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:41,017 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:41,502 adv_eval.py 161  INFO  ==================Task 35=========================
+2024-03-24 17:07:41,502 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:41,502 adv_eval.py 172  INFO  The rephrasing intention: Put the tiger flower into the red and blue stripe bowl .
+2024-03-24 17:07:41,502 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:41,523 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:41,926 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:42,231 adv_eval.py 161  INFO  ==================Task 36=========================
+2024-03-24 17:07:42,231 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:42,231 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow letter T into the cyan square .
+2024-03-24 17:07:42,231 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:42,253 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:42,699 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:43,144 adv_eval.py 161  INFO  ==================Task 37=========================
+2024-03-24 17:07:43,144 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:43,144 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow paisley ring into the wooden frame .
+2024-03-24 17:07:43,144 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:43,166 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:43,586 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:44,094 adv_eval.py 161  INFO  ==================Task 38=========================
+2024-03-24 17:07:44,094 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:44,094 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot letter V into the blue container .
+2024-03-24 17:07:44,094 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:44,115 adv_eval.py 219  INFO  Cosine similarity: 1.000000238418579
+2024-03-24 17:07:44,569 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:45,057 adv_eval.py 161  INFO  ==================Task 39=========================
+2024-03-24 17:07:45,057 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:45,057 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot ring into the red and blue stripe frame .
+2024-03-24 17:07:45,057 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:45,079 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:45,499 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:45,887 adv_eval.py 161  INFO  ==================Task 40=========================
+2024-03-24 17:07:45,887 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:45,887 adv_eval.py 172  INFO  The rephrasing intention: Put the tiger cross into the yellow and blue stripe frame .
+2024-03-24 17:07:45,887 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:45,908 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:07:46,380 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:46,892 adv_eval.py 161  INFO  ==================Task 41=========================
+2024-03-24 17:07:46,892 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:46,892 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot letter T into the purple swirl frame .
+2024-03-24 17:07:46,892 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:46,913 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:47,349 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:47,922 adv_eval.py 161  INFO  ==================Task 42=========================
+2024-03-24 17:07:47,923 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:47,923 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and green stripe heart into the blue and purple polka dot container .
+2024-03-24 17:07:47,923 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:47,945 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:48,381 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:48,826 adv_eval.py 161  INFO  ==================Task 43=========================
+2024-03-24 17:07:48,826 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:48,827 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot letter G into the purple swirl frame .
+2024-03-24 17:07:48,827 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:48,848 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:49,266 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:49,713 adv_eval.py 161  INFO  ==================Task 44=========================
+2024-03-24 17:07:49,713 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:49,713 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow paisley block into the red and blue stripe frame .
+2024-03-24 17:07:49,713 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:49,735 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:50,154 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:50,651 adv_eval.py 161  INFO  ==================Task 45=========================
+2024-03-24 17:07:50,651 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:50,651 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot cross into the yellow and blue stripe bowl .
+2024-03-24 17:07:50,651 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:50,672 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:07:51,127 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:51,605 adv_eval.py 161  INFO  ==================Task 46=========================
+2024-03-24 17:07:51,605 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:51,605 adv_eval.py 172  INFO  The rephrasing intention: Put the red and green polka dot pentagon into the yellow and blue stripe square .
+2024-03-24 17:07:51,605 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:51,626 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:52,066 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:52,550 adv_eval.py 161  INFO  ==================Task 47=========================
+2024-03-24 17:07:52,550 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:52,550 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow flower into the green and purple polka dot container .
+2024-03-24 17:07:52,550 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:52,572 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:07:53,008 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:53,371 adv_eval.py 161  INFO  ==================Task 48=========================
+2024-03-24 17:07:53,372 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:53,372 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow ring into the red and purple stripe container .
+2024-03-24 17:07:53,372 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:53,393 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:07:53,811 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:54,196 adv_eval.py 161  INFO  ==================Task 49=========================
+2024-03-24 17:07:54,196 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:54,196 adv_eval.py 172  INFO  The rephrasing intention: Put the red ring into the blue swirl bowl .
+2024-03-24 17:07:54,196 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:54,217 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:54,637 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:55,174 adv_eval.py 161  INFO  ==================Task 50=========================
+2024-03-24 17:07:55,174 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:55,174 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot block into the purple swirl frame .
+2024-03-24 17:07:55,174 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:55,195 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:07:55,614 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:55,996 adv_eval.py 161  INFO  ==================Task 51=========================
+2024-03-24 17:07:55,996 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:55,996 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley letter V into the blue swirl container .
+2024-03-24 17:07:55,997 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:56,017 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:56,452 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:56,872 adv_eval.py 161  INFO  ==================Task 52=========================
+2024-03-24 17:07:56,872 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:56,872 adv_eval.py 172  INFO  The rephrasing intention: Put the granite block into the cyan bowl .
+2024-03-24 17:07:56,872 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:56,894 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:07:57,263 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:57,699 adv_eval.py 161  INFO  ==================Task 53=========================
+2024-03-24 17:07:57,699 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:57,699 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl pentagon into the plastic frame .
+2024-03-24 17:07:57,699 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:57,720 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:07:58,177 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:58,640 adv_eval.py 161  INFO  ==================Task 54=========================
+2024-03-24 17:07:58,640 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:58,640 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow stripe letter A into the green and purple stripe container .
+2024-03-24 17:07:58,640 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:58,661 adv_eval.py 219  INFO  Cosine similarity: 0.9999998211860657
+2024-03-24 17:07:59,082 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:07:59,592 adv_eval.py 161  INFO  ==================Task 55=========================
+2024-03-24 17:07:59,592 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:07:59,592 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot flower into the olive square .
+2024-03-24 17:07:59,593 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:07:59,613 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:00,050 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:00,477 adv_eval.py 161  INFO  ==================Task 56=========================
+2024-03-24 17:08:00,477 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:00,477 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow L-shaped block into the red and purple stripe bowl .
+2024-03-24 17:08:00,477 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:00,498 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:00,901 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:01,389 adv_eval.py 161  INFO  ==================Task 57=========================
+2024-03-24 17:08:01,389 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:01,389 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley ring into the blue and purple polka dot bowl .
+2024-03-24 17:08:01,389 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:01,410 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:01,813 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:02,395 adv_eval.py 161  INFO  ==================Task 58=========================
+2024-03-24 17:08:02,396 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:02,396 adv_eval.py 172  INFO  The rephrasing intention: Put the red and green polka dot ring into the green and purple polka dot square .
+2024-03-24 17:08:02,396 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:02,417 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:02,853 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:03,363 adv_eval.py 161  INFO  ==================Task 59=========================
+2024-03-24 17:08:03,364 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:03,364 adv_eval.py 172  INFO  The rephrasing intention: Put the granite flower into the yellow and purple stripe bowl .
+2024-03-24 17:08:03,364 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:03,385 adv_eval.py 219  INFO  Cosine similarity: 1.000000238418579
+2024-03-24 17:08:03,803 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:04,345 adv_eval.py 161  INFO  ==================Task 60=========================
+2024-03-24 17:08:04,345 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:04,345 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot letter M into the checkerboard square .
+2024-03-24 17:08:04,345 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:04,367 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:04,802 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:05,310 adv_eval.py 161  INFO  ==================Task 61=========================
+2024-03-24 17:08:05,310 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:05,310 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot letter E into the blue swirl bowl .
+2024-03-24 17:08:05,310 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:05,331 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:05,734 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:06,255 adv_eval.py 161  INFO  ==================Task 62=========================
+2024-03-24 17:08:06,255 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:06,255 adv_eval.py 172  INFO  The rephrasing intention: Put the red and green polka dot ring into the wooden bowl .
+2024-03-24 17:08:06,255 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:06,277 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:06,696 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:07,067 adv_eval.py 161  INFO  ==================Task 63=========================
+2024-03-24 17:08:07,067 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:07,067 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl heart into the blue square .
+2024-03-24 17:08:07,067 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:07,088 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:08:07,508 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:07,981 adv_eval.py 161  INFO  ==================Task 64=========================
+2024-03-24 17:08:07,981 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:07,981 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow letter T into the blue and purple polka dot square .
+2024-03-24 17:08:07,981 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:08,002 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:08,437 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:08,982 adv_eval.py 161  INFO  ==================Task 65=========================
+2024-03-24 17:08:08,982 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:08,982 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot letter E into the tiles frame .
+2024-03-24 17:08:08,982 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:09,003 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:09,441 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:09,858 adv_eval.py 161  INFO  ==================Task 66=========================
+2024-03-24 17:08:09,858 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:09,858 adv_eval.py 172  INFO  The rephrasing intention: Put the granite L-shaped block into the purple bowl .
+2024-03-24 17:08:09,858 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:09,879 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:10,316 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:10,692 adv_eval.py 161  INFO  ==================Task 67=========================
+2024-03-24 17:08:10,692 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:10,692 adv_eval.py 172  INFO  The rephrasing intention: Put the green letter A into the wooden container .
+2024-03-24 17:08:10,692 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:10,714 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:11,151 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:11,539 adv_eval.py 161  INFO  ==================Task 68=========================
+2024-03-24 17:08:11,539 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:11,539 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow triangle into the red and purple stripe square .
+2024-03-24 17:08:11,539 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:11,561 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:12,014 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:12,446 adv_eval.py 161  INFO  ==================Task 69=========================
+2024-03-24 17:08:12,446 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:12,447 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and green stripe letter V into the olive square .
+2024-03-24 17:08:12,447 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:12,467 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:12,907 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:13,519 adv_eval.py 161  INFO  ==================Task 70=========================
+2024-03-24 17:08:13,520 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:13,520 adv_eval.py 172  INFO  The rephrasing intention: Put the red and blue polka dot heart into the blue and purple polka dot frame .
+2024-03-24 17:08:13,520 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:13,541 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:08:13,961 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:14,499 adv_eval.py 161  INFO  ==================Task 71=========================
+2024-03-24 17:08:14,499 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:14,499 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley block into the blue and purple polka dot bowl .
+2024-03-24 17:08:14,499 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:14,520 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:14,889 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:15,420 adv_eval.py 161  INFO  ==================Task 72=========================
+2024-03-24 17:08:15,420 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:15,420 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot letter A into the red and blue stripe bowl .
+2024-03-24 17:08:15,420 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:15,441 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:15,844 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:16,269 adv_eval.py 161  INFO  ==================Task 73=========================
+2024-03-24 17:08:16,269 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:16,269 adv_eval.py 172  INFO  The rephrasing intention: Put the red letter V into the red and blue stripe bowl .
+2024-03-24 17:08:16,269 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:16,290 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:16,709 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:17,133 adv_eval.py 161  INFO  ==================Task 74=========================
+2024-03-24 17:08:17,133 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:17,133 adv_eval.py 172  INFO  The rephrasing intention: Put the green swirl letter V into the checkerboard square .
+2024-03-24 17:08:17,133 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:17,154 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:17,590 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:18,025 adv_eval.py 161  INFO  ==================Task 75=========================
+2024-03-24 17:08:18,025 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:18,025 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow stripe letter E into the purple container .
+2024-03-24 17:08:18,025 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:18,046 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:18,449 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:18,922 adv_eval.py 161  INFO  ==================Task 76=========================
+2024-03-24 17:08:18,922 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:18,922 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley letter G into the blue and purple stripe bowl .
+2024-03-24 17:08:18,922 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:18,943 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:19,327 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:19,757 adv_eval.py 161  INFO  ==================Task 77=========================
+2024-03-24 17:08:19,757 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:19,758 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl block into the red and blue stripe bowl .
+2024-03-24 17:08:19,758 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:19,779 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:20,198 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:20,615 adv_eval.py 161  INFO  ==================Task 78=========================
+2024-03-24 17:08:20,616 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:20,616 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow heart into the yellow and blue stripe frame .
+2024-03-24 17:08:20,616 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:20,637 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:21,091 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:21,531 adv_eval.py 161  INFO  ==================Task 79=========================
+2024-03-24 17:08:21,532 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:21,532 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow polka dot letter M into the blue frame .
+2024-03-24 17:08:21,532 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:21,552 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:21,988 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:22,576 adv_eval.py 161  INFO  ==================Task 80=========================
+2024-03-24 17:08:22,577 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:22,577 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot letter T into the tiles container .
+2024-03-24 17:08:22,577 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:22,598 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:23,018 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:23,448 adv_eval.py 161  INFO  ==================Task 81=========================
+2024-03-24 17:08:23,448 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:23,448 adv_eval.py 172  INFO  The rephrasing intention: Put the green swirl cross into the yellow and purple stripe bowl .
+2024-03-24 17:08:23,448 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:23,469 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:23,872 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:24,450 adv_eval.py 161  INFO  ==================Task 82=========================
+2024-03-24 17:08:24,450 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:24,450 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow polka dot block into the green and purple polka dot frame .
+2024-03-24 17:08:24,450 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:24,471 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:08:24,875 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:25,247 adv_eval.py 161  INFO  ==================Task 83=========================
+2024-03-24 17:08:25,247 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:25,247 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley letter G into the olive square .
+2024-03-24 17:08:25,247 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:25,268 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:25,707 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:26,201 adv_eval.py 161  INFO  ==================Task 84=========================
+2024-03-24 17:08:26,202 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:26,202 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot block into the yellow and blue stripe frame .
+2024-03-24 17:08:26,202 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:26,223 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:08:26,642 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:27,253 adv_eval.py 161  INFO  ==================Task 85=========================
+2024-03-24 17:08:27,253 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:27,253 adv_eval.py 172  INFO  The rephrasing intention: Put the red and green polka dot pentagon into the yellow and purple polka dot container .
+2024-03-24 17:08:27,253 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:27,275 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:27,677 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:28,197 adv_eval.py 161  INFO  ==================Task 86=========================
+2024-03-24 17:08:28,197 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:28,197 adv_eval.py 172  INFO  The rephrasing intention: Put the green swirl flower into the blue and purple polka dot container .
+2024-03-24 17:08:28,197 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:28,219 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:28,673 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:29,219 adv_eval.py 161  INFO  ==================Task 87=========================
+2024-03-24 17:08:29,219 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:29,219 adv_eval.py 172  INFO  The rephrasing intention: Put the red and blue polka dot heart into the red and blue stripe container .
+2024-03-24 17:08:29,219 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:29,241 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:08:29,695 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:30,182 adv_eval.py 161  INFO  ==================Task 88=========================
+2024-03-24 17:08:30,182 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:30,182 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow block into the green and purple polka dot square .
+2024-03-24 17:08:30,182 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:30,203 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:30,604 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:31,208 adv_eval.py 161  INFO  ==================Task 89=========================
+2024-03-24 17:08:31,208 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:31,208 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot letter V into the blue and purple polka dot frame .
+2024-03-24 17:08:31,208 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:31,229 adv_eval.py 219  INFO  Cosine similarity: 1.000000238418579
+2024-03-24 17:08:31,665 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:32,135 adv_eval.py 161  INFO  ==================Task 90=========================
+2024-03-24 17:08:32,135 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:32,135 adv_eval.py 172  INFO  The rephrasing intention: Put the red and blue polka dot pentagon into the yellow and blue stripe frame .
+2024-03-24 17:08:32,135 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:32,156 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:32,577 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:33,257 adv_eval.py 161  INFO  ==================Task 91=========================
+2024-03-24 17:08:33,257 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:33,257 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot triangle into the blue and purple polka dot square .
+2024-03-24 17:08:33,257 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:33,279 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:33,715 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:34,145 adv_eval.py 161  INFO  ==================Task 92=========================
+2024-03-24 17:08:34,145 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:34,145 adv_eval.py 172  INFO  The rephrasing intention: Put the granite letter G into the blue and purple stripe container .
+2024-03-24 17:08:34,145 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:34,166 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:34,568 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:34,971 adv_eval.py 161  INFO  ==================Task 93=========================
+2024-03-24 17:08:34,971 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:34,971 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl letter G into the red and blue stripe square .
+2024-03-24 17:08:34,971 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:34,992 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:35,446 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:36,019 adv_eval.py 161  INFO  ==================Task 94=========================
+2024-03-24 17:08:36,019 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:36,019 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley triangle into the yellow and purple polka dot container .
+2024-03-24 17:08:36,019 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:36,041 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:36,493 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:37,059 adv_eval.py 161  INFO  ==================Task 95=========================
+2024-03-24 17:08:37,059 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:37,059 adv_eval.py 172  INFO  The rephrasing intention: Put the red and green polka dot cross into the tiles square .
+2024-03-24 17:08:37,059 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:37,081 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:37,499 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:37,977 adv_eval.py 161  INFO  ==================Task 96=========================
+2024-03-24 17:08:37,977 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:37,978 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley letter M into the tiles bowl .
+2024-03-24 17:08:37,978 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:37,999 adv_eval.py 219  INFO  Cosine similarity: 1.000000238418579
+2024-03-24 17:08:38,386 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:38,822 adv_eval.py 161  INFO  ==================Task 97=========================
+2024-03-24 17:08:38,822 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:38,823 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and green stripe ring into the purple swirl bowl .
+2024-03-24 17:08:38,823 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:38,844 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:08:39,244 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:39,608 adv_eval.py 161  INFO  ==================Task 98=========================
+2024-03-24 17:08:39,608 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:39,608 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley letter T into the olive frame .
+2024-03-24 17:08:39,608 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:39,631 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:40,065 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:40,436 adv_eval.py 161  INFO  ==================Task 99=========================
+2024-03-24 17:08:40,436 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:40,436 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow paisley block into the purple swirl square .
+2024-03-24 17:08:40,436 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:40,457 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:08:40,893 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:41,360 adv_eval.py 161  INFO  ==================Task 100=========================
+2024-03-24 17:08:41,360 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:41,360 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley letter M into the yellow and purple polka dot frame .
+2024-03-24 17:08:41,360 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:41,382 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:41,820 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:42,202 adv_eval.py 161  INFO  ==================Task 101=========================
+2024-03-24 17:08:42,203 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:42,203 adv_eval.py 172  INFO  The rephrasing intention: Put the green ring into the yellow and blue stripe frame .
+2024-03-24 17:08:42,203 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:42,224 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:42,694 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:43,071 adv_eval.py 161  INFO  ==================Task 102=========================
+2024-03-24 17:08:43,071 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:43,071 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl triangle into the purple bowl .
+2024-03-24 17:08:43,071 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:43,092 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:43,495 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:43,946 adv_eval.py 161  INFO  ==================Task 103=========================
+2024-03-24 17:08:43,947 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:43,947 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley letter E into the olive bowl .
+2024-03-24 17:08:43,947 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:43,967 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:44,369 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:44,760 adv_eval.py 161  INFO  ==================Task 104=========================
+2024-03-24 17:08:44,760 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:44,760 adv_eval.py 172  INFO  The rephrasing intention: Put the green block into the green and purple stripe square .
+2024-03-24 17:08:44,760 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:44,781 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:45,201 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:45,579 adv_eval.py 161  INFO  ==================Task 105=========================
+2024-03-24 17:08:45,579 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:45,580 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley cross into the yellow and blue stripe container .
+2024-03-24 17:08:45,580 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:45,601 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:46,019 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:46,578 adv_eval.py 161  INFO  ==================Task 106=========================
+2024-03-24 17:08:46,578 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:46,578 adv_eval.py 172  INFO  The rephrasing intention: Put the red and green polka dot letter G into the tiles square .
+2024-03-24 17:08:46,578 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:46,599 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:47,036 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:47,585 adv_eval.py 161  INFO  ==================Task 107=========================
+2024-03-24 17:08:47,585 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:47,585 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot heart into the green and purple polka dot frame .
+2024-03-24 17:08:47,585 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:47,606 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:48,025 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:48,395 adv_eval.py 161  INFO  ==================Task 108=========================
+2024-03-24 17:08:48,395 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:48,395 adv_eval.py 172  INFO  The rephrasing intention: Put the tiger letter T into the blue paisley bowl .
+2024-03-24 17:08:48,395 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:48,417 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:48,853 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:49,219 adv_eval.py 161  INFO  ==================Task 109=========================
+2024-03-24 17:08:49,219 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:49,219 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley pentagon into the purple swirl frame .
+2024-03-24 17:08:49,219 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:49,240 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:49,660 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:50,130 adv_eval.py 161  INFO  ==================Task 110=========================
+2024-03-24 17:08:50,130 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:50,130 adv_eval.py 172  INFO  The rephrasing intention: Put the granite pentagon into the red and purple stripe container .
+2024-03-24 17:08:50,130 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:50,151 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:50,572 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:50,986 adv_eval.py 161  INFO  ==================Task 111=========================
+2024-03-24 17:08:50,986 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:50,987 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow letter A into the checkerboard frame .
+2024-03-24 17:08:50,987 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:51,007 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:51,427 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:51,854 adv_eval.py 161  INFO  ==================Task 112=========================
+2024-03-24 17:08:51,854 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:51,854 adv_eval.py 172  INFO  The rephrasing intention: Put the granite L-shaped block into the red and blue stripe container .
+2024-03-24 17:08:51,854 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:51,875 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:52,279 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:52,919 adv_eval.py 161  INFO  ==================Task 113=========================
+2024-03-24 17:08:52,920 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:52,920 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot cross into the blue and purple polka dot container .
+2024-03-24 17:08:52,920 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:52,941 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:53,394 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:53,810 adv_eval.py 161  INFO  ==================Task 114=========================
+2024-03-24 17:08:53,810 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:53,810 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow stripe ring into the blue and purple stripe bowl .
+2024-03-24 17:08:53,810 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:53,831 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:54,233 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:54,711 adv_eval.py 161  INFO  ==================Task 115=========================
+2024-03-24 17:08:54,711 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:54,711 adv_eval.py 172  INFO  The rephrasing intention: Put the green and blue polka dot letter T into the purple container .
+2024-03-24 17:08:54,711 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:54,732 adv_eval.py 219  INFO  Cosine similarity: 0.9999997615814209
+2024-03-24 17:08:55,134 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:55,516 adv_eval.py 161  INFO  ==================Task 116=========================
+2024-03-24 17:08:55,516 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:55,516 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow heart into the red and blue stripe container .
+2024-03-24 17:08:55,516 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:55,536 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:08:55,957 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:56,448 adv_eval.py 161  INFO  ==================Task 117=========================
+2024-03-24 17:08:56,448 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:56,448 adv_eval.py 172  INFO  The rephrasing intention: Put the red triangle into the plastic square .
+2024-03-24 17:08:56,448 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:56,469 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:56,904 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:57,324 adv_eval.py 161  INFO  ==================Task 118=========================
+2024-03-24 17:08:57,324 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:57,324 adv_eval.py 172  INFO  The rephrasing intention: Put the red L-shaped block into the plastic frame .
+2024-03-24 17:08:57,324 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:57,345 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:08:57,765 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:58,123 adv_eval.py 161  INFO  ==================Task 119=========================
+2024-03-24 17:08:58,123 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:58,123 adv_eval.py 172  INFO  The rephrasing intention: Put the tiger ring into the cyan frame .
+2024-03-24 17:08:58,123 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:58,144 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:58,563 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:59,050 adv_eval.py 161  INFO  ==================Task 120=========================
+2024-03-24 17:08:59,050 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:59,050 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot heart into the blue and purple stripe frame .
+2024-03-24 17:08:59,050 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:59,072 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:08:59,492 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:08:59,906 adv_eval.py 161  INFO  ==================Task 121=========================
+2024-03-24 17:08:59,906 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:08:59,906 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley letter T into the blue and purple stripe frame .
+2024-03-24 17:08:59,906 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:08:59,928 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:00,363 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:00,876 adv_eval.py 161  INFO  ==================Task 122=========================
+2024-03-24 17:09:00,876 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:00,876 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow stripe letter T into the tiles frame .
+2024-03-24 17:09:00,876 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:00,897 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:01,333 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:01,710 adv_eval.py 161  INFO  ==================Task 123=========================
+2024-03-24 17:09:01,710 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:01,710 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl ring into the cyan container .
+2024-03-24 17:09:01,710 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:01,731 adv_eval.py 219  INFO  Cosine similarity: 0.9999998807907104
+2024-03-24 17:09:02,167 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:02,660 adv_eval.py 161  INFO  ==================Task 124=========================
+2024-03-24 17:09:02,660 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:02,660 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow and blue polka dot pentagon into the green and purple stripe frame .
+2024-03-24 17:09:02,660 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:02,681 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:03,136 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:03,530 adv_eval.py 161  INFO  ==================Task 125=========================
+2024-03-24 17:09:03,530 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:03,530 adv_eval.py 172  INFO  The rephrasing intention: Put the green swirl letter M into the yellow and blue stripe square .
+2024-03-24 17:09:03,530 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:03,551 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:09:04,022 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:04,433 adv_eval.py 161  INFO  ==================Task 126=========================
+2024-03-24 17:09:04,433 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:04,433 adv_eval.py 172  INFO  The rephrasing intention: Put the granite letter V into the blue swirl square .
+2024-03-24 17:09:04,433 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:04,457 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:09:04,890 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:05,383 adv_eval.py 161  INFO  ==================Task 127=========================
+2024-03-24 17:09:05,383 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:05,383 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley block into the plastic frame .
+2024-03-24 17:09:05,383 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:05,405 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:09:05,842 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:06,200 adv_eval.py 161  INFO  ==================Task 128=========================
+2024-03-24 17:09:06,200 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:06,200 adv_eval.py 172  INFO  The rephrasing intention: Put the green block into the purple swirl frame .
+2024-03-24 17:09:06,200 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:06,222 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:06,622 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:07,150 adv_eval.py 161  INFO  ==================Task 129=========================
+2024-03-24 17:09:07,150 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:07,150 adv_eval.py 172  INFO  The rephrasing intention: Put the red and blue polka dot letter V into the plastic frame .
+2024-03-24 17:09:07,150 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:07,171 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:09:07,608 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:08,027 adv_eval.py 161  INFO  ==================Task 130=========================
+2024-03-24 17:09:08,028 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:08,028 adv_eval.py 172  INFO  The rephrasing intention: Put the red pentagon into the red and blue stripe bowl .
+2024-03-24 17:09:08,028 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:08,049 adv_eval.py 219  INFO  Cosine similarity: 1.0000001192092896
+2024-03-24 17:09:08,485 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:08,942 adv_eval.py 161  INFO  ==================Task 131=========================
+2024-03-24 17:09:08,942 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:08,942 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow flower into the purple swirl container .
+2024-03-24 17:09:08,942 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:08,962 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:09,401 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:09,799 adv_eval.py 161  INFO  ==================Task 132=========================
+2024-03-24 17:09:09,799 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:09,799 adv_eval.py 172  INFO  The rephrasing intention: Put the green paisley ring into the wooden square .
+2024-03-24 17:09:09,799 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:09,821 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:10,271 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:10,624 adv_eval.py 161  INFO  ==================Task 133=========================
+2024-03-24 17:09:10,624 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:10,624 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl block into the cyan square .
+2024-03-24 17:09:10,624 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:10,645 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:11,083 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:11,537 adv_eval.py 161  INFO  ==================Task 134=========================
+2024-03-24 17:09:11,537 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:11,537 adv_eval.py 172  INFO  The rephrasing intention: Put the green flower into the yellow and blue stripe container .
+2024-03-24 17:09:11,537 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:11,557 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:11,979 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:12,520 adv_eval.py 161  INFO  ==================Task 135=========================
+2024-03-24 17:09:12,521 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:12,521 adv_eval.py 172  INFO  The rephrasing intention: Put the polka dot cross into the yellow and purple polka dot frame .
+2024-03-24 17:09:12,521 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:12,541 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:09:12,997 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:13,392 adv_eval.py 161  INFO  ==================Task 136=========================
+2024-03-24 17:09:13,392 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:13,392 adv_eval.py 172  INFO  The rephrasing intention: Put the tiger ring into the blue and purple stripe frame .
+2024-03-24 17:09:13,392 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:13,412 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:13,834 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:14,207 adv_eval.py 161  INFO  ==================Task 137=========================
+2024-03-24 17:09:14,207 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:14,207 adv_eval.py 172  INFO  The rephrasing intention: Put the red heart into the wooden frame .
+2024-03-24 17:09:14,207 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:14,228 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:14,681 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:15,131 adv_eval.py 161  INFO  ==================Task 138=========================
+2024-03-24 17:09:15,131 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:15,131 adv_eval.py 172  INFO  The rephrasing intention: Put the granite pentagon into the yellow and purple stripe bowl .
+2024-03-24 17:09:15,131 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:15,152 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:15,574 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:16,072 adv_eval.py 161  INFO  ==================Task 139=========================
+2024-03-24 17:09:16,072 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:16,072 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl letter E into the green and purple polka dot square .
+2024-03-24 17:09:16,072 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:16,094 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:16,546 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:17,015 adv_eval.py 161  INFO  ==================Task 140=========================
+2024-03-24 17:09:17,015 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:17,015 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow stripe letter A into the blue and purple stripe square .
+2024-03-24 17:09:17,015 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:17,036 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:17,472 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:18,006 adv_eval.py 161  INFO  ==================Task 141=========================
+2024-03-24 17:09:18,006 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:18,006 adv_eval.py 172  INFO  The rephrasing intention: Put the green letter M into the green and purple polka dot bowl .
+2024-03-24 17:09:18,006 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:18,027 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:18,428 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:18,882 adv_eval.py 161  INFO  ==================Task 142=========================
+2024-03-24 17:09:18,882 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:18,882 adv_eval.py 172  INFO  The rephrasing intention: Put the rainbow L-shaped block into the plastic bowl .
+2024-03-24 17:09:18,882 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:18,903 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:19,341 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:19,683 adv_eval.py 161  INFO  ==================Task 143=========================
+2024-03-24 17:09:19,683 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:19,683 adv_eval.py 172  INFO  The rephrasing intention: Put the red pentagon into the olive square .
+2024-03-24 17:09:19,684 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:19,704 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:09:20,165 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:20,570 adv_eval.py 161  INFO  ==================Task 144=========================
+2024-03-24 17:09:20,570 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:20,570 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley letter V into the wooden frame .
+2024-03-24 17:09:20,570 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:20,591 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:21,029 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:21,373 adv_eval.py 161  INFO  ==================Task 145=========================
+2024-03-24 17:09:21,373 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:21,373 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow paisley ring into the blue square .
+2024-03-24 17:09:21,373 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:21,394 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:21,815 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:22,199 adv_eval.py 161  INFO  ==================Task 146=========================
+2024-03-24 17:09:22,199 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:22,199 adv_eval.py 172  INFO  The rephrasing intention: Put the red paisley letter M into the red and purple stripe frame .
+2024-03-24 17:09:22,199 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:22,219 adv_eval.py 219  INFO  Cosine similarity: 0.9999999403953552
+2024-03-24 17:09:22,657 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:23,067 adv_eval.py 161  INFO  ==================Task 147=========================
+2024-03-24 17:09:23,068 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:23,068 adv_eval.py 172  INFO  The rephrasing intention: Put the red swirl cross into the cyan bowl .
+2024-03-24 17:09:23,068 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:23,088 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:23,490 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:23,919 adv_eval.py 161  INFO  ==================Task 148=========================
+2024-03-24 17:09:23,919 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:23,919 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow stripe pentagon into the red and purple stripe bowl .
+2024-03-24 17:09:23,919 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:23,940 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:24,344 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:24,750 adv_eval.py 161  INFO  ==================Task 149=========================
+2024-03-24 17:09:24,750 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:24,750 adv_eval.py 172  INFO  The rephrasing intention: Put the red and yellow stripe L-shaped block into the checkerboard square .
+2024-03-24 17:09:24,750 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:24,772 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:25,226 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:25,670 adv_eval.py 161  INFO  ==================Task 150=========================
+2024-03-24 17:09:25,671 adv_eval.py 171  INFO  The rephrasing type: None
+2024-03-24 17:09:25,671 adv_eval.py 172  INFO  The rephrasing intention: Put the yellow pentagon into the checkerboard frame .
+2024-03-24 17:09:25,671 adv_eval.py 173  INFO  The visual attack type: blurring
+2024-03-24 17:09:25,693 adv_eval.py 219  INFO  Cosine similarity: 1.0
+2024-03-24 17:09:26,112 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 17:09:26,628 adv_eval.py 364 WARNING  ==================Evaluation Done=========================
+2024-03-24 17:09:26,629 adv_eval.py 366  INFO  Success rate: 100.0%
+2024-03-24 17:09:26,629 adv_eval.py 367  INFO  Average cosine similarity: 100.0%

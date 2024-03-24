@@ -1,0 +1,904 @@
+2024-03-24 15:22:40,080 adv_eval.py 103  INFO  cfg: {'partition': 'placement_generalization', 'task': 'rearrange', 'rephrasings': 'Object Rephrase', 'vis_atk': 'None', 'device': 'cuda', 'reuse': False, 'save_dir': 'adv_scripts/output', 'ckpt': 'models/VIMA/200M.ckpt', 'debug_flag': True, 'hide_arm': True, 'seed': 42}
+2024-03-24 15:22:45,549 adv_eval.py 161  INFO  ==================Task 1=========================
+2024-03-24 15:22:45,902 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:22:45,902 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this particular setting view
+2024-03-24 15:22:45,902 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:45,927 adv_eval.py 219  INFO  Cosine similarity: 0.6437218189239502
+2024-03-24 15:22:53,201 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:53,637 adv_eval.py 161  INFO  ==================Task 2=========================
+2024-03-24 15:22:54,626 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:22:54,626 adv_eval.py 172  INFO  The rephrasing intention: Reposition, relocate, reorganize, or readjust the current layout or configuration of elements within this specific visual display, while staying true to the overall aesthetic of shades, tones, or designs used to depict or portray various physical items or entities
+2024-03-24 15:22:54,626 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:54,647 adv_eval.py 219  INFO  Cosine similarity: 0.21700310707092285
+2024-03-24 15:22:56,759 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:22:57,142 adv_eval.py 161  INFO  ==================Task 3=========================
+2024-03-24 15:22:58,858 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:22:58,858 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this particular scenarioAdjust to this specific settingReorganize to this given momentModify to this particular placeAdapt to this situationTransform to this selected landscapeAlter to this chosen environmentRevamp to this unique backdropAmend to this designated localeIncorporate to this vibrant scene Blend into this lively pictureMerge into this colorful tableauIntegrate into this dynamic panoramaAssimilate into this vivid vistaJoin together with this vivid spectacleUnite with this bright exhibitionFuse with this striking viewHarmonize with this vibrant display
+2024-03-24 15:22:58,858 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:58,884 adv_eval.py 219  INFO  Cosine similarity: 0.3626263737678528
+2024-03-24 15:22:59,287 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:59,613 adv_eval.py 161  INFO  ==================Task 4=========================
+2024-03-24 15:22:59,947 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:22:59,948 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting to this picturesque tableau
+2024-03-24 15:22:59,948 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:59,969 adv_eval.py 219  INFO  Cosine similarity: 0.3608311414718628
+2024-03-24 15:23:00,798 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:01,149 adv_eval.py 161  INFO  ==================Task 5=========================
+2024-03-24 15:23:01,393 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:01,393 adv_eval.py 172  INFO  The rephrasing intention: Adjust the composition of this particular landscape
+2024-03-24 15:23:01,393 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:01,417 adv_eval.py 219  INFO  Cosine similarity: 0.561667799949646
+2024-03-24 15:23:02,299 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:02,661 adv_eval.py 161  INFO  ==================Task 6=========================
+2024-03-24 15:23:02,916 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:02,916 adv_eval.py 172  INFO  The rephrasing intention: Revamp the composition of this elaborate setting
+2024-03-24 15:23:02,916 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:02,938 adv_eval.py 219  INFO  Cosine similarity: 0.16924817860126495
+2024-03-24 15:23:05,625 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:06,142 adv_eval.py 161  INFO  ==================Task 7=========================
+2024-03-24 15:23:06,440 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:06,440 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure this particular setting with its unique assortment of items and elements
+2024-03-24 15:23:06,441 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:06,464 adv_eval.py 219  INFO  Cosine similarity: 0.3303411900997162
+2024-03-24 15:23:07,382 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:07,774 adv_eval.py 161  INFO  ==================Task 8=========================
+2024-03-24 15:23:09,419 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:09,419 adv_eval.py 172  INFO  The rephrasing intention: Revamp this settingModify this scenarioTransform this landscapeRework this pictureReorganize this imageRestructure this tableauRedesign this depictionReshape this viewReimagine this vistaRefine this portraitReinvent this pictureReconstruct this panoramaReconfigure this compositionReorder this still lifeRearm this pictureRejuvenate this photographRegenerate this illustrationRevitalize this paintingRenovate this snapshotReinvigorate this artworkReinstate this designReignite this graphicResurrect this visualReincarnate this depictionReanimate this representation
+2024-03-24 15:23:09,419 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:09,443 adv_eval.py 219  INFO  Cosine similarity: 0.22102448344230652
+2024-03-24 15:23:12,082 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:12,433 adv_eval.py 161  INFO  ==================Task 9=========================
+2024-03-24 15:23:12,679 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:12,679 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this tableau
+2024-03-24 15:23:12,680 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:12,702 adv_eval.py 219  INFO  Cosine similarity: 0.7115163207054138
+2024-03-24 15:23:13,564 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:14,003 adv_eval.py 161  INFO  ==================Task 10=========================
+2024-03-24 15:23:14,481 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:14,481 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure this particular landscape, repositioning objects without changing the physical layout or spatial arrangement
+2024-03-24 15:23:14,481 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:14,502 adv_eval.py 219  INFO  Cosine similarity: 0.2732096016407013
+2024-03-24 15:23:14,894 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:15,397 adv_eval.py 161  INFO  ==================Task 11=========================
+2024-03-24 15:23:15,812 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:15,812 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the placement or positioning of the objects in this particular milieu or environment
+2024-03-24 15:23:15,812 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:15,835 adv_eval.py 219  INFO  Cosine similarity: 0.3721535801887512
+2024-03-24 15:23:17,076 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:17,384 adv_eval.py 161  INFO  ==================Task 12=========================
+2024-03-24 15:23:17,828 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:17,828 adv_eval.py 172  INFO  The rephrasing intention: Rearrangement of the current setting has been employed with the intention of altering its current structure
+2024-03-24 15:23:17,828 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:17,853 adv_eval.py 219  INFO  Cosine similarity: 0.3717762529850006
+2024-03-24 15:23:20,818 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:21,190 adv_eval.py 161  INFO  ==================Task 13=========================
+2024-03-24 15:23:22,052 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:22,052 adv_eval.py 172  INFO  The rephrasing intention: The previously undisturbed room with the beige walls and hardwood floors was now a completely altered space, filled with various pieces of furniture in shades of tan, sand, and cream
+2024-03-24 15:23:22,052 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:22,076 adv_eval.py 219  INFO  Cosine similarity: 0.13923880457878113
+2024-03-24 15:23:24,943 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:25,625 adv_eval.py 161  INFO  ==================Task 14=========================
+2024-03-24 15:23:26,019 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:26,019 adv_eval.py 172  INFO  The rephrasing intention: Adjust the placement of elements to form a new perspective within this particular milieu
+2024-03-24 15:23:26,019 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:26,043 adv_eval.py 219  INFO  Cosine similarity: 0.29583707451820374
+2024-03-24 15:23:27,271 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:27,585 adv_eval.py 161  INFO  ==================Task 15=========================
+2024-03-24 15:23:27,804 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:27,804 adv_eval.py 172  INFO  The rephrasing intention: Revise to this situation
+2024-03-24 15:23:27,804 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:27,826 adv_eval.py 219  INFO  Cosine similarity: 0.4925602674484253
+2024-03-24 15:23:28,705 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:29,318 adv_eval.py 161  INFO  ==================Task 16=========================
+2024-03-24 15:23:29,625 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:29,625 adv_eval.py 172  INFO  The rephrasing intention: Alter the layout of this particular situation
+2024-03-24 15:23:29,625 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:29,649 adv_eval.py 219  INFO  Cosine similarity: 0.6284536123275757
+2024-03-24 15:23:30,959 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:31,284 adv_eval.py 161  INFO  ==================Task 17=========================
+2024-03-24 15:23:31,869 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:31,869 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picture of the surroundings, layout, or composition depicting multiple structures, furniture, and various other physical elements in different positions or configurations that form an overall visual impression or representation
+2024-03-24 15:23:31,869 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:31,894 adv_eval.py 219  INFO  Cosine similarity: 0.43036678433418274
+2024-03-24 15:23:32,735 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:33,109 adv_eval.py 161  INFO  ==================Task 18=========================
+2024-03-24 15:23:33,392 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:33,392 adv_eval.py 172  INFO  The rephrasing intention: Rework the configuration of this setting
+2024-03-24 15:23:33,392 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:33,414 adv_eval.py 219  INFO  Cosine similarity: 0.416363924741745
+2024-03-24 15:23:33,805 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:34,320 adv_eval.py 161  INFO  ==================Task 19=========================
+2024-03-24 15:23:34,759 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:34,759 adv_eval.py 172  INFO  The rephrasing intention: Alter the visual depiction to this particular frame, while maintaining the chromatic and design attributes
+2024-03-24 15:23:34,759 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:34,784 adv_eval.py 219  INFO  Cosine similarity: 0.22452013194561005
+2024-03-24 15:23:37,394 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:37,772 adv_eval.py 161  INFO  ==================Task 20=========================
+2024-03-24 15:23:38,090 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:38,090 adv_eval.py 172  INFO  The rephrasing intention: Reposition and restructure the appearance of this specific scenario
+2024-03-24 15:23:38,090 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:38,114 adv_eval.py 219  INFO  Cosine similarity: 0.21348127722740173
+2024-03-24 15:23:38,559 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:38,950 adv_eval.py 161  INFO  ==================Task 21=========================
+2024-03-24 15:23:39,193 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:39,194 adv_eval.py 172  INFO  The rephrasing intention:  Rearrange the current composition
+2024-03-24 15:23:39,194 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:39,217 adv_eval.py 219  INFO  Cosine similarity: 0.6414902210235596
+2024-03-24 15:23:40,038 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:40,528 adv_eval.py 161  INFO  ==================Task 22=========================
+2024-03-24 15:23:40,865 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:40,865 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the arrangement of elements in this particular depiction
+2024-03-24 15:23:40,865 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:40,889 adv_eval.py 219  INFO  Cosine similarity: 0.38381722569465637
+2024-03-24 15:23:42,076 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:42,338 adv_eval.py 161  INFO  ==================Task 23=========================
+2024-03-24 15:23:42,639 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:42,639 adv_eval.py 172  INFO  The rephrasing intention: This setting has been reorganized
+2024-03-24 15:23:42,639 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:42,661 adv_eval.py 219  INFO  Cosine similarity: 0.21423107385635376
+2024-03-24 15:23:43,030 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:43,361 adv_eval.py 161  INFO  ==================Task 24=========================
+2024-03-24 15:23:43,608 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:43,608 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this visual panorama
+2024-03-24 15:23:43,608 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:43,632 adv_eval.py 219  INFO  Cosine similarity: 0.712775468826294
+2024-03-24 15:23:43,976 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:44,314 adv_eval.py 161  INFO  ==================Task 25=========================
+2024-03-24 15:23:44,878 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:44,878 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the existing setting with various objects distributed strategically, lending to a visually pleasing arrangement
+2024-03-24 15:23:44,878 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:44,901 adv_eval.py 219  INFO  Cosine similarity: 0.34767967462539673
+2024-03-24 15:23:45,643 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:45,902 adv_eval.py 161  INFO  ==================Task 26=========================
+2024-03-24 15:23:46,263 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:46,263 adv_eval.py 172  INFO  The rephrasing intention: Reorganize the arrangement of elements in this particular visual tableau
+2024-03-24 15:23:46,263 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:46,285 adv_eval.py 219  INFO  Cosine similarity: 0.247752845287323
+2024-03-24 15:23:48,000 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:48,414 adv_eval.py 161  INFO  ==================Task 27=========================
+2024-03-24 15:23:48,836 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:48,836 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this tableau, composition, arrangement, or layout of elements or components
+2024-03-24 15:23:48,836 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:48,860 adv_eval.py 219  INFO  Cosine similarity: 0.45332372188568115
+2024-03-24 15:23:49,695 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:49,939 adv_eval.py 161  INFO  ==================Task 28=========================
+2024-03-24 15:23:50,285 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:50,285 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the arrangement of objects within this particular setting
+2024-03-24 15:23:50,285 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:50,308 adv_eval.py 219  INFO  Cosine similarity: 0.2486325204372406
+2024-03-24 15:23:50,705 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:51,038 adv_eval.py 161  INFO  ==================Task 29=========================
+2024-03-24 15:23:51,762 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:51,763 adv_eval.py 172  INFO  The rephrasing intention: Rearranging the visual composition before our eyes, we observe a plethora of various objects, ranging from small to large, all scattered about in a purposeful yet random manner
+2024-03-24 15:23:51,763 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:51,785 adv_eval.py 219  INFO  Cosine similarity: 0.2292661964893341
+2024-03-24 15:23:54,694 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:55,003 adv_eval.py 161  INFO  ==================Task 30=========================
+2024-03-24 15:23:55,296 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:55,296 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure this particular visual tableau
+2024-03-24 15:23:55,296 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:55,319 adv_eval.py 219  INFO  Cosine similarity: 0.5631975531578064
+2024-03-24 15:23:56,083 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:56,420 adv_eval.py 161  INFO  ==================Task 31=========================
+2024-03-24 15:23:56,815 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:56,815 adv_eval.py 172  INFO  The rephrasing intention: Reposition and restructure the current setting to this landscape
+2024-03-24 15:23:56,815 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:56,838 adv_eval.py 219  INFO  Cosine similarity: 0.26651716232299805
+2024-03-24 15:23:57,694 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:23:58,002 adv_eval.py 161  INFO  ==================Task 32=========================
+2024-03-24 15:23:58,318 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:23:58,318 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the spatial layout of this particular setting
+2024-03-24 15:23:58,318 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:23:58,341 adv_eval.py 219  INFO  Cosine similarity: 0.27288877964019775
+2024-03-24 15:23:59,130 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:23:59,644 adv_eval.py 161  INFO  ==================Task 33=========================
+2024-03-24 15:24:00,401 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:00,401 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this particular visual representation of surroundings, in which various tangible items, such as furniture and decor, are placed or disposed in a particular manner, potentially altering their previous arrangement or organization
+2024-03-24 15:24:00,401 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:00,425 adv_eval.py 219  INFO  Cosine similarity: 0.40284812450408936
+2024-03-24 15:24:03,141 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:24:03,444 adv_eval.py 161  INFO  ==================Task 34=========================
+2024-03-24 15:24:03,799 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:03,799 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the elements and components within this particular visual setting
+2024-03-24 15:24:03,799 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:03,820 adv_eval.py 219  INFO  Cosine similarity: 0.34391313791275024
+2024-03-24 15:24:04,601 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:04,938 adv_eval.py 161  INFO  ==================Task 35=========================
+2024-03-24 15:24:05,517 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:05,517 adv_eval.py 172  INFO  The rephrasing intention:  Rearrange to this display with reconfigured elements of various shapes and sizes, all composed into a harmonious composition of hues, tones, and designs
+2024-03-24 15:24:05,517 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:05,540 adv_eval.py 219  INFO  Cosine similarity: 0.40319639444351196
+2024-03-24 15:24:06,318 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:06,663 adv_eval.py 161  INFO  ==================Task 36=========================
+2024-03-24 15:24:06,991 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:06,991 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the present arrangement within this visual representation
+2024-03-24 15:24:06,991 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:07,013 adv_eval.py 219  INFO  Cosine similarity: 0.27374449372291565
+2024-03-24 15:24:07,430 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:07,961 adv_eval.py 161  INFO  ==================Task 37=========================
+2024-03-24 15:24:08,548 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:08,548 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this particular moment, modifying the arrangement of objects and items within the frame, evoking a sense of disorganization or alteration to the visual landscape
+2024-03-24 15:24:08,548 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:08,571 adv_eval.py 219  INFO  Cosine similarity: 0.38549113273620605
+2024-03-24 15:24:09,412 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:09,779 adv_eval.py 161  INFO  ==================Task 38=========================
+2024-03-24 15:24:10,063 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:10,063 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the current layout of this particular setting
+2024-03-24 15:24:10,064 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:10,085 adv_eval.py 219  INFO  Cosine similarity: 0.2909916341304779
+2024-03-24 15:24:10,459 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:24:10,930 adv_eval.py 161  INFO  ==================Task 39=========================
+2024-03-24 15:24:11,181 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:11,181 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the composition of the current tableau
+2024-03-24 15:24:11,181 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:11,204 adv_eval.py 219  INFO  Cosine similarity: 0.30460721254348755
+2024-03-24 15:24:12,082 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:12,413 adv_eval.py 161  INFO  ==================Task 40=========================
+2024-03-24 15:24:12,988 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:12,989 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting, modify the arrangement of this picture, reshuffle the layout of this composition, alter the positioning of the elements in this view
+2024-03-24 15:24:12,989 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:13,010 adv_eval.py 219  INFO  Cosine similarity: 0.4020458459854126
+2024-03-24 15:24:13,840 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:14,198 adv_eval.py 161  INFO  ==================Task 41=========================
+2024-03-24 15:24:14,533 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:14,533 adv_eval.py 172  INFO  The rephrasing intention: Rework the composition of this visage
+2024-03-24 15:24:14,533 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:14,557 adv_eval.py 219  INFO  Cosine similarity: 0.5382422804832458
+2024-03-24 15:24:15,444 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:15,684 adv_eval.py 161  INFO  ==================Task 42=========================
+2024-03-24 15:24:16,131 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:16,131 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this tableau, vignette, or mise en scène
+2024-03-24 15:24:16,131 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:16,156 adv_eval.py 219  INFO  Cosine similarity: 0.42440277338027954
+2024-03-24 15:24:17,010 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:17,314 adv_eval.py 161  INFO  ==================Task 43=========================
+2024-03-24 15:24:17,703 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:17,703 adv_eval.py 172  INFO  The rephrasing intention: Reshuffle the arrangement of objects present within the frame showcased to us
+2024-03-24 15:24:17,703 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:17,728 adv_eval.py 219  INFO  Cosine similarity: 0.30965906381607056
+2024-03-24 15:24:18,535 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:18,844 adv_eval.py 161  INFO  ==================Task 44=========================
+2024-03-24 15:24:19,337 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:19,337 adv_eval.py 172  INFO  The rephrasing intention:  -Reconfigure this scenario by making substantial modifications and altering the layout of objects without explicitly stating the names of said objects, while preserving the descriptions of hues or designs
+2024-03-24 15:24:19,337 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:19,363 adv_eval.py 219  INFO  Cosine similarity: 0.225710928440094
+2024-03-24 15:24:21,865 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:24:22,273 adv_eval.py 161  INFO  ==================Task 45=========================
+2024-03-24 15:24:22,678 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:22,678 adv_eval.py 172  INFO  The rephrasing intention: Move and rearrange all objects in this particular location
+2024-03-24 15:24:22,678 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:22,703 adv_eval.py 219  INFO  Cosine similarity: 0.2509000897407532
+2024-03-24 15:24:23,592 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:23,994 adv_eval.py 161  INFO  ==================Task 46=========================
+2024-03-24 15:24:24,226 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:24,226 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this particular scenario
+2024-03-24 15:24:24,226 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:24,249 adv_eval.py 219  INFO  Cosine similarity: 0.6365388631820679
+2024-03-24 15:24:25,065 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:25,317 adv_eval.py 161  INFO  ==================Task 47=========================
+2024-03-24 15:24:26,133 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:26,133 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the current mise en scène to a more structured and aesthetically pleasing arrangement
+2024-03-24 15:24:26,133 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:26,154 adv_eval.py 219  INFO  Cosine similarity: 0.3081613779067993
+2024-03-24 15:24:26,539 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:26,919 adv_eval.py 161  INFO  ==================Task 48=========================
+2024-03-24 15:24:27,387 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:27,387 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting, modify the environment, reposition the layout, and change the display of this particular scene
+2024-03-24 15:24:27,387 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:27,410 adv_eval.py 219  INFO  Cosine similarity: 0.4072401523590088
+2024-03-24 15:24:28,197 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:28,468 adv_eval.py 161  INFO  ==================Task 49=========================
+2024-03-24 15:24:28,744 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:28,744 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting of this particular moment or situation
+2024-03-24 15:24:28,744 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:28,765 adv_eval.py 219  INFO  Cosine similarity: 0.2720741629600525
+2024-03-24 15:24:29,135 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:29,603 adv_eval.py 161  INFO  ==================Task 50=========================
+2024-03-24 15:24:29,822 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:29,822 adv_eval.py 172  INFO  The rephrasing intention: Adjust the layout of this setting
+2024-03-24 15:24:29,822 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:29,845 adv_eval.py 219  INFO  Cosine similarity: 0.5476763844490051
+2024-03-24 15:24:30,629 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:30,961 adv_eval.py 161  INFO  ==================Task 51=========================
+2024-03-24 15:24:31,313 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:31,313 adv_eval.py 172  INFO  The rephrasing intention: Modify and restructure the current arrangement of this display
+2024-03-24 15:24:31,313 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:31,336 adv_eval.py 219  INFO  Cosine similarity: 0.24299731850624084
+2024-03-24 15:24:34,157 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:24:34,661 adv_eval.py 161  INFO  ==================Task 52=========================
+2024-03-24 15:24:35,018 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:35,018 adv_eval.py 172  INFO  The rephrasing intention: Shift and change the spatial arrangement of elements within this particular setting
+2024-03-24 15:24:35,018 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:35,041 adv_eval.py 219  INFO  Cosine similarity: 0.3106709420681
+2024-03-24 15:24:36,306 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:24:36,597 adv_eval.py 161  INFO  ==================Task 53=========================
+2024-03-24 15:24:37,120 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:37,120 adv_eval.py 172  INFO  The rephrasing intention: Rearrangement was done to alter this particular setting, with objects newly positioned and realigned in a distinct configuration
+2024-03-24 15:24:37,120 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:37,145 adv_eval.py 219  INFO  Cosine similarity: 0.3620642423629761
+2024-03-24 15:24:40,106 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:24:40,528 adv_eval.py 161  INFO  ==================Task 54=========================
+2024-03-24 15:24:40,959 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:40,959 adv_eval.py 172  INFO  The rephrasing intention: This landscape has undergone a significant transformation, as evident in its current arrangement
+2024-03-24 15:24:40,959 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:40,983 adv_eval.py 219  INFO  Cosine similarity: 0.2996714115142822
+2024-03-24 15:24:43,752 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:24:44,131 adv_eval.py 161  INFO  ==================Task 55=========================
+2024-03-24 15:24:44,619 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:44,619 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the layout of this setting
+2024-03-24 15:24:44,619 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:44,642 adv_eval.py 219  INFO  Cosine similarity: 0.32487720251083374
+2024-03-24 15:24:47,312 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:24:47,714 adv_eval.py 161  INFO  ==================Task 56=========================
+2024-03-24 15:24:48,135 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:24:48,135 adv_eval.py 172  INFO  The rephrasing intention: Revise the current depiction to this particular setting, wherein various elements are present
+2024-03-24 15:24:48,135 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:24:48,157 adv_eval.py 219  INFO  Cosine similarity: 0.2862134575843811
+2024-03-24 15:25:04,201 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:25:04,753 adv_eval.py 161  INFO  ==================Task 57=========================
+2024-03-24 15:25:05,056 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:25:05,056 adv_eval.py 172  INFO  The rephrasing intention:  Transform this picture into the following scenario
+2024-03-24 15:25:05,056 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:25:05,087 adv_eval.py 219  INFO  Cosine similarity: 0.27027827501296997
+2024-03-24 15:25:50,355 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:25:50,763 adv_eval.py 161  INFO  ==================Task 58=========================
+2024-03-24 15:25:51,156 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:25:51,156 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to the current present view
+2024-03-24 15:25:51,156 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:25:51,193 adv_eval.py 219  INFO  Cosine similarity: 0.3839479684829712
+2024-03-24 15:25:52,023 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:25:52,412 adv_eval.py 161  INFO  ==================Task 59=========================
+2024-03-24 15:25:53,671 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:25:53,671 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the layout of the current environment or setting, altering the placement, order, or configuration of objects present, without altering the attribution of said objects, particularly in terms of their coloration or decorative motifs
+2024-03-24 15:25:53,671 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:25:53,696 adv_eval.py 219  INFO  Cosine similarity: 0.3612115681171417
+2024-03-24 15:25:54,525 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:25:55,129 adv_eval.py 161  INFO  ==================Task 60=========================
+2024-03-24 15:25:55,418 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:25:55,418 adv_eval.py 172  INFO  The rephrasing intention: Rework and reconfigure the components of this particular setting
+2024-03-24 15:25:55,418 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:25:55,440 adv_eval.py 219  INFO  Cosine similarity: 0.35116538405418396
+2024-03-24 15:25:58,095 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:25:58,492 adv_eval.py 161  INFO  ==================Task 61=========================
+2024-03-24 15:25:58,794 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:25:58,795 adv_eval.py 172  INFO  The rephrasing intention: Alter the arrangement of elements in this particular setting
+2024-03-24 15:25:58,795 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:25:58,819 adv_eval.py 219  INFO  Cosine similarity: 0.24181416630744934
+2024-03-24 15:26:01,395 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:01,794 adv_eval.py 161  INFO  ==================Task 62=========================
+2024-03-24 15:26:02,249 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:02,249 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the spatial arrangement of this particular setting, rearranging the elements within in a different manner
+2024-03-24 15:26:02,249 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:02,274 adv_eval.py 219  INFO  Cosine similarity: 0.3662898540496826
+2024-03-24 15:26:05,072 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:05,359 adv_eval.py 161  INFO  ==================Task 63=========================
+2024-03-24 15:26:05,675 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:05,675 adv_eval.py 172  INFO  The rephrasing intention: Reorganize the layout and spatial configuration of this particular visual setting
+2024-03-24 15:26:05,675 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:05,701 adv_eval.py 219  INFO  Cosine similarity: 0.31460875272750854
+2024-03-24 15:26:06,537 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:06,833 adv_eval.py 161  INFO  ==================Task 64=========================
+2024-03-24 15:26:07,873 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:07,873 adv_eval.py 172  INFO  The rephrasing intention: Another scene reorganized in this manner would involve placing a multitude of additional, surplus facts or utilizing elongated, prolonged alternatives to replace terminology pertaining to tangible items without revealing the original descriptors characteristic of those objects, all while maintaining the color or design-related terms intact: Reshuffle into this setting
+2024-03-24 15:26:07,873 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:07,898 adv_eval.py 219  INFO  Cosine similarity: 0.24914604425430298
+2024-03-24 15:26:08,731 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:09,174 adv_eval.py 161  INFO  ==================Task 65=========================
+2024-03-24 15:26:09,892 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:09,892 adv_eval.py 172  INFO  The rephrasing intention: Rearrange and reconfigure the entirety of this vividly envisioned setting, composed of various objects and elements, without showing the initial descriptors used to describe said objects
+2024-03-24 15:26:09,892 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:09,921 adv_eval.py 219  INFO  Cosine similarity: 0.4610309600830078
+2024-03-24 15:26:11,225 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:11,534 adv_eval.py 161  INFO  ==================Task 66=========================
+2024-03-24 15:26:12,197 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:12,197 adv_eval.py 172  INFO  The rephrasing intention: Rework this setting with various articles, trinkets, decorations, and furnishings scattered throughout the area
+2024-03-24 15:26:12,197 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:12,220 adv_eval.py 219  INFO  Cosine similarity: 0.2921127676963806
+2024-03-24 15:26:14,972 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:15,309 adv_eval.py 161  INFO  ==================Task 67=========================
+2024-03-24 15:26:15,648 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:15,648 adv_eval.py 172  INFO  The rephrasing intention: Revamp this scenario to create the desired visual tableau
+2024-03-24 15:26:15,648 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:15,671 adv_eval.py 219  INFO  Cosine similarity: 0.18269017338752747
+2024-03-24 15:26:18,345 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:18,639 adv_eval.py 161  INFO  ==================Task 68=========================
+2024-03-24 15:26:18,870 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:18,871 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this scenario
+2024-03-24 15:26:18,871 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:18,895 adv_eval.py 219  INFO  Cosine similarity: 0.6489635109901428
+2024-03-24 15:26:19,705 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:20,010 adv_eval.py 161  INFO  ==================Task 69=========================
+2024-03-24 15:26:20,354 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:20,354 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the various elements in this collection of items and features
+2024-03-24 15:26:20,354 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:20,378 adv_eval.py 219  INFO  Cosine similarity: 0.3478870689868927
+2024-03-24 15:26:21,248 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:21,645 adv_eval.py 161  INFO  ==================Task 70=========================
+2024-03-24 15:26:22,480 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:22,480 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this particular scene in its entirety, with utmost care and precision, keeping in mind every single detail and taking into account all the little nuances and intricacies that make it truly unique
+2024-03-24 15:26:22,480 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:22,505 adv_eval.py 219  INFO  Cosine similarity: 0.3639875650405884
+2024-03-24 15:26:23,342 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:23,653 adv_eval.py 161  INFO  ==================Task 71=========================
+2024-03-24 15:26:24,140 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:24,140 adv_eval.py 172  INFO  The rephrasing intention: Reposition the elements in such a way that the visual composition of this particular scenario is altered
+2024-03-24 15:26:24,140 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:24,164 adv_eval.py 219  INFO  Cosine similarity: 0.31463927030563354
+2024-03-24 15:26:24,977 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:25,233 adv_eval.py 161  INFO  ==================Task 72=========================
+2024-03-24 15:26:25,669 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:25,669 adv_eval.py 172  INFO  The rephrasing intention: Alter the composition of the current aesthetic display by relocating multiple elements to create a fresh arrangement
+2024-03-24 15:26:25,669 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:25,692 adv_eval.py 219  INFO  Cosine similarity: 0.18561267852783203
+2024-03-24 15:26:28,290 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:28,622 adv_eval.py 161  INFO  ==================Task 73=========================
+2024-03-24 15:26:29,208 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:29,209 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the existing arrangement of various physical elements, without altering the overall composition, in order to present a different visual display of elements
+2024-03-24 15:26:29,209 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:29,231 adv_eval.py 219  INFO  Cosine similarity: 0.2872717082500458
+2024-03-24 15:26:29,642 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:30,080 adv_eval.py 161  INFO  ==================Task 74=========================
+2024-03-24 15:26:30,394 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:30,394 adv_eval.py 172  INFO  The rephrasing intention: Restructure this particular visual scenario
+2024-03-24 15:26:30,394 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:30,418 adv_eval.py 219  INFO  Cosine similarity: 0.4769589900970459
+2024-03-24 15:26:33,072 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:33,692 adv_eval.py 161  INFO  ==================Task 75=========================
+2024-03-24 15:26:34,073 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:34,073 adv_eval.py 172  INFO  The rephrasing intention: Spread out and reorganize the objects and elements within this particular setting
+2024-03-24 15:26:34,073 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:34,098 adv_eval.py 219  INFO  Cosine similarity: 0.2985824942588806
+2024-03-24 15:26:36,996 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:37,550 adv_eval.py 161  INFO  ==================Task 76=========================
+2024-03-24 15:26:38,099 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:38,099 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the existing elements in this view
+2024-03-24 15:26:38,099 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:38,123 adv_eval.py 219  INFO  Cosine similarity: 0.3788583278656006
+2024-03-24 15:26:39,388 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:39,638 adv_eval.py 161  INFO  ==================Task 77=========================
+2024-03-24 15:26:39,939 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:39,939 adv_eval.py 172  INFO  The rephrasing intention: }Reorder the current vision to this setting
+2024-03-24 15:26:39,940 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:39,962 adv_eval.py 219  INFO  Cosine similarity: 0.16293363273143768
+2024-03-24 15:26:40,407 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:40,803 adv_eval.py 161  INFO  ==================Task 78=========================
+2024-03-24 15:26:41,116 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:41,116 adv_eval.py 172  INFO  The rephrasing intention: Rework this particular situation to the following scenario
+2024-03-24 15:26:41,116 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:41,139 adv_eval.py 219  INFO  Cosine similarity: 0.21053765714168549
+2024-03-24 15:26:42,702 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:43,340 adv_eval.py 161  INFO  ==================Task 79=========================
+2024-03-24 15:26:43,755 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:43,755 adv_eval.py 172  INFO  The rephrasing intention: Rearrange and further manipulate the elements and components present in this visual backdrop
+2024-03-24 15:26:43,755 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:43,781 adv_eval.py 219  INFO  Cosine similarity: 0.4551342725753784
+2024-03-24 15:26:45,078 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:45,475 adv_eval.py 161  INFO  ==================Task 80=========================
+2024-03-24 15:26:47,204 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:47,204 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this particular setting, scenery, landscape, environment, backdrop, backdrop, view, vista, tableau, tableau, tableau, tableau, tableau, tableau, tableau, tableau, tableau, tableau, tableau, tableau, panorama, picture, décor, stage, spectacle, perspective, outlook, outlook, portrayal, showcase, exhibit, representation, manifestation, manifestation, display, demonstration, illustration, manifestation, motif, motif, motif, motif, motif, motif, motif, motif, motif, motif, motif, tableau, motif, visage, vision, spectacle, tableau, image, semblance
+2024-03-24 15:26:47,204 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:47,231 adv_eval.py 219  INFO  Cosine similarity: 0.4190545976161957
+2024-03-24 15:26:48,101 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:48,380 adv_eval.py 161  INFO  ==================Task 81=========================
+2024-03-24 15:26:48,646 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:48,646 adv_eval.py 172  INFO  The rephrasing intention: Modify this arrangement to this setting
+2024-03-24 15:26:48,646 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:48,671 adv_eval.py 219  INFO  Cosine similarity: 0.3327762186527252
+2024-03-24 15:26:51,613 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:52,396 adv_eval.py 161  INFO  ==================Task 82=========================
+2024-03-24 15:26:52,921 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:52,921 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the placement, positioning, and organization of the various objects to create and construct this particular composition, tableau, or vista
+2024-03-24 15:26:52,921 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:52,944 adv_eval.py 219  INFO  Cosine similarity: 0.35208022594451904
+2024-03-24 15:26:53,778 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:54,216 adv_eval.py 161  INFO  ==================Task 83=========================
+2024-03-24 15:26:54,521 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:54,521 adv_eval.py 172  INFO  The rephrasing intention: The items in this current setting have been moved around and rearranged
+2024-03-24 15:26:54,521 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:54,546 adv_eval.py 219  INFO  Cosine similarity: 0.24349874258041382
+2024-03-24 15:26:56,137 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:56,416 adv_eval.py 161  INFO  ==================Task 84=========================
+2024-03-24 15:26:57,523 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:57,523 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the layout and arrangement of this particular scene, altering the spatial and chronological organization of the elements within, without changing the physical or visual properties of the objects within it, such as their hue, tone, or design pattern
+2024-03-24 15:26:57,523 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:57,545 adv_eval.py 219  INFO  Cosine similarity: 0.2863115668296814
+2024-03-24 15:26:57,931 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:26:58,264 adv_eval.py 161  INFO  ==================Task 85=========================
+2024-03-24 15:26:58,695 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:26:58,695 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque view with a collection of various objects in coordinating shades and patterns
+2024-03-24 15:26:58,695 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:26:58,720 adv_eval.py 219  INFO  Cosine similarity: 0.40011492371559143
+2024-03-24 15:26:59,554 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:26:59,856 adv_eval.py 161  INFO  ==================Task 86=========================
+2024-03-24 15:27:00,141 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:00,141 adv_eval.py 172  INFO  The rephrasing intention: Revise to this arrangement of elements
+2024-03-24 15:27:00,141 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:00,164 adv_eval.py 219  INFO  Cosine similarity: 0.28315654397010803
+2024-03-24 15:27:00,546 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:00,968 adv_eval.py 161  INFO  ==================Task 87=========================
+2024-03-24 15:27:01,300 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:01,300 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the arrangement of the elements within this particular setting, space, or location
+2024-03-24 15:27:01,300 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:01,323 adv_eval.py 219  INFO  Cosine similarity: 0.3021737337112427
+2024-03-24 15:27:02,093 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:02,334 adv_eval.py 161  INFO  ==================Task 88=========================
+2024-03-24 15:27:02,921 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:02,921 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure this situation with an adjustment of positioning or layout to formulate this occasion
+2024-03-24 15:27:02,921 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:02,944 adv_eval.py 219  INFO  Cosine similarity: 0.2533644139766693
+2024-03-24 15:27:03,373 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:03,702 adv_eval.py 161  INFO  ==================Task 89=========================
+2024-03-24 15:27:04,091 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:04,091 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the various elements and components within this particular scene
+2024-03-24 15:27:04,091 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:04,116 adv_eval.py 219  INFO  Cosine similarity: 0.3041684627532959
+2024-03-24 15:27:04,519 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:04,791 adv_eval.py 161  INFO  ==================Task 90=========================
+2024-03-24 15:27:05,275 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:05,275 adv_eval.py 172  INFO  The rephrasing intention: Move around this setting
+2024-03-24 15:27:05,275 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:05,296 adv_eval.py 219  INFO  Cosine similarity: 0.23336981236934662
+2024-03-24 15:27:05,684 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:06,156 adv_eval.py 161  INFO  ==================Task 91=========================
+2024-03-24 15:27:06,532 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:06,532 adv_eval.py 172  INFO  The rephrasing intention: Rework the layout and arrangement of this particular setting
+2024-03-24 15:27:06,532 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:06,557 adv_eval.py 219  INFO  Cosine similarity: 0.3252195417881012
+2024-03-24 15:27:07,795 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:08,364 adv_eval.py 161  INFO  ==================Task 92=========================
+2024-03-24 15:27:08,843 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:08,844 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this visual setting, alter this specific view, modify this particular scenario
+2024-03-24 15:27:08,844 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:08,867 adv_eval.py 219  INFO  Cosine similarity: 0.4930895268917084
+2024-03-24 15:27:10,107 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:10,622 adv_eval.py 161  INFO  ==================Task 93=========================
+2024-03-24 15:27:11,197 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:11,198 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the current setting and arrangement to this particular scenario, shifting and altering the overall depiction without altering the portrayal of hues or designs
+2024-03-24 15:27:11,198 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:11,222 adv_eval.py 219  INFO  Cosine similarity: 0.44018447399139404
+2024-03-24 15:27:12,564 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:12,839 adv_eval.py 161  INFO  ==================Task 94=========================
+2024-03-24 15:27:13,201 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:13,201 adv_eval.py 172  INFO  The rephrasing intention: Reposition and restructure the arrangement of objects, furnishings, and decor within this particular location
+2024-03-24 15:27:13,201 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:13,223 adv_eval.py 219  INFO  Cosine similarity: 0.18841393291950226
+2024-03-24 15:27:13,642 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:14,092 adv_eval.py 161  INFO  ==================Task 95=========================
+2024-03-24 15:27:14,337 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:14,338 adv_eval.py 172  INFO  The rephrasing intention: Make changes to this setting
+2024-03-24 15:27:14,338 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:14,361 adv_eval.py 219  INFO  Cosine similarity: 0.44900715351104736
+2024-03-24 15:27:15,260 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:15,609 adv_eval.py 161  INFO  ==================Task 96=========================
+2024-03-24 15:27:15,956 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:15,956 adv_eval.py 172  INFO  The rephrasing intention: Firstly, relocate all of the objects in this room to new positions
+2024-03-24 15:27:15,957 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:15,981 adv_eval.py 219  INFO  Cosine similarity: 0.22184084355831146
+2024-03-24 15:27:18,666 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:18,986 adv_eval.py 161  INFO  ==================Task 97=========================
+2024-03-24 15:27:19,210 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:19,211 adv_eval.py 172  INFO  The rephrasing intention:  Enter to the area 
+2024-03-24 15:27:19,211 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:19,233 adv_eval.py 219  INFO  Cosine similarity: 0.16541078686714172
+2024-03-24 15:27:21,878 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:22,439 adv_eval.py 161  INFO  ==================Task 98=========================
+2024-03-24 15:27:22,770 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:22,770 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting to this particular location
+2024-03-24 15:27:22,770 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:22,794 adv_eval.py 219  INFO  Cosine similarity: 0.3936082422733307
+2024-03-24 15:27:25,613 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:25,969 adv_eval.py 161  INFO  ==================Task 99=========================
+2024-03-24 15:27:26,330 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:26,330 adv_eval.py 172  INFO  The rephrasing intention: Rework and reorganize the elements of this particular landscape
+2024-03-24 15:27:26,330 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:26,354 adv_eval.py 219  INFO  Cosine similarity: 0.2173072099685669
+2024-03-24 15:27:26,743 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:27,028 adv_eval.py 161  INFO  ==================Task 100=========================
+2024-03-24 15:27:27,495 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:27,496 adv_eval.py 172  INFO  The rephrasing intention:  To complete this picture, we must arrange the elements within this visual representation and organize them according to our desired composition
+2024-03-24 15:27:27,496 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:27,521 adv_eval.py 219  INFO  Cosine similarity: 0.15041705965995789
+2024-03-24 15:27:30,459 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:30,892 adv_eval.py 161  INFO  ==================Task 101=========================
+2024-03-24 15:27:31,256 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:31,256 adv_eval.py 172  INFO  The rephrasing intention: Reorganize and reshuffle the elements in this particular setting
+2024-03-24 15:27:31,256 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:31,281 adv_eval.py 219  INFO  Cosine similarity: 0.3107856512069702
+2024-03-24 15:27:33,461 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:33,769 adv_eval.py 161  INFO  ==================Task 102=========================
+2024-03-24 15:27:34,277 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:34,277 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the layout of this particular setting, while maintaining the structural integrity of the environment and its various components
+2024-03-24 15:27:34,277 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:34,300 adv_eval.py 219  INFO  Cosine similarity: 0.3221215605735779
+2024-03-24 15:27:36,708 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:36,980 adv_eval.py 161  INFO  ==================Task 103=========================
+2024-03-24 15:27:37,399 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:37,399 adv_eval.py 172  INFO  The rephrasing intention: Rearrange elements in order to modify and enhance the details of this particular setting
+2024-03-24 15:27:37,399 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:37,423 adv_eval.py 219  INFO  Cosine similarity: 0.3039017617702484
+2024-03-24 15:27:37,798 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:38,445 adv_eval.py 161  INFO  ==================Task 104=========================
+2024-03-24 15:27:38,685 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:38,685 adv_eval.py 172  INFO  The rephrasing intention: Change this scene
+2024-03-24 15:27:38,685 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:38,709 adv_eval.py 219  INFO  Cosine similarity: 0.4023892283439636
+2024-03-24 15:27:41,328 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:41,698 adv_eval.py 161  INFO  ==================Task 105=========================
+2024-03-24 15:27:42,384 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:42,384 adv_eval.py 172  INFO  The rephrasing intention: Rearrange and reorganize the layout of this particular set up and placement of furniture and decor
+2024-03-24 15:27:42,384 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:42,409 adv_eval.py 219  INFO  Cosine similarity: 0.3526839017868042
+2024-03-24 15:27:44,531 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:44,934 adv_eval.py 161  INFO  ==================Task 106=========================
+2024-03-24 15:27:45,179 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:45,179 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the composition of this particular setting
+2024-03-24 15:27:45,179 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:45,203 adv_eval.py 219  INFO  Cosine similarity: 0.2993541359901428
+2024-03-24 15:27:47,890 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:48,240 adv_eval.py 161  INFO  ==================Task 107=========================
+2024-03-24 15:27:48,502 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:48,502 adv_eval.py 172  INFO  The rephrasing intention: Adjust the layout of the surrounding environment
+2024-03-24 15:27:48,502 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:48,526 adv_eval.py 219  INFO  Cosine similarity: 0.3914107382297516
+2024-03-24 15:27:50,261 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:50,721 adv_eval.py 161  INFO  ==================Task 108=========================
+2024-03-24 15:27:51,342 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:51,342 adv_eval.py 172  INFO  The rephrasing intention: Add much more back-up data or use lengthy, prolonged alternatives to replace terms depicting items without revealing the original descriptions, while maintaining terms depicting shades or designs the same: Reconfigure to this tableau
+2024-03-24 15:27:51,342 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:51,366 adv_eval.py 219  INFO  Cosine similarity: 0.19708499312400818
+2024-03-24 15:27:54,231 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:54,968 adv_eval.py 161  INFO  ==================Task 109=========================
+2024-03-24 15:27:55,290 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:55,290 adv_eval.py 172  INFO  The rephrasing intention: Alter the arrangement of elements in this particular setting
+2024-03-24 15:27:55,290 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:55,315 adv_eval.py 219  INFO  Cosine similarity: 0.33568450808525085
+2024-03-24 15:27:58,048 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:27:58,374 adv_eval.py 161  INFO  ==================Task 110=========================
+2024-03-24 15:27:58,755 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:27:58,755 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the arrangement of items in this visual depiction
+2024-03-24 15:27:58,755 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:27:58,777 adv_eval.py 219  INFO  Cosine similarity: 0.29864078760147095
+2024-03-24 15:27:59,143 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:27:59,474 adv_eval.py 161  INFO  ==================Task 111=========================
+2024-03-24 15:28:00,155 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:00,155 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the current setting or environment to this specific visual panorama or view
+2024-03-24 15:28:00,155 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:00,177 adv_eval.py 219  INFO  Cosine similarity: 0.3604239225387573
+2024-03-24 15:28:00,578 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:01,010 adv_eval.py 161  INFO  ==================Task 112=========================
+2024-03-24 15:28:01,408 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:01,408 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure and reposition the elements of this particular setting to render a new arrangement
+2024-03-24 15:28:01,408 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:01,430 adv_eval.py 219  INFO  Cosine similarity: 0.2554505467414856
+2024-03-24 15:28:01,849 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:02,449 adv_eval.py 161  INFO  ==================Task 113=========================
+2024-03-24 15:28:03,070 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:03,070 adv_eval.py 172  INFO  The rephrasing intention: This scene, filled with various colorful objects and adorned with a plethora of vibrant patterns, has been expertly curated to maximize visual appeal and aesthetic satisfaction
+2024-03-24 15:28:03,070 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:03,094 adv_eval.py 219  INFO  Cosine similarity: 0.2345285415649414
+2024-03-24 15:28:05,838 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:06,386 adv_eval.py 161  INFO  ==================Task 114=========================
+2024-03-24 15:28:06,732 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:06,732 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the placement of various elements within this particular setting
+2024-03-24 15:28:06,732 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:06,756 adv_eval.py 219  INFO  Cosine similarity: 0.32374992966651917
+2024-03-24 15:28:09,809 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:10,231 adv_eval.py 161  INFO  ==================Task 115=========================
+2024-03-24 15:28:10,651 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:10,651 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the elements within this particular composition, altering their placements or positions to achieve a harmonious and cohesive visual arrangement
+2024-03-24 15:28:10,651 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:10,674 adv_eval.py 219  INFO  Cosine similarity: 0.33157747983932495
+2024-03-24 15:28:13,135 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:13,492 adv_eval.py 161  INFO  ==================Task 116=========================
+2024-03-24 15:28:14,363 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:14,363 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this visually captivating and aesthetically pleasing setting littered with various inanimate objects, carefully positioned to create a cohesive and alluring composition
+2024-03-24 15:28:14,363 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:14,388 adv_eval.py 219  INFO  Cosine similarity: 0.3743744492530823
+2024-03-24 15:28:14,796 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:15,131 adv_eval.py 161  INFO  ==================Task 117=========================
+2024-03-24 15:28:15,500 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:15,501 adv_eval.py 172  INFO  The rephrasing intention: Modify and restructure the current arrangement of objects in this particular setting
+2024-03-24 15:28:15,501 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:15,524 adv_eval.py 219  INFO  Cosine similarity: 0.21623194217681885
+2024-03-24 15:28:18,003 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:18,486 adv_eval.py 161  INFO  ==================Task 118=========================
+2024-03-24 15:28:19,114 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:19,114 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque tableau of life
+2024-03-24 15:28:19,114 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:19,140 adv_eval.py 219  INFO  Cosine similarity: 0.43483591079711914
+2024-03-24 15:28:20,479 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:20,851 adv_eval.py 161  INFO  ==================Task 119=========================
+2024-03-24 15:28:21,348 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:21,349 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure this scenario to include an assortment of vibrant hues and intricate motifs, all while maintaining the underlying composition
+2024-03-24 15:28:21,349 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:21,373 adv_eval.py 219  INFO  Cosine similarity: 0.3344475030899048
+2024-03-24 15:28:22,250 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:22,745 adv_eval.py 161  INFO  ==================Task 120=========================
+2024-03-24 15:28:22,999 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:22,999 adv_eval.py 172  INFO  The rephrasing intention: Revise this situation in its entirety 
+2024-03-24 15:28:22,999 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:23,024 adv_eval.py 219  INFO  Cosine similarity: 0.3498019576072693
+2024-03-24 15:28:25,832 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:26,246 adv_eval.py 161  INFO  ==================Task 121=========================
+2024-03-24 15:28:26,951 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:26,951 adv_eval.py 172  INFO  The rephrasing intention: Reposition various items and elements within this particular setting
+2024-03-24 15:28:26,951 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:26,976 adv_eval.py 219  INFO  Cosine similarity: 0.35464978218078613
+2024-03-24 15:28:29,888 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:30,381 adv_eval.py 161  INFO  ==================Task 122=========================
+2024-03-24 15:28:30,759 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:30,759 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this particular setting, environment, locale, or backdrop
+2024-03-24 15:28:30,759 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:30,785 adv_eval.py 219  INFO  Cosine similarity: 0.367798388004303
+2024-03-24 15:28:31,219 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:31,946 adv_eval.py 161  INFO  ==================Task 123=========================
+2024-03-24 15:28:32,345 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:32,345 adv_eval.py 172  INFO  The rephrasing intention: Rework, modify, or adjust the current arrangement and composition of this particular setting, environment, or area
+2024-03-24 15:28:32,345 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:32,370 adv_eval.py 219  INFO  Cosine similarity: 0.33937370777130127
+2024-03-24 15:28:35,391 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:35,814 adv_eval.py 161  INFO  ==================Task 124=========================
+2024-03-24 15:28:36,137 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:36,137 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting and scenery in this picturesque display
+2024-03-24 15:28:36,137 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:36,160 adv_eval.py 219  INFO  Cosine similarity: 0.35306331515312195
+2024-03-24 15:28:36,993 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:37,262 adv_eval.py 161  INFO  ==================Task 125=========================
+2024-03-24 15:28:37,757 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:37,757 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this tableau, display, picture, visual, or composition
+2024-03-24 15:28:37,757 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:37,781 adv_eval.py 219  INFO  Cosine similarity: 0.4197736978530884
+2024-03-24 15:28:38,214 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:38,628 adv_eval.py 161  INFO  ==================Task 126=========================
+2024-03-24 15:28:39,051 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:39,051 adv_eval.py 172  INFO  The rephrasing intention: Reorganize and reorder the current setting of this environment with precision and skill
+2024-03-24 15:28:39,051 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:39,077 adv_eval.py 219  INFO  Cosine similarity: 0.3258848786354065
+2024-03-24 15:28:40,018 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:40,465 adv_eval.py 161  INFO  ==================Task 127=========================
+2024-03-24 15:28:40,807 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:40,808 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this arrangement of elements
+2024-03-24 15:28:40,808 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:40,833 adv_eval.py 219  INFO  Cosine similarity: 0.4084776043891907
+2024-03-24 15:28:41,708 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:42,123 adv_eval.py 161  INFO  ==================Task 128=========================
+2024-03-24 15:28:42,416 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:42,416 adv_eval.py 172  INFO  The rephrasing intention: Move things around in this particular setting
+2024-03-24 15:28:42,416 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:42,444 adv_eval.py 219  INFO  Cosine similarity: 0.5640667676925659
+2024-03-24 15:28:43,359 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:43,740 adv_eval.py 161  INFO  ==================Task 129=========================
+2024-03-24 15:28:44,120 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:44,120 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the current composition of elements present in this visual scenario
+2024-03-24 15:28:44,120 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:44,148 adv_eval.py 219  INFO  Cosine similarity: 0.34636884927749634
+2024-03-24 15:28:45,050 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:45,532 adv_eval.py 161  INFO  ==================Task 130=========================
+2024-03-24 15:28:45,789 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:45,789 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting or scenario
+2024-03-24 15:28:45,789 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:45,813 adv_eval.py 219  INFO  Cosine similarity: 0.43405821919441223
+2024-03-24 15:28:46,631 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:46,958 adv_eval.py 161  INFO  ==================Task 131=========================
+2024-03-24 15:28:47,339 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:47,339 adv_eval.py 172  INFO  The rephrasing intention: Rework and rearrange the elements of this particular setting or environment
+2024-03-24 15:28:47,339 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:47,364 adv_eval.py 219  INFO  Cosine similarity: 0.18241406977176666
+2024-03-24 15:28:50,166 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:50,568 adv_eval.py 161  INFO  ==================Task 132=========================
+2024-03-24 15:28:51,327 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:51,327 adv_eval.py 172  INFO  The rephrasing intention: Modify the layout within this specific setting
+2024-03-24 15:28:51,327 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:51,351 adv_eval.py 219  INFO  Cosine similarity: 0.23812969028949738
+2024-03-24 15:28:53,967 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:28:54,275 adv_eval.py 161  INFO  ==================Task 133=========================
+2024-03-24 15:28:55,320 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:55,321 adv_eval.py 172  INFO  The rephrasing intention: Reorganize the setting with a combination of objects and decor elements in a spatially innovative manner, utilizing a diverse array of vivid hues and captivating motifs
+2024-03-24 15:28:55,321 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:55,343 adv_eval.py 219  INFO  Cosine similarity: 0.38080936670303345
+2024-03-24 15:28:56,172 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:28:56,675 adv_eval.py 161  INFO  ==================Task 134=========================
+2024-03-24 15:28:56,985 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:28:56,985 adv_eval.py 172  INFO  The rephrasing intention: Rework this view with a new layout
+2024-03-24 15:28:56,985 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:28:57,008 adv_eval.py 219  INFO  Cosine similarity: 0.33374568819999695
+2024-03-24 15:28:59,896 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:00,204 adv_eval.py 161  INFO  ==================Task 135=========================
+2024-03-24 15:29:00,514 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:00,514 adv_eval.py 172  INFO  The rephrasing intention: Reposition the various objects occupying this particular locale
+2024-03-24 15:29:00,514 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:00,538 adv_eval.py 219  INFO  Cosine similarity: 0.27300477027893066
+2024-03-24 15:29:01,467 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:01,745 adv_eval.py 161  INFO  ==================Task 136=========================
+2024-03-24 15:29:02,741 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:02,741 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting filled with myriad illustrious elements, all coexisting harmoniously amidst the vibrant splashes of azure, crimson, and golden hues adorning the intricate designs and delicate embellishments that adorn the various pieces of furniture, decor, and knick-knacks placed artfully around the space
+2024-03-24 15:29:02,742 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:02,765 adv_eval.py 219  INFO  Cosine similarity: 0.3754439949989319
+2024-03-24 15:29:03,196 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:03,747 adv_eval.py 161  INFO  ==================Task 137=========================
+2024-03-24 15:29:04,198 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:04,198 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picture-perfect, carefully curated and precisely arranged tableau
+2024-03-24 15:29:04,199 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:04,221 adv_eval.py 219  INFO  Cosine similarity: 0.40846168994903564
+2024-03-24 15:29:05,079 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:05,363 adv_eval.py 161  INFO  ==================Task 138=========================
+2024-03-24 15:29:06,318 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:06,318 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the current landscape with its myriad components and diverse structures, making subtle changes to ensure an alternate arrangement that showcases a novel perspective
+2024-03-24 15:29:06,318 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:06,342 adv_eval.py 219  INFO  Cosine similarity: 0.2358453869819641
+2024-03-24 15:29:06,768 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:07,657 adv_eval.py 161  INFO  ==================Task 139=========================
+2024-03-24 15:29:07,960 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:07,960 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the composition of this set up
+2024-03-24 15:29:07,960 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:07,985 adv_eval.py 219  INFO  Cosine similarity: 0.3577346205711365
+2024-03-24 15:29:09,295 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:10,016 adv_eval.py 161  INFO  ==================Task 140=========================
+2024-03-24 15:29:10,362 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:10,363 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the current setup of people and objects within this specific location or setting
+2024-03-24 15:29:10,363 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:10,389 adv_eval.py 219  INFO  Cosine similarity: 0.43757864832878113
+2024-03-24 15:29:11,702 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:12,133 adv_eval.py 161  INFO  ==================Task 141=========================
+2024-03-24 15:29:12,581 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:12,581 adv_eval.py 172  INFO  The rephrasing intention: Inconceivably, I shall proceed to rearrange the current scenery to this newly assigned setting
+2024-03-24 15:29:12,581 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:12,604 adv_eval.py 219  INFO  Cosine similarity: 0.1722540408372879
+2024-03-24 15:29:15,602 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:15,982 adv_eval.py 161  INFO  ==================Task 142=========================
+2024-03-24 15:29:16,476 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:16,476 adv_eval.py 172  INFO  The rephrasing intention: Rearrange and reconfigure the present environment, shifting and adjusting the placement and arrangement of objects within the immediate space
+2024-03-24 15:29:16,476 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:16,497 adv_eval.py 219  INFO  Cosine similarity: 0.31104981899261475
+2024-03-24 15:29:16,896 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:17,204 adv_eval.py 161  INFO  ==================Task 143=========================
+2024-03-24 15:29:17,469 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:17,469 adv_eval.py 172  INFO  The rephrasing intention: Alter the configuration of this panorama
+2024-03-24 15:29:17,469 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:17,493 adv_eval.py 219  INFO  Cosine similarity: 0.5268596410751343
+2024-03-24 15:29:18,369 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:18,770 adv_eval.py 161  INFO  ==================Task 144=========================
+2024-03-24 15:29:19,467 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:19,467 adv_eval.py 172  INFO  The rephrasing intention:  Rearranging the physical elements of this particular setting, altering the organization and placement of various objects and entities to create a distinct and novel arrangement
+2024-03-24 15:29:19,467 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:19,492 adv_eval.py 219  INFO  Cosine similarity: 0.2907394766807556
+2024-03-24 15:29:22,637 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:23,427 adv_eval.py 161  INFO  ==================Task 145=========================
+2024-03-24 15:29:23,798 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:23,799 adv_eval.py 172  INFO  The rephrasing intention: Revamp to this composition
+2024-03-24 15:29:23,799 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:23,829 adv_eval.py 219  INFO  Cosine similarity: 0.527752161026001
+2024-03-24 15:29:25,138 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:25,421 adv_eval.py 161  INFO  ==================Task 146=========================
+2024-03-24 15:29:25,830 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:25,831 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this spectacle of sight and scene
+2024-03-24 15:29:25,831 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:25,855 adv_eval.py 219  INFO  Cosine similarity: 0.34673815965652466
+2024-03-24 15:29:26,259 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:26,517 adv_eval.py 161  INFO  ==================Task 147=========================
+2024-03-24 15:29:26,997 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:26,998 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the various components and elements in a strategic manner to form a cohesive and visually appealing scene
+2024-03-24 15:29:26,998 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:27,019 adv_eval.py 219  INFO  Cosine similarity: 0.2904979884624481
+2024-03-24 15:29:27,421 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:27,857 adv_eval.py 161  INFO  ==================Task 148=========================
+2024-03-24 15:29:28,156 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:28,156 adv_eval.py 172  INFO  The rephrasing intention: Rework the layout of this particular setting
+2024-03-24 15:29:28,156 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:28,182 adv_eval.py 219  INFO  Cosine similarity: 0.3023108243942261
+2024-03-24 15:29:30,996 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:31,381 adv_eval.py 161  INFO  ==================Task 149=========================
+2024-03-24 15:29:32,097 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:32,097 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the structural layout of this particular setting
+2024-03-24 15:29:32,097 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:32,121 adv_eval.py 219  INFO  Cosine similarity: 0.3864173889160156
+2024-03-24 15:29:34,544 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:34,841 adv_eval.py 161  INFO  ==================Task 150=========================
+2024-03-24 15:29:35,739 adv_eval.py 171  INFO  The rephrasing type: Object Rephrase
+2024-03-24 15:29:35,739 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the components and elements of this particular arrangement and layout to better portray and accurately depict this specific situation and scenario, while maintaining the unaltered words conveying the hues, tones, and forms of the various objects and textures present within
+2024-03-24 15:29:35,739 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:35,761 adv_eval.py 219  INFO  Cosine similarity: 0.30055683851242065
+2024-03-24 15:29:36,192 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:36,557 adv_eval.py 364 WARNING  ==================Evaluation Done=========================
+2024-03-24 15:29:36,557 adv_eval.py 366  INFO  Success rate: 57.99999999999999%
+2024-03-24 15:29:36,557 adv_eval.py 367  INFO  Average cosine similarity: 34.43535232543945%

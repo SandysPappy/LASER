@@ -1,0 +1,904 @@
+2024-03-24 14:56:02,753 adv_eval.py 103  INFO  cfg: {'partition': 'placement_generalization', 'task': 'visual_manipulation', 'rephrasings': 'Noun', 'vis_atk': 'None', 'device': 'cuda', 'reuse': False, 'save_dir': 'adv_scripts/output', 'ckpt': 'models/VIMA/200M.ckpt', 'debug_flag': True, 'hide_arm': True, 'seed': 42}
+2024-03-24 14:56:07,638 adv_eval.py 161  INFO  ==================Task 1=========================
+2024-03-24 14:56:08,007 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:08,007 adv_eval.py 172  INFO  The rephrasing intention: Insert the crimson spiral brick into the lavender receptacle
+2024-03-24 14:56:08,007 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:08,029 adv_eval.py 219  INFO  Cosine similarity: 0.24408036470413208
+2024-03-24 14:56:09,845 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:10,162 adv_eval.py 161  INFO  ==================Task 2=========================
+2024-03-24 14:56:10,465 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:10,465 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson teardrop bloom into the emerald and lavender bar pattern
+2024-03-24 14:56:10,465 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:10,490 adv_eval.py 219  INFO  Cosine similarity: 0.23205412924289703
+2024-03-24 14:56:10,910 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:11,272 adv_eval.py 161  INFO  ==================Task 3=========================
+2024-03-24 14:56:11,707 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:11,707 adv_eval.py 172  INFO  The rephrasing intention: Place the rock letter E into the emerald and lavender circular patterned border
+2024-03-24 14:56:11,707 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:11,729 adv_eval.py 219  INFO  Cosine similarity: 0.31486213207244873
+2024-03-24 14:56:12,105 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:12,426 adv_eval.py 161  INFO  ==================Task 4=========================
+2024-03-24 14:56:12,721 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:12,721 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson spiral symbol M into the timber box
+2024-03-24 14:56:12,721 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:12,744 adv_eval.py 219  INFO  Cosine similarity: 0.2902195155620575
+2024-03-24 14:56:13,092 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:13,447 adv_eval.py 161  INFO  ==================Task 5=========================
+2024-03-24 14:56:13,832 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:13,832 adv_eval.py 172  INFO  The rephrasing intention: Place the dotted 'V' symbol into the navy patterned border
+2024-03-24 14:56:13,832 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:13,853 adv_eval.py 219  INFO  Cosine similarity: 0.28368890285491943
+2024-03-24 14:56:14,239 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:14,737 adv_eval.py 161  INFO  ==================Task 6=========================
+2024-03-24 14:56:15,517 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:15,517 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and cobalt spotted capital M into the sapphire and lavender dotted dish
+2024-03-24 14:56:15,517 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:15,540 adv_eval.py 219  INFO  Cosine similarity: 0.2621443271636963
+2024-03-24 14:56:15,892 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:16,336 adv_eval.py 161  INFO  ==================Task 7=========================
+2024-03-24 14:56:16,746 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:16,747 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and azure spotted cube into the timber rectangle
+2024-03-24 14:56:16,747 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:16,770 adv_eval.py 219  INFO  Cosine similarity: 0.20831137895584106
+2024-03-24 14:56:17,132 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:17,482 adv_eval.py 161  INFO  ==================Task 8=========================
+2024-03-24 14:56:17,801 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:17,801 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson spiral character G into the golden and lavender speckled border
+2024-03-24 14:56:17,801 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:17,823 adv_eval.py 219  INFO  Cosine similarity: 0.2391529530286789
+2024-03-24 14:56:18,185 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:18,560 adv_eval.py 161  INFO  ==================Task 9=========================
+2024-03-24 14:56:18,898 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:18,898 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and golden spotty brick into the timber receptacle
+2024-03-24 14:56:18,898 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:18,920 adv_eval.py 219  INFO  Cosine similarity: 0.2964884042739868
+2024-03-24 14:56:19,257 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:19,607 adv_eval.py 161  INFO  ==================Task 10=========================
+2024-03-24 14:56:20,177 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:20,177 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and azure polka dotted character E into the teal receptacle
+2024-03-24 14:56:20,177 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:20,200 adv_eval.py 219  INFO  Cosine similarity: 0.21967998147010803
+2024-03-24 14:56:20,554 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:20,812 adv_eval.py 161  INFO  ==================Task 11=========================
+2024-03-24 14:56:21,147 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:21,147 adv_eval.py 172  INFO  The rephrasing intention: Insert the crimson cube into the crimson and lavender striped enclosure
+2024-03-24 14:56:21,147 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:21,170 adv_eval.py 219  INFO  Cosine similarity: 0.24753084778785706
+2024-03-24 14:56:21,531 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:21,795 adv_eval.py 161  INFO  ==================Task 12=========================
+2024-03-24 14:56:22,122 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:22,122 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald character M inside the lavender rectangle
+2024-03-24 14:56:22,122 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:22,146 adv_eval.py 219  INFO  Cosine similarity: 0.2691197693347931
+2024-03-24 14:56:22,560 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:22,899 adv_eval.py 161  INFO  ==================Task 13=========================
+2024-03-24 14:56:23,448 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:23,448 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and azure dotted three-sided shape into the cobalt whirl rectangle
+2024-03-24 14:56:23,448 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:23,471 adv_eval.py 219  INFO  Cosine similarity: 0.2155379205942154
+2024-03-24 14:56:24,148 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:24,458 adv_eval.py 161  INFO  ==================Task 14=========================
+2024-03-24 14:56:24,819 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:24,819 adv_eval.py 172  INFO  The rephrasing intention: Place the golden note G into the azure and lavender striped bin
+2024-03-24 14:56:24,819 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:24,840 adv_eval.py 219  INFO  Cosine similarity: 0.27754664421081543
+2024-03-24 14:56:25,246 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:25,607 adv_eval.py 161  INFO  ==================Task 15=========================
+2024-03-24 14:56:25,888 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:25,888 adv_eval.py 172  INFO  The rephrasing intention: Insert the crimson complex design into the azure spiral rectangle
+2024-03-24 14:56:25,888 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:25,912 adv_eval.py 219  INFO  Cosine similarity: 0.20728187263011932
+2024-03-24 14:56:26,339 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:26,618 adv_eval.py 161  INFO  ==================Task 16=========================
+2024-03-24 14:56:27,022 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:27,022 adv_eval.py 172  INFO  The rephrasing intention: Place the amber teardrop emblem into the aqua dish
+2024-03-24 14:56:27,022 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:27,045 adv_eval.py 219  INFO  Cosine similarity: 0.2040235996246338
+2024-03-24 14:56:27,439 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:27,766 adv_eval.py 161  INFO  ==================Task 17=========================
+2024-03-24 14:56:28,252 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:28,252 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson symbol G into the crimson and lavender stripe border
+2024-03-24 14:56:28,252 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:28,275 adv_eval.py 219  INFO  Cosine similarity: 0.2512068450450897
+2024-03-24 14:56:28,692 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:29,072 adv_eval.py 161  INFO  ==================Task 18=========================
+2024-03-24 14:56:29,463 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:29,463 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and cerulean spotted angular block into the azure spiral quadrilateral
+2024-03-24 14:56:29,463 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:29,488 adv_eval.py 219  INFO  Cosine similarity: 0.27861422300338745
+2024-03-24 14:56:30,785 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:31,134 adv_eval.py 161  INFO  ==================Task 19=========================
+2024-03-24 14:56:31,453 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:31,453 adv_eval.py 172  INFO  The rephrasing intention: Place the multicolored V-shaped symbol into the golden and violet spotted border
+2024-03-24 14:56:31,453 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:31,477 adv_eval.py 219  INFO  Cosine similarity: 0.24168068170547485
+2024-03-24 14:56:33,084 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:33,494 adv_eval.py 161  INFO  ==================Task 20=========================
+2024-03-24 14:56:34,403 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:34,403 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and golden speckled plus sign into the scarlet and lavender lined rectangle
+2024-03-24 14:56:34,403 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:34,425 adv_eval.py 219  INFO  Cosine similarity: 0.23587355017662048
+2024-03-24 14:56:34,863 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:35,290 adv_eval.py 161  INFO  ==================Task 21=========================
+2024-03-24 14:56:35,709 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:35,709 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and azure spotted capital G into the ruby and lilac striped container
+2024-03-24 14:56:35,709 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:35,731 adv_eval.py 219  INFO  Cosine similarity: 0.2688775062561035
+2024-03-24 14:56:36,128 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:36,488 adv_eval.py 161  INFO  ==================Task 22=========================
+2024-03-24 14:56:36,884 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:36,885 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and navy dotted capital T into the aqua border
+2024-03-24 14:56:36,885 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:36,907 adv_eval.py 219  INFO  Cosine similarity: 0.2827026844024658
+2024-03-24 14:56:37,340 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:50,573 adv_eval.py 161  INFO  ==================Task 23=========================
+2024-03-24 14:56:51,080 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:51,080 adv_eval.py 172  INFO  The rephrasing intention: Place the verdant teardrop design in the cerulean and lavender striped dish
+2024-03-24 14:56:51,080 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:51,105 adv_eval.py 219  INFO  Cosine similarity: 0.2098565399646759
+2024-03-24 14:56:51,509 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:51,942 adv_eval.py 161  INFO  ==================Task 24=========================
+2024-03-24 14:56:52,294 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:52,294 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and emerald spotted blossom into the timber container
+2024-03-24 14:56:52,295 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:52,319 adv_eval.py 219  INFO  Cosine similarity: 0.24093636870384216
+2024-03-24 14:56:52,708 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:53,100 adv_eval.py 161  INFO  ==================Task 25=========================
+2024-03-24 14:56:53,527 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:53,528 adv_eval.py 172  INFO  The rephrasing intention: Place the canary and azure dotted capital A into the timber cube
+2024-03-24 14:56:53,528 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:53,552 adv_eval.py 219  INFO  Cosine similarity: 0.2803744971752167
+2024-03-24 14:56:53,975 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:54,443 adv_eval.py 161  INFO  ==================Task 26=========================
+2024-03-24 14:56:54,863 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:54,863 adv_eval.py 172  INFO  The rephrasing intention: Place the scarlet and emerald spotted capital A into the azure and lavender striped holder
+2024-03-24 14:56:54,863 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:54,886 adv_eval.py 219  INFO  Cosine similarity: 0.26326125860214233
+2024-03-24 14:56:55,328 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:55,701 adv_eval.py 161  INFO  ==================Task 27=========================
+2024-03-24 14:56:56,123 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:56,123 adv_eval.py 172  INFO  The rephrasing intention: Place the rock L-shaped brick into the emerald and lavender spotted casing
+2024-03-24 14:56:56,123 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:56,144 adv_eval.py 219  INFO  Cosine similarity: 0.2826807498931885
+2024-03-24 14:56:56,551 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:56,860 adv_eval.py 161  INFO  ==================Task 28=========================
+2024-03-24 14:56:57,281 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:57,281 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald teardrop-shaped piece into the azure spiral dish
+2024-03-24 14:56:57,281 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:57,304 adv_eval.py 219  INFO  Cosine similarity: 0.25130826234817505
+2024-03-24 14:56:57,704 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:58,166 adv_eval.py 161  INFO  ==================Task 29=========================
+2024-03-24 14:56:58,599 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:58,599 adv_eval.py 172  INFO  The rephrasing intention: Insert the emerald and azure speckled blossom into the lemon and lavender line receptacle
+2024-03-24 14:56:58,599 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:58,623 adv_eval.py 219  INFO  Cosine similarity: 0.21003961563110352
+2024-03-24 14:56:59,012 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:56:59,306 adv_eval.py 161  INFO  ==================Task 30=========================
+2024-03-24 14:56:59,740 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:56:59,740 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and amber band intersection into the azure twirl border
+2024-03-24 14:56:59,740 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:56:59,765 adv_eval.py 219  INFO  Cosine similarity: 0.24369361996650696
+2024-03-24 14:57:00,169 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:00,459 adv_eval.py 161  INFO  ==================Task 31=========================
+2024-03-24 14:57:00,957 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:00,957 adv_eval.py 172  INFO  The rephrasing intention: Place the multicolored L-shaped piece into the crimson and lavender streak box
+2024-03-24 14:57:00,957 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:00,981 adv_eval.py 219  INFO  Cosine similarity: 0.28637948632240295
+2024-03-24 14:57:01,369 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:01,631 adv_eval.py 161  INFO  ==================Task 32=========================
+2024-03-24 14:57:01,977 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:01,977 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald spiral character A into the jade rectangle
+2024-03-24 14:57:01,977 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:02,000 adv_eval.py 219  INFO  Cosine similarity: 0.19994880259037018
+2024-03-24 14:57:03,533 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:57:03,771 adv_eval.py 161  INFO  ==================Task 33=========================
+2024-03-24 14:57:04,092 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:04,092 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald capital M into the cerulean border
+2024-03-24 14:57:04,092 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:04,116 adv_eval.py 219  INFO  Cosine similarity: 0.2687000334262848
+2024-03-24 14:57:05,410 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:05,672 adv_eval.py 161  INFO  ==================Task 34=========================
+2024-03-24 14:57:06,018 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:06,018 adv_eval.py 172  INFO  The rephrasing intention: Insert the golden-shaped brick into the golden and cerulean stripe rectangle
+2024-03-24 14:57:06,018 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:06,041 adv_eval.py 219  INFO  Cosine similarity: 0.27737390995025635
+2024-03-24 14:57:06,463 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:06,837 adv_eval.py 161  INFO  ==================Task 35=========================
+2024-03-24 14:57:07,251 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:07,251 adv_eval.py 172  INFO  The rephrasing intention: Place the feline blossom into the scarlet and navy banded dish
+2024-03-24 14:57:07,251 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:07,272 adv_eval.py 219  INFO  Cosine similarity: 0.24562574923038483
+2024-03-24 14:57:07,657 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:07,896 adv_eval.py 161  INFO  ==================Task 36=========================
+2024-03-24 14:57:08,249 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:08,249 adv_eval.py 172  INFO  The rephrasing intention: Place the amber character T into the aqua quadrilateral
+2024-03-24 14:57:08,249 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:08,271 adv_eval.py 219  INFO  Cosine similarity: 0.31436970829963684
+2024-03-24 14:57:08,663 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:08,990 adv_eval.py 161  INFO  ==================Task 37=========================
+2024-03-24 14:57:09,271 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:09,271 adv_eval.py 172  INFO  The rephrasing intention: Place the mustard patterned band into the timber border
+2024-03-24 14:57:09,271 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:09,294 adv_eval.py 219  INFO  Cosine similarity: 0.2675222158432007
+2024-03-24 14:57:09,678 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:10,053 adv_eval.py 161  INFO  ==================Task 38=========================
+2024-03-24 14:57:10,391 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:10,391 adv_eval.py 172  INFO  The rephrasing intention: Place the spotted letter V into the azure receptacle
+2024-03-24 14:57:10,391 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:10,416 adv_eval.py 219  INFO  Cosine similarity: 0.2651478350162506
+2024-03-24 14:57:10,822 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:11,221 adv_eval.py 161  INFO  ==================Task 39=========================
+2024-03-24 14:57:11,697 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:11,697 adv_eval.py 172  INFO  The rephrasing intention:  Insert the emerald and sapphire spotted band into the scarlet and azure lined casing
+2024-03-24 14:57:11,697 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:11,720 adv_eval.py 219  INFO  Cosine similarity: 0.22001680731773376
+2024-03-24 14:57:12,109 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:12,383 adv_eval.py 161  INFO  ==================Task 40=========================
+2024-03-24 14:57:12,729 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:12,729 adv_eval.py 172  INFO  The rephrasing intention: Place the feline across inside the golden and azure streak border
+2024-03-24 14:57:12,729 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:12,752 adv_eval.py 219  INFO  Cosine similarity: 0.27131378650665283
+2024-03-24 14:57:13,187 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:13,604 adv_eval.py 161  INFO  ==================Task 41=========================
+2024-03-24 14:57:13,870 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:13,871 adv_eval.py 172  INFO  The rephrasing intention: Place the spotted capital T into the violet spiral border
+2024-03-24 14:57:13,871 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:13,894 adv_eval.py 219  INFO  Cosine similarity: 0.27761220932006836
+2024-03-24 14:57:14,522 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:15,007 adv_eval.py 161  INFO  ==================Task 42=========================
+2024-03-24 14:57:15,467 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:15,467 adv_eval.py 172  INFO  The rephrasing intention: Place the golden and verdant band love into the azure and lavender dotted receptacle
+2024-03-24 14:57:15,467 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:15,491 adv_eval.py 219  INFO  Cosine similarity: 0.2128455638885498
+2024-03-24 14:57:17,410 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:57:17,772 adv_eval.py 161  INFO  ==================Task 43=========================
+2024-03-24 14:57:18,105 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:18,105 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and azure spotted character G into the lavender twirl border
+2024-03-24 14:57:18,105 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:18,128 adv_eval.py 219  INFO  Cosine similarity: 0.20744594931602478
+2024-03-24 14:57:20,051 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:57:20,390 adv_eval.py 161  INFO  ==================Task 44=========================
+2024-03-24 14:57:20,805 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:20,805 adv_eval.py 172  INFO  The rephrasing intention: Place the golden teardrop patterned piece into the crimson and azure ribbed enclosure
+2024-03-24 14:57:20,805 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:20,828 adv_eval.py 219  INFO  Cosine similarity: 0.24760602414608002
+2024-03-24 14:57:22,264 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:57:22,678 adv_eval.py 161  INFO  ==================Task 45=========================
+2024-03-24 14:57:23,479 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:23,479 adv_eval.py 172  INFO  The rephrasing intention: Place the spotted intersection into the golden and azure line dish
+2024-03-24 14:57:23,480 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:23,503 adv_eval.py 219  INFO  Cosine similarity: 0.23046289384365082
+2024-03-24 14:57:23,875 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:24,248 adv_eval.py 161  INFO  ==================Task 46=========================
+2024-03-24 14:57:24,770 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:24,771 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and emerald speckled five-sided shape into the golden and sapphire line rectangle
+2024-03-24 14:57:24,771 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:24,793 adv_eval.py 219  INFO  Cosine similarity: 0.22191724181175232
+2024-03-24 14:57:25,204 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:25,596 adv_eval.py 161  INFO  ==================Task 47=========================
+2024-03-24 14:57:25,889 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:25,889 adv_eval.py 172  INFO  The rephrasing intention: Place the golden daisy into the emerald and lavender spotted vessel
+2024-03-24 14:57:25,890 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:25,912 adv_eval.py 219  INFO  Cosine similarity: 0.2899215519428253
+2024-03-24 14:57:26,546 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:26,837 adv_eval.py 161  INFO  ==================Task 48=========================
+2024-03-24 14:57:27,168 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:27,168 adv_eval.py 172  INFO  The rephrasing intention: Place the spectrum band into the crimson and lavender streak container
+2024-03-24 14:57:27,168 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:27,192 adv_eval.py 219  INFO  Cosine similarity: 0.2727814316749573
+2024-03-24 14:57:27,582 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:27,866 adv_eval.py 161  INFO  ==================Task 49=========================
+2024-03-24 14:57:28,308 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:28,308 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson band into the azure twirl basin
+2024-03-24 14:57:28,308 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:28,331 adv_eval.py 219  INFO  Cosine similarity: 0.23383355140686035
+2024-03-24 14:57:28,710 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:29,126 adv_eval.py 161  INFO  ==================Task 50=========================
+2024-03-24 14:57:29,519 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:29,519 adv_eval.py 172  INFO  The rephrasing intention: Place the golden and azure speckled cube into the violet spiral border
+2024-03-24 14:57:29,519 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:29,542 adv_eval.py 219  INFO  Cosine similarity: 0.27133435010910034
+2024-03-24 14:57:29,946 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:30,231 adv_eval.py 161  INFO  ==================Task 51=========================
+2024-03-24 14:57:30,630 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:30,630 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson patterned symbol V into the azure twist receptacle
+2024-03-24 14:57:30,630 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:30,652 adv_eval.py 219  INFO  Cosine similarity: 0.2783350944519043
+2024-03-24 14:57:31,046 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:31,366 adv_eval.py 161  INFO  ==================Task 52=========================
+2024-03-24 14:57:31,668 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:31,668 adv_eval.py 172  INFO  The rephrasing intention: Place the stone slab into the turquoise dish
+2024-03-24 14:57:31,669 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:31,691 adv_eval.py 219  INFO  Cosine similarity: 0.24833743274211884
+2024-03-24 14:57:32,016 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:32,355 adv_eval.py 161  INFO  ==================Task 53=========================
+2024-03-24 14:57:32,743 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:32,744 adv_eval.py 172  INFO  The rephrasing intention: Insert the scarlet coil five-sided shape into the polymer casing
+2024-03-24 14:57:32,744 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:32,769 adv_eval.py 219  INFO  Cosine similarity: 0.21032236516475677
+2024-03-24 14:57:33,428 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:57:33,802 adv_eval.py 161  INFO  ==================Task 54=========================
+2024-03-24 14:57:34,160 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:34,160 adv_eval.py 172  INFO  The rephrasing intention: Insert the crimson and golden band symbol A into the emerald and violet band receptacle
+2024-03-24 14:57:34,160 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:34,183 adv_eval.py 219  INFO  Cosine similarity: 0.24286028742790222
+2024-03-24 14:57:34,593 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:35,014 adv_eval.py 161  INFO  ==================Task 55=========================
+2024-03-24 14:57:35,294 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:35,294 adv_eval.py 172  INFO  The rephrasing intention: Place the spotted blossom into the emerald rectangle
+2024-03-24 14:57:35,295 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:35,319 adv_eval.py 219  INFO  Cosine similarity: 0.23498965799808502
+2024-03-24 14:57:35,728 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:36,055 adv_eval.py 161  INFO  ==================Task 56=========================
+2024-03-24 14:57:36,793 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:36,794 adv_eval.py 172  INFO  The rephrasing intention: Place the colorful curved block into the scarlet and violet striped dish
+2024-03-24 14:57:36,794 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:36,818 adv_eval.py 219  INFO  Cosine similarity: 0.3131037950515747
+2024-03-24 14:57:37,205 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:37,603 adv_eval.py 161  INFO  ==================Task 57=========================
+2024-03-24 14:57:37,979 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:37,979 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald floral band into the indigo and lavender circle pattern dish
+2024-03-24 14:57:37,980 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:38,002 adv_eval.py 219  INFO  Cosine similarity: 0.2356005758047104
+2024-03-24 14:57:38,381 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:38,865 adv_eval.py 161  INFO  ==================Task 58=========================
+2024-03-24 14:57:39,357 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:39,357 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and chartreuse spotted band into the emerald and lavender spotted rectangle
+2024-03-24 14:57:39,357 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:39,380 adv_eval.py 219  INFO  Cosine similarity: 0.2448086440563202
+2024-03-24 14:57:39,803 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:40,208 adv_eval.py 161  INFO  ==================Task 59=========================
+2024-03-24 14:57:40,560 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:40,560 adv_eval.py 172  INFO  The rephrasing intention: Place the stone blossom into the golden and lavender striped dish
+2024-03-24 14:57:40,560 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:40,582 adv_eval.py 219  INFO  Cosine similarity: 0.21758371591567993
+2024-03-24 14:57:40,989 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:41,455 adv_eval.py 161  INFO  ==================Task 60=========================
+2024-03-24 14:57:41,809 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:41,809 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and azure spotted character M into the chessboard block
+2024-03-24 14:57:41,809 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:41,833 adv_eval.py 219  INFO  Cosine similarity: 0.26888513565063477
+2024-03-24 14:57:42,254 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:42,649 adv_eval.py 161  INFO  ==================Task 61=========================
+2024-03-24 14:57:43,058 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:43,058 adv_eval.py 172  INFO  The rephrasing intention: Place the amber and azure spotted capital E into the cerulean whorl basin
+2024-03-24 14:57:43,058 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:43,081 adv_eval.py 219  INFO  Cosine similarity: 0.28035658597946167
+2024-03-24 14:57:43,458 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:43,896 adv_eval.py 161  INFO  ==================Task 62=========================
+2024-03-24 14:57:44,208 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:44,208 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and emerald spotted band into the timber basin
+2024-03-24 14:57:44,208 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:44,232 adv_eval.py 219  INFO  Cosine similarity: 0.22476698458194733
+2024-03-24 14:57:44,600 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:44,866 adv_eval.py 161  INFO  ==================Task 63=========================
+2024-03-24 14:57:45,197 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:45,197 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson spiral love symbol into the azure rectangle
+2024-03-24 14:57:45,197 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:45,222 adv_eval.py 219  INFO  Cosine similarity: 0.21907615661621094
+2024-03-24 14:57:45,634 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:46,019 adv_eval.py 161  INFO  ==================Task 64=========================
+2024-03-24 14:57:46,404 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:46,404 adv_eval.py 172  INFO  The rephrasing intention: Put the golden character A into the azure and lavender dotted rectangle
+2024-03-24 14:57:46,404 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:46,427 adv_eval.py 219  INFO  Cosine similarity: 0.342291921377182
+2024-03-24 14:57:46,837 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:47,278 adv_eval.py 161  INFO  ==================Task 65=========================
+2024-03-24 14:57:47,937 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:47,937 adv_eval.py 172  INFO  The rephrasing intention: Insert the golden and azure speckled capital E into the mosaic border
+2024-03-24 14:57:47,937 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:47,961 adv_eval.py 219  INFO  Cosine similarity: 0.2633882761001587
+2024-03-24 14:57:48,387 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:48,701 adv_eval.py 161  INFO  ==================Task 66=========================
+2024-03-24 14:57:49,047 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:49,048 adv_eval.py 172  INFO  The rephrasing intention: Place the stone L-shaped piece into the lavender container
+2024-03-24 14:57:49,048 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:49,071 adv_eval.py 219  INFO  Cosine similarity: 0.2613043189048767
+2024-03-24 14:57:49,487 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:49,790 adv_eval.py 161  INFO  ==================Task 67=========================
+2024-03-24 14:57:50,076 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:50,076 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald character A into the timber receptacle
+2024-03-24 14:57:50,076 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:50,100 adv_eval.py 219  INFO  Cosine similarity: 0.2032591700553894
+2024-03-24 14:57:52,111 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:57:52,408 adv_eval.py 161  INFO  ==================Task 68=========================
+2024-03-24 14:57:52,842 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:52,843 adv_eval.py 172  INFO  The rephrasing intention: Place the colorful prism in the crimson and lavender band rectangle
+2024-03-24 14:57:52,843 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:52,866 adv_eval.py 219  INFO  Cosine similarity: 0.24923555552959442
+2024-03-24 14:57:53,317 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:53,636 adv_eval.py 161  INFO  ==================Task 69=========================
+2024-03-24 14:57:54,053 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:54,053 adv_eval.py 172  INFO  The rephrasing intention: Place the golden and verdant stripe symbol V into the emerald rectangle
+2024-03-24 14:57:54,053 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:54,076 adv_eval.py 219  INFO  Cosine similarity: 0.2211691439151764
+2024-03-24 14:57:54,484 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:55,018 adv_eval.py 161  INFO  ==================Task 70=========================
+2024-03-24 14:57:55,435 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:55,435 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and azure spotted center into the azure and lavender spotted border
+2024-03-24 14:57:55,435 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:55,458 adv_eval.py 219  INFO  Cosine similarity: 0.2340678572654724
+2024-03-24 14:57:55,863 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:56,361 adv_eval.py 161  INFO  ==================Task 71=========================
+2024-03-24 14:57:56,761 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:56,761 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson patterned cube into the azure and lavender spotted dish
+2024-03-24 14:57:56,761 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:56,786 adv_eval.py 219  INFO  Cosine similarity: 0.26925742626190186
+2024-03-24 14:57:57,158 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:57,615 adv_eval.py 161  INFO  ==================Task 72=========================
+2024-03-24 14:57:57,932 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:57,933 adv_eval.py 172  INFO  The rephrasing intention: Place the dappled symbol A into the crimson and azure striped container
+2024-03-24 14:57:57,933 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:57,957 adv_eval.py 219  INFO  Cosine similarity: 0.24579200148582458
+2024-03-24 14:57:58,335 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:58,677 adv_eval.py 161  INFO  ==================Task 73=========================
+2024-03-24 14:57:59,095 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:57:59,095 adv_eval.py 172  INFO  The rephrasing intention: Insert the crimson symbol V into the scarlet and navy band vessel
+2024-03-24 14:57:59,095 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:57:59,123 adv_eval.py 219  INFO  Cosine similarity: 0.21473827958106995
+2024-03-24 14:57:59,511 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:57:59,849 adv_eval.py 161  INFO  ==================Task 74=========================
+2024-03-24 14:58:00,235 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:00,235 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald spiral symbol V into the chessboard box
+2024-03-24 14:58:00,235 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:00,260 adv_eval.py 219  INFO  Cosine similarity: 0.20032061636447906
+2024-03-24 14:58:00,652 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:00,991 adv_eval.py 161  INFO  ==================Task 75=========================
+2024-03-24 14:58:01,336 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:01,336 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and golden band symbol E into the violet vessel
+2024-03-24 14:58:01,336 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:01,361 adv_eval.py 219  INFO  Cosine similarity: 0.31234151124954224
+2024-03-24 14:58:03,305 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:58:03,690 adv_eval.py 161  INFO  ==================Task 76=========================
+2024-03-24 14:58:04,131 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:04,132 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald teardrop symbol G into the azure and lavender patterned dish
+2024-03-24 14:58:04,132 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:04,156 adv_eval.py 219  INFO  Cosine similarity: 0.20117855072021484
+2024-03-24 14:58:04,528 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:04,854 adv_eval.py 161  INFO  ==================Task 77=========================
+2024-03-24 14:58:05,282 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:05,282 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson twirl cube into the scarlet and azure striped dish
+2024-03-24 14:58:05,282 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:05,304 adv_eval.py 219  INFO  Cosine similarity: 0.27054518461227417
+2024-03-24 14:58:05,685 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:06,007 adv_eval.py 161  INFO  ==================Task 78=========================
+2024-03-24 14:58:06,343 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:06,343 adv_eval.py 172  INFO  The rephrasing intention: Place the ochre heart inside the mustard and azure striped border
+2024-03-24 14:58:06,343 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:06,366 adv_eval.py 219  INFO  Cosine similarity: 0.21448099613189697
+2024-03-24 14:58:06,777 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:07,126 adv_eval.py 161  INFO  ==================Task 79=========================
+2024-03-24 14:58:07,497 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:07,497 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and golden spotted symbol M into the azure border
+2024-03-24 14:58:07,497 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:07,519 adv_eval.py 219  INFO  Cosine similarity: 0.28071683645248413
+2024-03-24 14:58:07,934 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:08,443 adv_eval.py 161  INFO  ==================Task 80=========================
+2024-03-24 14:58:08,844 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:08,845 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and azure spotted capital T into the ceramic vessel
+2024-03-24 14:58:08,845 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:08,869 adv_eval.py 219  INFO  Cosine similarity: 0.2804289162158966
+2024-03-24 14:58:09,522 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:58:09,860 adv_eval.py 161  INFO  ==================Task 81=========================
+2024-03-24 14:58:10,275 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:10,275 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald spiral crucifix into the golden and lavender pinstripe dish
+2024-03-24 14:58:10,275 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:10,301 adv_eval.py 219  INFO  Cosine similarity: 0.21516752243041992
+2024-03-24 14:58:10,716 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:11,224 adv_eval.py 161  INFO  ==================Task 82=========================
+2024-03-24 14:58:11,585 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:11,586 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and golden speckled cube into the emerald and lavender speckled border
+2024-03-24 14:58:11,586 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:11,611 adv_eval.py 219  INFO  Cosine similarity: 0.2999721169471741
+2024-03-24 14:58:13,453 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:58:13,713 adv_eval.py 161  INFO  ==================Task 83=========================
+2024-03-24 14:58:14,158 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:14,158 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson paisley symbol G into the greenish square
+2024-03-24 14:58:14,158 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:14,183 adv_eval.py 219  INFO  Cosine similarity: 0.2738829553127289
+2024-03-24 14:58:14,575 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:14,961 adv_eval.py 161  INFO  ==================Task 84=========================
+2024-03-24 14:58:15,317 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:15,317 adv_eval.py 172  INFO  The rephrasing intention: Insert the dappled cube into the golden and azure barred casing
+2024-03-24 14:58:15,317 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:15,339 adv_eval.py 219  INFO  Cosine similarity: 0.2269643247127533
+2024-03-24 14:58:15,694 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:16,156 adv_eval.py 161  INFO  ==================Task 85=========================
+2024-03-24 14:58:16,661 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:16,661 adv_eval.py 172  INFO  The rephrasing intention: Place the scarlet and emerald spotted five-sided figure into the amber and lavender spotted receptacle
+2024-03-24 14:58:16,661 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:16,685 adv_eval.py 219  INFO  Cosine similarity: 0.23391613364219666
+2024-03-24 14:58:17,046 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:17,491 adv_eval.py 161  INFO  ==================Task 86=========================
+2024-03-24 14:58:17,884 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:17,884 adv_eval.py 172  INFO  The rephrasing intention: Place the verdant twirl blossom into the azure and violet dotted vessel
+2024-03-24 14:58:17,884 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:17,909 adv_eval.py 219  INFO  Cosine similarity: 0.2383912205696106
+2024-03-24 14:58:18,309 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:18,766 adv_eval.py 161  INFO  ==================Task 87=========================
+2024-03-24 14:58:19,458 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:19,458 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and azure speckled love symbol into the scarlet and cobalt patterned receptacle
+2024-03-24 14:58:19,458 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:19,482 adv_eval.py 219  INFO  Cosine similarity: 0.24019816517829895
+2024-03-24 14:58:19,902 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:20,301 adv_eval.py 161  INFO  ==================Task 88=========================
+2024-03-24 14:58:20,660 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:20,660 adv_eval.py 172  INFO  The rephrasing intention: Place the spectrum brick into the emerald and lavender spotted rectangle
+2024-03-24 14:58:20,660 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:20,690 adv_eval.py 219  INFO  Cosine similarity: 0.2776491641998291
+2024-03-24 14:58:21,065 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:21,658 adv_eval.py 161  INFO  ==================Task 89=========================
+2024-03-24 14:58:22,117 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:22,117 adv_eval.py 172  INFO  The rephrasing intention: Place the speckled letter V into the azure and lavender speckled border
+2024-03-24 14:58:22,117 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:22,143 adv_eval.py 219  INFO  Cosine similarity: 0.2400810569524765
+2024-03-24 14:58:22,552 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:22,944 adv_eval.py 161  INFO  ==================Task 90=========================
+2024-03-24 14:58:23,538 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:23,538 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and azure dappled five-sided shape into the amber and cobalt banded border
+2024-03-24 14:58:23,538 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:23,562 adv_eval.py 219  INFO  Cosine similarity: 0.23474426567554474
+2024-03-24 14:58:23,958 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:24,590 adv_eval.py 161  INFO  ==================Task 91=========================
+2024-03-24 14:58:24,969 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:24,969 adv_eval.py 172  INFO  The rephrasing intention: Insert the mustard and cobalt speckled triangle into the navy and lavender speckled square
+2024-03-24 14:58:24,969 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:24,997 adv_eval.py 219  INFO  Cosine similarity: 0.187823086977005
+2024-03-24 14:58:25,440 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:25,778 adv_eval.py 161  INFO  ==================Task 92=========================
+2024-03-24 14:58:26,172 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:26,172 adv_eval.py 172  INFO  The rephrasing intention: Place the rock symbol G into the indigo and violet striped receptacle
+2024-03-24 14:58:26,172 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:26,198 adv_eval.py 219  INFO  Cosine similarity: 0.27522367238998413
+2024-03-24 14:58:26,629 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:26,955 adv_eval.py 161  INFO  ==================Task 93=========================
+2024-03-24 14:58:27,292 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:27,292 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson spiral character G into the scarlet and navy patterned rectangle
+2024-03-24 14:58:27,292 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:27,318 adv_eval.py 219  INFO  Cosine similarity: 0.23873358964920044
+2024-03-24 14:58:27,719 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:58:28,201 adv_eval.py 161  INFO  ==================Task 94=========================
+2024-03-24 14:58:28,602 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:28,602 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson floral triangle into the golden and violet spotted receptacle
+2024-03-24 14:58:28,602 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:28,626 adv_eval.py 219  INFO  Cosine similarity: 0.22363388538360596
+2024-03-24 14:58:29,072 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:29,556 adv_eval.py 161  INFO  ==================Task 95=========================
+2024-03-24 14:58:29,896 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:29,896 adv_eval.py 172  INFO  The rephrasing intention: Insert the crimson and emerald spotted crucifix into the blocks rectangle
+2024-03-24 14:58:29,896 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:29,919 adv_eval.py 219  INFO  Cosine similarity: 0.22041623294353485
+2024-03-24 14:58:30,311 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:30,725 adv_eval.py 161  INFO  ==================Task 96=========================
+2024-03-24 14:58:31,093 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:31,093 adv_eval.py 172  INFO  The rephrasing intention: Place the scarlet paisley capital M inside the tiles receptacle
+2024-03-24 14:58:31,093 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:31,119 adv_eval.py 219  INFO  Cosine similarity: 0.2904706299304962
+2024-03-24 14:58:31,493 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:31,838 adv_eval.py 161  INFO  ==================Task 97=========================
+2024-03-24 14:58:32,158 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:32,158 adv_eval.py 172  INFO  The rephrasing intention: Place the golden and olive band hoop into the violet spiral dish
+2024-03-24 14:58:32,158 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:32,187 adv_eval.py 219  INFO  Cosine similarity: 0.2647112011909485
+2024-03-24 14:58:32,587 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:58:32,884 adv_eval.py 161  INFO  ==================Task 98=========================
+2024-03-24 14:58:33,279 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:33,280 adv_eval.py 172  INFO  The rephrasing intention: Place the verdant swirled note T into the forest green border
+2024-03-24 14:58:33,280 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:33,305 adv_eval.py 219  INFO  Cosine similarity: 0.2973693609237671
+2024-03-24 14:58:33,715 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:33,966 adv_eval.py 161  INFO  ==================Task 99=========================
+2024-03-24 14:58:34,317 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:34,317 adv_eval.py 172  INFO  The rephrasing intention: Place the golden floral piece into the lavender spiral rectangle
+2024-03-24 14:58:34,317 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:34,341 adv_eval.py 219  INFO  Cosine similarity: 0.2888540029525757
+2024-03-24 14:58:34,734 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:35,138 adv_eval.py 161  INFO  ==================Task 100=========================
+2024-03-24 14:58:35,554 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:35,554 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson floral symbol M into the golden and lilac spotted border
+2024-03-24 14:58:35,554 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:35,580 adv_eval.py 219  INFO  Cosine similarity: 0.2747495472431183
+2024-03-24 14:58:35,981 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:36,284 adv_eval.py 161  INFO  ==================Task 101=========================
+2024-03-24 14:58:36,671 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:36,672 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald band into the citrine and azure striped border
+2024-03-24 14:58:36,672 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:36,697 adv_eval.py 219  INFO  Cosine similarity: 0.23757147789001465
+2024-03-24 14:58:37,364 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:58:37,657 adv_eval.py 161  INFO  ==================Task 102=========================
+2024-03-24 14:58:37,993 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:37,993 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson spiral triangle into the lavender dish
+2024-03-24 14:58:37,993 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:38,020 adv_eval.py 219  INFO  Cosine similarity: 0.22338862717151642
+2024-03-24 14:58:38,407 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:38,743 adv_eval.py 161  INFO  ==================Task 103=========================
+2024-03-24 14:58:39,182 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:39,182 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson damask symbol E into the olive dish
+2024-03-24 14:58:39,182 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:39,207 adv_eval.py 219  INFO  Cosine similarity: 0.25244563817977905
+2024-03-24 14:58:39,630 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:39,926 adv_eval.py 161  INFO  ==================Task 104=========================
+2024-03-24 14:58:40,309 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:40,309 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald square into the verdant and lavender striped rectangle
+2024-03-24 14:58:40,309 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:40,332 adv_eval.py 219  INFO  Cosine similarity: 0.21041439473628998
+2024-03-24 14:58:40,741 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:41,055 adv_eval.py 161  INFO  ==================Task 105=========================
+2024-03-24 14:58:41,835 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:41,835 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald patterned crucifix into the amber and navy striped receptacle
+2024-03-24 14:58:41,835 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:41,859 adv_eval.py 219  INFO  Cosine similarity: 0.21571552753448486
+2024-03-24 14:58:42,247 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:42,732 adv_eval.py 161  INFO  ==================Task 106=========================
+2024-03-24 14:58:43,128 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:43,128 adv_eval.py 172  INFO  The rephrasing intention: Place the scarlet and emerald spotted capital G inside the blocks rectangle
+2024-03-24 14:58:43,128 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:43,152 adv_eval.py 219  INFO  Cosine similarity: 0.25664660334587097
+2024-03-24 14:58:43,570 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:44,032 adv_eval.py 161  INFO  ==================Task 107=========================
+2024-03-24 14:58:44,511 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:44,511 adv_eval.py 172  INFO  The rephrasing intention:  Insert the mustard and azure polka dot love symbol into the emerald and lavender polka dot border
+2024-03-24 14:58:44,511 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:44,535 adv_eval.py 219  INFO  Cosine similarity: 0.24705687165260315
+2024-03-24 14:58:44,935 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:45,239 adv_eval.py 161  INFO  ==================Task 108=========================
+2024-03-24 14:58:45,531 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:45,531 adv_eval.py 172  INFO  The rephrasing intention: Insert the feline symbol T into the azure patterned dish
+2024-03-24 14:58:45,531 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:45,555 adv_eval.py 219  INFO  Cosine similarity: 0.26000040769577026
+2024-03-24 14:58:47,499 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:58:47,767 adv_eval.py 161  INFO  ==================Task 109=========================
+2024-03-24 14:58:48,408 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:48,408 adv_eval.py 172  INFO  The rephrasing intention: Insert the emerald teardrop shape into the violet spiral border
+2024-03-24 14:58:48,408 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:48,432 adv_eval.py 219  INFO  Cosine similarity: 0.18404991924762726
+2024-03-24 14:58:48,846 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:49,222 adv_eval.py 161  INFO  ==================Task 110=========================
+2024-03-24 14:58:49,615 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:49,615 adv_eval.py 172  INFO  The rephrasing intention: Place the stone pentagon into the crimson and violet striped bin
+2024-03-24 14:58:49,615 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:49,637 adv_eval.py 219  INFO  Cosine similarity: 0.24461303651332855
+2024-03-24 14:58:50,030 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:50,355 adv_eval.py 161  INFO  ==================Task 111=========================
+2024-03-24 14:58:50,731 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:50,731 adv_eval.py 172  INFO  The rephrasing intention: Place the multi-colored symbol A into the chessboard enclosure
+2024-03-24 14:58:50,731 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:50,755 adv_eval.py 219  INFO  Cosine similarity: 0.2559574246406555
+2024-03-24 14:58:51,394 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:51,763 adv_eval.py 161  INFO  ==================Task 112=========================
+2024-03-24 14:58:52,392 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:52,392 adv_eval.py 172  INFO  The rephrasing intention: Place the stone L-shaped brick into the crimson and azure striped bin
+2024-03-24 14:58:52,392 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:52,417 adv_eval.py 219  INFO  Cosine similarity: 0.2820418179035187
+2024-03-24 14:58:53,899 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:58:54,451 adv_eval.py 161  INFO  ==================Task 113=========================
+2024-03-24 14:58:54,926 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:54,926 adv_eval.py 172  INFO  The rephrasing intention: Place the golden and cerulean dotted crucifix into the azure and lavender dotted receptacle
+2024-03-24 14:58:54,926 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:54,949 adv_eval.py 219  INFO  Cosine similarity: 0.24466130137443542
+2024-03-24 14:58:55,379 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:55,706 adv_eval.py 161  INFO  ==================Task 114=========================
+2024-03-24 14:58:56,347 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:56,348 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and golden band into the azure and lavender band dish
+2024-03-24 14:58:56,348 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:56,373 adv_eval.py 219  INFO  Cosine similarity: 0.22771704196929932
+2024-03-24 14:58:56,754 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:57,145 adv_eval.py 161  INFO  ==================Task 115=========================
+2024-03-24 14:58:57,720 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:57,720 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald and azure spotted capital T into the lavender receptacle
+2024-03-24 14:58:57,720 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:57,743 adv_eval.py 219  INFO  Cosine similarity: 0.27985453605651855
+2024-03-24 14:58:58,129 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:58,439 adv_eval.py 161  INFO  ==================Task 116=========================
+2024-03-24 14:58:58,929 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:58:58,929 adv_eval.py 172  INFO  The rephrasing intention: Place the multicolored love symbol into the scarlet and azure line receptacle
+2024-03-24 14:58:58,929 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:58:58,956 adv_eval.py 219  INFO  Cosine similarity: 0.2671821415424347
+2024-03-24 14:58:59,362 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:58:59,772 adv_eval.py 161  INFO  ==================Task 117=========================
+2024-03-24 14:59:00,025 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:00,025 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson triangle into the polymer rectangle
+2024-03-24 14:59:00,025 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:00,049 adv_eval.py 219  INFO  Cosine similarity: 0.22754177451133728
+2024-03-24 14:59:01,848 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:59:02,190 adv_eval.py 161  INFO  ==================Task 118=========================
+2024-03-24 14:59:02,589 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:02,589 adv_eval.py 172  INFO  The rephrasing intention: Insert the crimson L-shaped brick into the polymer casing
+2024-03-24 14:59:02,590 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:02,614 adv_eval.py 219  INFO  Cosine similarity: 0.2696090340614319
+2024-03-24 14:59:03,011 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:03,260 adv_eval.py 161  INFO  ==================Task 119=========================
+2024-03-24 14:59:03,598 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:03,598 adv_eval.py 172  INFO  The rephrasing intention: Place the feline band into the aqua casing
+2024-03-24 14:59:03,598 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:03,627 adv_eval.py 219  INFO  Cosine similarity: 0.28832611441612244
+2024-03-24 14:59:04,048 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:04,444 adv_eval.py 161  INFO  ==================Task 120=========================
+2024-03-24 14:59:04,824 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:04,824 adv_eval.py 172  INFO  The rephrasing intention: Place the golden and azure spotted love symbol into the cobalt and lavender lined enclosure
+2024-03-24 14:59:04,824 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:04,860 adv_eval.py 219  INFO  Cosine similarity: 0.2644977867603302
+2024-03-24 14:59:05,258 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:05,601 adv_eval.py 161  INFO  ==================Task 121=========================
+2024-03-24 14:59:06,096 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:06,096 adv_eval.py 172  INFO  The rephrasing intention: Insert the emerald patterned uppercase T into the cerulean and lavender striped casing
+2024-03-24 14:59:06,096 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:06,120 adv_eval.py 219  INFO  Cosine similarity: 0.26219427585601807
+2024-03-24 14:59:06,523 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:06,972 adv_eval.py 161  INFO  ==================Task 122=========================
+2024-03-24 14:59:07,372 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:07,372 adv_eval.py 172  INFO  The rephrasing intention: Insert the scarlet and golden band uppercase T into the squares border
+2024-03-24 14:59:07,372 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:07,395 adv_eval.py 219  INFO  Cosine similarity: 0.28268125653266907
+2024-03-24 14:59:08,959 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:59:09,226 adv_eval.py 161  INFO  ==================Task 123=========================
+2024-03-24 14:59:09,617 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:09,617 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson twirl band into the aqua receptacle
+2024-03-24 14:59:09,617 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:09,641 adv_eval.py 219  INFO  Cosine similarity: 0.278592050075531
+2024-03-24 14:59:10,083 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:10,479 adv_eval.py 161  INFO  ==================Task 124=========================
+2024-03-24 14:59:10,903 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:10,903 adv_eval.py 172  INFO  The rephrasing intention: Place the golden and cerulean dotted five-sided figure into the emerald and lavender striped border
+2024-03-24 14:59:10,903 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:10,930 adv_eval.py 219  INFO  Cosine similarity: 0.2334439605474472
+2024-03-24 14:59:11,343 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:11,629 adv_eval.py 161  INFO  ==================Task 125=========================
+2024-03-24 14:59:12,085 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:12,085 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald twirl character M into the golden and azure band rectangle
+2024-03-24 14:59:12,085 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:12,109 adv_eval.py 219  INFO  Cosine similarity: 0.2622520923614502
+2024-03-24 14:59:12,542 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:12,866 adv_eval.py 161  INFO  ==================Task 126=========================
+2024-03-24 14:59:13,294 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:13,294 adv_eval.py 172  INFO  The rephrasing intention: Place the boulder character V into the indigo spiral rectangle
+2024-03-24 14:59:13,294 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:13,321 adv_eval.py 219  INFO  Cosine similarity: 0.28482869267463684
+2024-03-24 14:59:13,760 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:14,167 adv_eval.py 161  INFO  ==================Task 127=========================
+2024-03-24 14:59:14,527 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:14,527 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson teardrop piece into the synthetic casing
+2024-03-24 14:59:14,527 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:14,550 adv_eval.py 219  INFO  Cosine similarity: 0.2472325712442398
+2024-03-24 14:59:15,609 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:59:15,857 adv_eval.py 161  INFO  ==================Task 128=========================
+2024-03-24 14:59:16,188 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:16,188 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald brick into the violet coil casing
+2024-03-24 14:59:16,188 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:16,212 adv_eval.py 219  INFO  Cosine similarity: 0.2117505520582199
+2024-03-24 14:59:17,789 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:59:18,231 adv_eval.py 161  INFO  ==================Task 129=========================
+2024-03-24 14:59:18,646 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:18,646 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and cerulean spotted character V into the synthetic casing
+2024-03-24 14:59:18,646 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:18,672 adv_eval.py 219  INFO  Cosine similarity: 0.28338736295700073
+2024-03-24 14:59:19,082 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:19,397 adv_eval.py 161  INFO  ==================Task 130=========================
+2024-03-24 14:59:19,769 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:19,769 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson five-sided figure into the scarlet and azure banded dish
+2024-03-24 14:59:19,769 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:19,794 adv_eval.py 219  INFO  Cosine similarity: 0.2057046890258789
+2024-03-24 14:59:20,186 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:20,493 adv_eval.py 161  INFO  ==================Task 131=========================
+2024-03-24 14:59:20,806 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:20,806 adv_eval.py 172  INFO  The rephrasing intention: Place the multicolored blossom inside the violet spiral receptacle
+2024-03-24 14:59:20,806 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:20,829 adv_eval.py 219  INFO  Cosine similarity: 0.24961431324481964
+2024-03-24 14:59:21,195 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:21,490 adv_eval.py 161  INFO  ==================Task 132=========================
+2024-03-24 14:59:21,833 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:21,833 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald patterned band into the timber rectangle
+2024-03-24 14:59:21,833 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:21,857 adv_eval.py 219  INFO  Cosine similarity: 0.2378280907869339
+2024-03-24 14:59:22,240 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:22,505 adv_eval.py 161  INFO  ==================Task 133=========================
+2024-03-24 14:59:22,862 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:22,862 adv_eval.py 172  INFO  The rephrasing intention:  Place the scarlet twirl piece into the aqua rectangle
+2024-03-24 14:59:22,862 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:22,886 adv_eval.py 219  INFO  Cosine similarity: 0.26905593276023865
+2024-03-24 14:59:23,240 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:23,615 adv_eval.py 161  INFO  ==================Task 134=========================
+2024-03-24 14:59:24,010 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:24,010 adv_eval.py 172  INFO  The rephrasing intention: Place the emerald blossom into the golden and cerulean striped receptacle
+2024-03-24 14:59:24,010 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:24,035 adv_eval.py 219  INFO  Cosine similarity: 0.22695988416671753
+2024-03-24 14:59:24,413 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:24,896 adv_eval.py 161  INFO  ==================Task 135=========================
+2024-03-24 14:59:25,313 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:25,314 adv_eval.py 172  INFO  The rephrasing intention: Place the spotted crisscross into the gold and violet dotted border
+2024-03-24 14:59:25,314 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:25,338 adv_eval.py 219  INFO  Cosine similarity: 0.2615079879760742
+2024-03-24 14:59:25,744 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:26,075 adv_eval.py 161  INFO  ==================Task 136=========================
+2024-03-24 14:59:26,361 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:26,362 adv_eval.py 172  INFO  The rephrasing intention: Place the panther band into the azure and lavender striped casing
+2024-03-24 14:59:26,362 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:26,388 adv_eval.py 219  INFO  Cosine similarity: 0.31195276975631714
+2024-03-24 14:59:26,770 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:27,068 adv_eval.py 161  INFO  ==================Task 137=========================
+2024-03-24 14:59:27,635 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:27,636 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson affection into the timber casing
+2024-03-24 14:59:27,636 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:27,666 adv_eval.py 219  INFO  Cosine similarity: 0.22289927303791046
+2024-03-24 14:59:28,087 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:28,451 adv_eval.py 161  INFO  ==================Task 138=========================
+2024-03-24 14:59:28,793 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:28,793 adv_eval.py 172  INFO  The rephrasing intention: Put the rock five-sided figure into the golden and violet striped container
+2024-03-24 14:59:28,793 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:28,818 adv_eval.py 219  INFO  Cosine similarity: 0.24137449264526367
+2024-03-24 14:59:29,189 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:29,591 adv_eval.py 161  INFO  ==================Task 139=========================
+2024-03-24 14:59:29,947 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:29,947 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson spiral symbol E in the emerald and lavender dotted rectangle
+2024-03-24 14:59:29,947 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:29,971 adv_eval.py 219  INFO  Cosine similarity: 0.24584424495697021
+2024-03-24 14:59:31,621 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:59:32,010 adv_eval.py 161  INFO  ==================Task 140=========================
+2024-03-24 14:59:32,346 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:32,347 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and amber band symbol A into the navy and lavender band rectangle
+2024-03-24 14:59:32,347 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:32,372 adv_eval.py 219  INFO  Cosine similarity: 0.2725825607776642
+2024-03-24 14:59:32,812 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:33,273 adv_eval.py 161  INFO  ==================Task 141=========================
+2024-03-24 14:59:33,727 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:33,727 adv_eval.py 172  INFO  The rephrasing intention: Place the verdant character M into the emerald and lavender speckled container
+2024-03-24 14:59:33,727 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:33,754 adv_eval.py 219  INFO  Cosine similarity: 0.2859843075275421
+2024-03-24 14:59:34,144 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:34,495 adv_eval.py 161  INFO  ==================Task 142=========================
+2024-03-24 14:59:34,926 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:34,926 adv_eval.py 172  INFO  The rephrasing intention: Place the multi-colored bent shape into the container made of synthetic material
+2024-03-24 14:59:34,926 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:34,950 adv_eval.py 219  INFO  Cosine similarity: 0.28478124737739563
+2024-03-24 14:59:35,389 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:35,675 adv_eval.py 161  INFO  ==================Task 143=========================
+2024-03-24 14:59:36,343 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:36,343 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson hexagon into the sage green rectangle
+2024-03-24 14:59:36,343 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:36,369 adv_eval.py 219  INFO  Cosine similarity: 0.22184157371520996
+2024-03-24 14:59:36,753 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:37,103 adv_eval.py 161  INFO  ==================Task 144=========================
+2024-03-24 14:59:37,482 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:37,482 adv_eval.py 172  INFO  The rephrasing intention: Place the scarlet paisley symbol V into the timber casing
+2024-03-24 14:59:37,482 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:37,505 adv_eval.py 219  INFO  Cosine similarity: 0.2592701315879822
+2024-03-24 14:59:37,900 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:38,186 adv_eval.py 161  INFO  ==================Task 145=========================
+2024-03-24 14:59:38,484 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:38,484 adv_eval.py 172  INFO  The rephrasing intention: Insert the gold floral band into the azure rectangle
+2024-03-24 14:59:38,484 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:38,506 adv_eval.py 219  INFO  Cosine similarity: 0.252590537071228
+2024-03-24 14:59:38,940 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:39,234 adv_eval.py 161  INFO  ==================Task 146=========================
+2024-03-24 14:59:39,636 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:39,636 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson paisley symbol M into the ruby and lavender striped frame
+2024-03-24 14:59:39,636 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:39,663 adv_eval.py 219  INFO  Cosine similarity: 0.2919501066207886
+2024-03-24 14:59:40,072 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:40,396 adv_eval.py 161  INFO  ==================Task 147=========================
+2024-03-24 14:59:40,726 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:40,726 adv_eval.py 172  INFO  The rephrasing intention: Insert the crimson spiral symbol into the turquoise basin
+2024-03-24 14:59:40,726 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:40,752 adv_eval.py 219  INFO  Cosine similarity: 0.21017959713935852
+2024-03-24 14:59:41,162 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:41,491 adv_eval.py 161  INFO  ==================Task 148=========================
+2024-03-24 14:59:41,981 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:41,981 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and golden streaked five-sided figure into the scarlet and lavender streaked dish
+2024-03-24 14:59:41,982 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:42,006 adv_eval.py 219  INFO  Cosine similarity: 0.207136332988739
+2024-03-24 14:59:43,741 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 14:59:44,077 adv_eval.py 161  INFO  ==================Task 149=========================
+2024-03-24 14:59:44,390 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:44,390 adv_eval.py 172  INFO  The rephrasing intention: Place the crimson and golden stripe angular piece into the chessboard quadrant
+2024-03-24 14:59:44,390 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:44,416 adv_eval.py 219  INFO  Cosine similarity: 0.28119733929634094
+2024-03-24 14:59:44,853 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:45,226 adv_eval.py 161  INFO  ==================Task 150=========================
+2024-03-24 14:59:45,523 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 14:59:45,523 adv_eval.py 172  INFO  The rephrasing intention: Place the golden hexagon into the chessboard casing
+2024-03-24 14:59:45,523 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 14:59:45,553 adv_eval.py 219  INFO  Cosine similarity: 0.2542087137699127
+2024-03-24 14:59:45,959 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 14:59:46,410 adv_eval.py 364 WARNING  ==================Evaluation Done=========================
+2024-03-24 14:59:46,410 adv_eval.py 366  INFO  Success rate: 86.66666666666667%
+2024-03-24 14:59:46,410 adv_eval.py 367  INFO  Average cosine similarity: 25.161069869995117%

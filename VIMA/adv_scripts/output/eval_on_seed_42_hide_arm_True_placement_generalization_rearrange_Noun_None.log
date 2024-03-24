@@ -1,0 +1,904 @@
+2024-03-24 15:29:36,614 adv_eval.py 103  INFO  cfg: {'partition': 'placement_generalization', 'task': 'rearrange', 'rephrasings': 'Noun', 'vis_atk': 'None', 'device': 'cuda', 'reuse': False, 'save_dir': 'adv_scripts/output', 'ckpt': 'models/VIMA/200M.ckpt', 'debug_flag': True, 'hide_arm': True, 'seed': 42}
+2024-03-24 15:29:41,877 adv_eval.py 161  INFO  ==================Task 1=========================
+2024-03-24 15:29:42,163 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:42,163 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this scenario
+2024-03-24 15:29:42,163 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:42,190 adv_eval.py 219  INFO  Cosine similarity: 0.5975443124771118
+2024-03-24 15:29:43,034 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:43,523 adv_eval.py 161  INFO  ==================Task 2=========================
+2024-03-24 15:29:43,795 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:43,795 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:29:43,795 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:43,817 adv_eval.py 219  INFO  Cosine similarity: 0.719027578830719
+2024-03-24 15:29:44,636 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:45,028 adv_eval.py 161  INFO  ==================Task 3=========================
+2024-03-24 15:29:45,321 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:45,321 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting/training
+2024-03-24 15:29:45,321 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:45,347 adv_eval.py 219  INFO  Cosine similarity: 0.37736213207244873
+2024-03-24 15:29:45,751 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:46,069 adv_eval.py 161  INFO  ==================Task 4=========================
+2024-03-24 15:29:46,323 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:46,323 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this scenario
+2024-03-24 15:29:46,323 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:46,348 adv_eval.py 219  INFO  Cosine similarity: 0.6536418199539185
+2024-03-24 15:29:47,169 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:47,551 adv_eval.py 161  INFO  ==================Task 5=========================
+2024-03-24 15:29:47,790 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:47,790 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:29:47,790 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:47,814 adv_eval.py 219  INFO  Cosine similarity: 0.7724025845527649
+2024-03-24 15:29:48,714 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:49,081 adv_eval.py 161  INFO  ==================Task 6=========================
+2024-03-24 15:29:49,366 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:49,366 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:29:49,366 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:49,388 adv_eval.py 219  INFO  Cosine similarity: 0.6964153051376343
+2024-03-24 15:29:49,791 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:50,257 adv_eval.py 161  INFO  ==================Task 7=========================
+2024-03-24 15:29:50,547 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:50,547 adv_eval.py 172  INFO  The rephrasing intention: Reposition to this picture
+2024-03-24 15:29:50,547 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:50,570 adv_eval.py 219  INFO  Cosine similarity: 0.4870310425758362
+2024-03-24 15:29:53,449 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:29:53,802 adv_eval.py 161  INFO  ==================Task 8=========================
+2024-03-24 15:29:54,040 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:54,040 adv_eval.py 172  INFO  The rephrasing intention: Reorganize this setting
+2024-03-24 15:29:54,040 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:54,063 adv_eval.py 219  INFO  Cosine similarity: 0.5244629979133606
+2024-03-24 15:29:54,896 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:55,251 adv_eval.py 161  INFO  ==================Task 9=========================
+2024-03-24 15:29:55,530 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:55,530 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:29:55,530 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:55,555 adv_eval.py 219  INFO  Cosine similarity: 0.7338544130325317
+2024-03-24 15:29:56,443 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:56,880 adv_eval.py 161  INFO  ==================Task 10=========================
+2024-03-24 15:29:57,216 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:57,216 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:29:57,216 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:57,237 adv_eval.py 219  INFO  Cosine similarity: 0.6983344554901123
+2024-03-24 15:29:58,051 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:29:58,568 adv_eval.py 161  INFO  ==================Task 11=========================
+2024-03-24 15:29:58,825 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:29:58,825 adv_eval.py 172  INFO  The rephrasing intention: Reorder to this setting
+2024-03-24 15:29:58,825 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:29:58,852 adv_eval.py 219  INFO  Cosine similarity: 0.5667100548744202
+2024-03-24 15:30:00,137 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:00,449 adv_eval.py 161  INFO  ==================Task 12=========================
+2024-03-24 15:30:00,685 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:00,685 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:00,685 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:00,710 adv_eval.py 219  INFO  Cosine similarity: 0.7806991338729858
+2024-03-24 15:30:01,548 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:01,886 adv_eval.py 161  INFO  ==================Task 13=========================
+2024-03-24 15:30:02,131 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:02,132 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this situation
+2024-03-24 15:30:02,132 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:02,154 adv_eval.py 219  INFO  Cosine similarity: 0.5308456420898438
+2024-03-24 15:30:02,537 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:03,180 adv_eval.py 161  INFO  ==================Task 14=========================
+2024-03-24 15:30:03,428 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:03,428 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this setting
+2024-03-24 15:30:03,429 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:03,453 adv_eval.py 219  INFO  Cosine similarity: 0.7292735576629639
+2024-03-24 15:30:04,714 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:05,028 adv_eval.py 161  INFO  ==================Task 15=========================
+2024-03-24 15:30:05,722 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:05,722 adv_eval.py 172  INFO  The rephrasing intention: Reshuffle to this setting
+2024-03-24 15:30:05,722 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:05,746 adv_eval.py 219  INFO  Cosine similarity: 0.5613386631011963
+2024-03-24 15:30:06,602 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:07,198 adv_eval.py 161  INFO  ==================Task 16=========================
+2024-03-24 15:30:07,458 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:07,458 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this scenario
+2024-03-24 15:30:07,458 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:07,486 adv_eval.py 219  INFO  Cosine similarity: 0.6748597621917725
+2024-03-24 15:30:08,697 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:09,004 adv_eval.py 161  INFO  ==================Task 17=========================
+2024-03-24 15:30:09,278 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:09,278 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:09,278 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:09,300 adv_eval.py 219  INFO  Cosine similarity: 0.7782397270202637
+2024-03-24 15:30:10,184 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:10,552 adv_eval.py 161  INFO  ==================Task 18=========================
+2024-03-24 15:30:10,833 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:10,833 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:30:10,833 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:10,857 adv_eval.py 219  INFO  Cosine similarity: 0.6981014013290405
+2024-03-24 15:30:11,290 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:11,792 adv_eval.py 161  INFO  ==================Task 19=========================
+2024-03-24 15:30:12,061 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:12,061 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:12,061 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:12,084 adv_eval.py 219  INFO  Cosine similarity: 0.7721782922744751
+2024-03-24 15:30:12,925 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:13,302 adv_eval.py 161  INFO  ==================Task 20=========================
+2024-03-24 15:30:13,532 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:13,532 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:13,532 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:13,554 adv_eval.py 219  INFO  Cosine similarity: 0.710517168045044
+2024-03-24 15:30:14,008 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:14,405 adv_eval.py 161  INFO  ==================Task 21=========================
+2024-03-24 15:30:14,677 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:14,677 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this situation
+2024-03-24 15:30:14,677 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:14,703 adv_eval.py 219  INFO  Cosine similarity: 0.7682473063468933
+2024-03-24 15:30:20,389 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:30:20,869 adv_eval.py 161  INFO  ==================Task 22=========================
+2024-03-24 15:30:21,215 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:21,215 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:21,215 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:21,238 adv_eval.py 219  INFO  Cosine similarity: 0.8174387216567993
+2024-03-24 15:30:22,531 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:22,805 adv_eval.py 161  INFO  ==================Task 23=========================
+2024-03-24 15:30:23,026 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:23,026 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:23,026 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:23,049 adv_eval.py 219  INFO  Cosine similarity: 0.7124624252319336
+2024-03-24 15:30:23,942 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:24,275 adv_eval.py 161  INFO  ==================Task 24=========================
+2024-03-24 15:30:24,525 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:24,525 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:30:24,525 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:24,548 adv_eval.py 219  INFO  Cosine similarity: 0.6992215514183044
+2024-03-24 15:30:24,947 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:25,271 adv_eval.py 161  INFO  ==================Task 25=========================
+2024-03-24 15:30:25,531 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:25,531 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:30:25,531 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:25,553 adv_eval.py 219  INFO  Cosine similarity: 0.7569307088851929
+2024-03-24 15:30:26,378 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:26,650 adv_eval.py 161  INFO  ==================Task 26=========================
+2024-03-24 15:30:26,966 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:26,966 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:26,966 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:26,988 adv_eval.py 219  INFO  Cosine similarity: 0.7246777415275574
+2024-03-24 15:30:27,878 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:28,281 adv_eval.py 161  INFO  ==================Task 27=========================
+2024-03-24 15:30:28,548 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:28,548 adv_eval.py 172  INFO  The rephrasing intention: Rework this setting
+2024-03-24 15:30:28,548 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:28,573 adv_eval.py 219  INFO  Cosine similarity: 0.3626130223274231
+2024-03-24 15:30:29,484 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:29,757 adv_eval.py 161  INFO  ==================Task 28=========================
+2024-03-24 15:30:30,296 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:30,296 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:30,296 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:30,320 adv_eval.py 219  INFO  Cosine similarity: 0.7241412401199341
+2024-03-24 15:30:30,744 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:31,055 adv_eval.py 161  INFO  ==================Task 29=========================
+2024-03-24 15:30:31,288 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:31,288 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:31,288 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:31,311 adv_eval.py 219  INFO  Cosine similarity: 0.7162850499153137
+2024-03-24 15:30:31,743 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:32,071 adv_eval.py 161  INFO  ==================Task 30=========================
+2024-03-24 15:30:32,287 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:32,287 adv_eval.py 172  INFO  The rephrasing intention: Reorder to this setting
+2024-03-24 15:30:32,287 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:32,310 adv_eval.py 219  INFO  Cosine similarity: 0.5100202560424805
+2024-03-24 15:30:33,110 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:33,433 adv_eval.py 161  INFO  ==================Task 31=========================
+2024-03-24 15:30:33,702 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:33,702 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:30:33,702 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:33,725 adv_eval.py 219  INFO  Cosine similarity: 0.757871150970459
+2024-03-24 15:30:34,595 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:34,905 adv_eval.py 161  INFO  ==================Task 32=========================
+2024-03-24 15:30:35,175 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:35,175 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:30:35,175 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:35,198 adv_eval.py 219  INFO  Cosine similarity: 0.5257764458656311
+2024-03-24 15:30:36,085 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:36,562 adv_eval.py 161  INFO  ==================Task 33=========================
+2024-03-24 15:30:36,843 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:36,843 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:30:36,843 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:36,867 adv_eval.py 219  INFO  Cosine similarity: 0.8135636448860168
+2024-03-24 15:30:38,219 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:38,514 adv_eval.py 161  INFO  ==================Task 34=========================
+2024-03-24 15:30:39,152 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:39,152 adv_eval.py 172  INFO  The rephrasing intention: Rearrangement of this setting
+2024-03-24 15:30:39,152 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:39,174 adv_eval.py 219  INFO  Cosine similarity: 0.6402404308319092
+2024-03-24 15:30:39,967 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:40,323 adv_eval.py 161  INFO  ==================Task 35=========================
+2024-03-24 15:30:40,587 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:40,588 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this setting
+2024-03-24 15:30:40,588 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:40,610 adv_eval.py 219  INFO  Cosine similarity: 0.6491587162017822
+2024-03-24 15:30:41,420 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:41,763 adv_eval.py 161  INFO  ==================Task 36=========================
+2024-03-24 15:30:42,007 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:42,008 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:30:42,008 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:42,033 adv_eval.py 219  INFO  Cosine similarity: 0.5282468199729919
+2024-03-24 15:30:42,468 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:43,010 adv_eval.py 161  INFO  ==================Task 37=========================
+2024-03-24 15:30:43,239 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:43,239 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:30:43,239 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:43,264 adv_eval.py 219  INFO  Cosine similarity: 0.6154884099960327
+2024-03-24 15:30:44,102 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:44,476 adv_eval.py 161  INFO  ==================Task 38=========================
+2024-03-24 15:30:44,697 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:44,697 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this tableau
+2024-03-24 15:30:44,697 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:44,719 adv_eval.py 219  INFO  Cosine similarity: 0.6870526075363159
+2024-03-24 15:30:45,520 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:45,978 adv_eval.py 161  INFO  ==================Task 39=========================
+2024-03-24 15:30:46,617 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:46,617 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this situation
+2024-03-24 15:30:46,617 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:46,640 adv_eval.py 219  INFO  Cosine similarity: 0.7650539875030518
+2024-03-24 15:30:47,538 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:47,859 adv_eval.py 161  INFO  ==================Task 40=========================
+2024-03-24 15:30:48,100 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:48,100 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:48,100 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:48,124 adv_eval.py 219  INFO  Cosine similarity: 0.7108190059661865
+2024-03-24 15:30:49,049 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:49,439 adv_eval.py 161  INFO  ==================Task 41=========================
+2024-03-24 15:30:49,652 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:49,652 adv_eval.py 172  INFO  The rephrasing intention: Rework this scenario
+2024-03-24 15:30:49,652 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:49,675 adv_eval.py 219  INFO  Cosine similarity: 0.3583115339279175
+2024-03-24 15:30:50,572 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:50,822 adv_eval.py 161  INFO  ==================Task 42=========================
+2024-03-24 15:30:51,099 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:51,100 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this scenario
+2024-03-24 15:30:51,100 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:51,122 adv_eval.py 219  INFO  Cosine similarity: 0.5167637467384338
+2024-03-24 15:30:52,014 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:52,334 adv_eval.py 161  INFO  ==================Task 43=========================
+2024-03-24 15:30:53,065 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:53,065 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:53,065 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:53,089 adv_eval.py 219  INFO  Cosine similarity: 0.786338210105896
+2024-03-24 15:30:53,898 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:54,211 adv_eval.py 161  INFO  ==================Task 44=========================
+2024-03-24 15:30:54,458 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:54,458 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:30:54,458 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:54,481 adv_eval.py 219  INFO  Cosine similarity: 0.7726885676383972
+2024-03-24 15:30:55,237 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:55,669 adv_eval.py 161  INFO  ==================Task 45=========================
+2024-03-24 15:30:55,951 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:55,951 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this arrangement
+2024-03-24 15:30:55,951 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:55,975 adv_eval.py 219  INFO  Cosine similarity: 0.7596961259841919
+2024-03-24 15:30:56,791 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:57,192 adv_eval.py 161  INFO  ==================Task 46=========================
+2024-03-24 15:30:57,454 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:57,454 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:30:57,454 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:57,478 adv_eval.py 219  INFO  Cosine similarity: 0.6155973076820374
+2024-03-24 15:30:58,225 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:58,485 adv_eval.py 161  INFO  ==================Task 47=========================
+2024-03-24 15:30:58,723 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:58,723 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:30:58,724 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:58,745 adv_eval.py 219  INFO  Cosine similarity: 0.5373983383178711
+2024-03-24 15:30:59,143 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:30:59,522 adv_eval.py 161  INFO  ==================Task 48=========================
+2024-03-24 15:30:59,799 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:30:59,799 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:30:59,799 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:30:59,822 adv_eval.py 219  INFO  Cosine similarity: 0.7721213102340698
+2024-03-24 15:31:00,674 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:00,960 adv_eval.py 161  INFO  ==================Task 49=========================
+2024-03-24 15:31:01,194 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:01,194 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this setting
+2024-03-24 15:31:01,194 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:01,217 adv_eval.py 219  INFO  Cosine similarity: 0.5827628374099731
+2024-03-24 15:31:01,626 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:02,098 adv_eval.py 161  INFO  ==================Task 50=========================
+2024-03-24 15:31:02,386 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:02,386 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:02,386 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:02,409 adv_eval.py 219  INFO  Cosine similarity: 0.774076521396637
+2024-03-24 15:31:03,261 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:03,593 adv_eval.py 161  INFO  ==================Task 51=========================
+2024-03-24 15:31:03,868 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:03,868 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:31:03,868 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:03,891 adv_eval.py 219  INFO  Cosine similarity: 0.6149047613143921
+2024-03-24 15:31:04,779 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:05,286 adv_eval.py 161  INFO  ==================Task 52=========================
+2024-03-24 15:31:05,654 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:05,654 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting
+2024-03-24 15:31:05,655 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:05,679 adv_eval.py 219  INFO  Cosine similarity: 0.6678658723831177
+2024-03-24 15:31:06,961 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:07,276 adv_eval.py 161  INFO  ==================Task 53=========================
+2024-03-24 15:31:07,558 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:07,558 adv_eval.py 172  INFO  The rephrasing intention: Rework to this scenario
+2024-03-24 15:31:07,558 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:07,582 adv_eval.py 219  INFO  Cosine similarity: 0.48060712218284607
+2024-03-24 15:31:08,402 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:08,848 adv_eval.py 161  INFO  ==================Task 54=========================
+2024-03-24 15:31:09,135 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:09,135 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:09,135 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:09,157 adv_eval.py 219  INFO  Cosine similarity: 0.7741101980209351
+2024-03-24 15:31:10,018 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:10,428 adv_eval.py 161  INFO  ==================Task 55=========================
+2024-03-24 15:31:10,678 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:10,678 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:10,678 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:10,704 adv_eval.py 219  INFO  Cosine similarity: 0.7690985202789307
+2024-03-24 15:31:11,508 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:11,905 adv_eval.py 161  INFO  ==================Task 56=========================
+2024-03-24 15:31:12,125 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:12,126 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:12,126 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:12,148 adv_eval.py 219  INFO  Cosine similarity: 0.7759473323822021
+2024-03-24 15:31:12,961 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:13,461 adv_eval.py 161  INFO  ==================Task 57=========================
+2024-03-24 15:31:13,749 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:13,749 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:13,749 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:13,772 adv_eval.py 219  INFO  Cosine similarity: 0.7782317399978638
+2024-03-24 15:31:14,613 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:14,941 adv_eval.py 161  INFO  ==================Task 58=========================
+2024-03-24 15:31:15,280 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:15,280 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:15,280 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:15,302 adv_eval.py 219  INFO  Cosine similarity: 0.7772877216339111
+2024-03-24 15:31:16,143 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:16,522 adv_eval.py 161  INFO  ==================Task 59=========================
+2024-03-24 15:31:16,796 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:16,796 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this arrangement
+2024-03-24 15:31:16,796 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:16,819 adv_eval.py 219  INFO  Cosine similarity: 0.6063545942306519
+2024-03-24 15:31:17,669 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:18,257 adv_eval.py 161  INFO  ==================Task 60=========================
+2024-03-24 15:31:18,508 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:18,508 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:31:18,508 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:18,531 adv_eval.py 219  INFO  Cosine similarity: 0.7715582847595215
+2024-03-24 15:31:19,843 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:20,227 adv_eval.py 161  INFO  ==================Task 61=========================
+2024-03-24 15:31:20,556 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:20,556 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this setting
+2024-03-24 15:31:20,556 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:20,579 adv_eval.py 219  INFO  Cosine similarity: 0.6515244245529175
+2024-03-24 15:31:21,391 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:21,780 adv_eval.py 161  INFO  ==================Task 62=========================
+2024-03-24 15:31:22,047 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:22,047 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting to this scenario
+2024-03-24 15:31:22,047 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:22,070 adv_eval.py 219  INFO  Cosine similarity: 0.43004435300827026
+2024-03-24 15:31:23,449 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:23,741 adv_eval.py 161  INFO  ==================Task 63=========================
+2024-03-24 15:31:24,014 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:24,014 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting to this scenario
+2024-03-24 15:31:24,014 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:24,037 adv_eval.py 219  INFO  Cosine similarity: 0.39474770426750183
+2024-03-24 15:31:24,902 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:25,193 adv_eval.py 161  INFO  ==================Task 64=========================
+2024-03-24 15:31:25,473 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:25,473 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picture
+2024-03-24 15:31:25,473 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:25,496 adv_eval.py 219  INFO  Cosine similarity: 0.7628599405288696
+2024-03-24 15:31:26,349 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:26,781 adv_eval.py 161  INFO  ==================Task 65=========================
+2024-03-24 15:31:27,034 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:27,034 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:27,034 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:27,058 adv_eval.py 219  INFO  Cosine similarity: 0.8007208704948425
+2024-03-24 15:31:28,338 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:28,644 adv_eval.py 161  INFO  ==================Task 66=========================
+2024-03-24 15:31:28,872 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:28,873 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:28,873 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:28,897 adv_eval.py 219  INFO  Cosine similarity: 0.7729084491729736
+2024-03-24 15:31:29,737 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:30,074 adv_eval.py 161  INFO  ==================Task 67=========================
+2024-03-24 15:31:30,308 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:30,309 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:30,309 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:30,331 adv_eval.py 219  INFO  Cosine similarity: 0.7177807092666626
+2024-03-24 15:31:31,167 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:31,474 adv_eval.py 161  INFO  ==================Task 68=========================
+2024-03-24 15:31:31,809 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:31,809 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:31,809 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:31,832 adv_eval.py 219  INFO  Cosine similarity: 0.7754059433937073
+2024-03-24 15:31:32,708 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:33,032 adv_eval.py 161  INFO  ==================Task 69=========================
+2024-03-24 15:31:33,251 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:33,251 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:33,251 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:33,276 adv_eval.py 219  INFO  Cosine similarity: 0.7753145694732666
+2024-03-24 15:31:34,143 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:34,534 adv_eval.py 161  INFO  ==================Task 70=========================
+2024-03-24 15:31:34,814 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:34,814 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this situation
+2024-03-24 15:31:34,814 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:34,838 adv_eval.py 219  INFO  Cosine similarity: 0.7676513195037842
+2024-03-24 15:31:35,632 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:35,923 adv_eval.py 161  INFO  ==================Task 71=========================
+2024-03-24 15:31:36,180 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:36,180 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:36,180 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:36,203 adv_eval.py 219  INFO  Cosine similarity: 0.7815266251564026
+2024-03-24 15:31:36,966 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:37,215 adv_eval.py 161  INFO  ==================Task 72=========================
+2024-03-24 15:31:37,476 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:37,476 adv_eval.py 172  INFO  The rephrasing intention: Reposition to this setting
+2024-03-24 15:31:37,476 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:37,498 adv_eval.py 219  INFO  Cosine similarity: 0.42285728454589844
+2024-03-24 15:31:37,871 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:38,205 adv_eval.py 161  INFO  ==================Task 73=========================
+2024-03-24 15:31:38,474 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:38,474 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:31:38,474 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:38,497 adv_eval.py 219  INFO  Cosine similarity: 0.6978434920310974
+2024-03-24 15:31:38,890 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:39,323 adv_eval.py 161  INFO  ==================Task 74=========================
+2024-03-24 15:31:39,586 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:39,586 adv_eval.py 172  INFO  The rephrasing intention: Reorder to this setting
+2024-03-24 15:31:39,586 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:39,612 adv_eval.py 219  INFO  Cosine similarity: 0.5135217905044556
+2024-03-24 15:31:40,373 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:40,998 adv_eval.py 161  INFO  ==================Task 75=========================
+2024-03-24 15:31:41,218 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:41,218 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:41,218 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:41,241 adv_eval.py 219  INFO  Cosine similarity: 0.8334801197052002
+2024-03-24 15:31:42,429 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:42,967 adv_eval.py 161  INFO  ==================Task 76=========================
+2024-03-24 15:31:43,270 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:43,270 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this setting
+2024-03-24 15:31:43,271 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:43,293 adv_eval.py 219  INFO  Cosine similarity: 0.7176297307014465
+2024-03-24 15:31:44,535 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:44,792 adv_eval.py 161  INFO  ==================Task 77=========================
+2024-03-24 15:31:45,249 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:45,249 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:45,249 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:45,272 adv_eval.py 219  INFO  Cosine similarity: 0.7147853970527649
+2024-03-24 15:31:46,152 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:46,528 adv_eval.py 161  INFO  ==================Task 78=========================
+2024-03-24 15:31:46,788 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:46,788 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this depiction
+2024-03-24 15:31:46,788 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:46,811 adv_eval.py 219  INFO  Cosine similarity: 0.5978652238845825
+2024-03-24 15:31:47,711 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:48,339 adv_eval.py 161  INFO  ==================Task 79=========================
+2024-03-24 15:31:48,573 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:48,573 adv_eval.py 172  INFO  The rephrasing intention: Restructure to this setting
+2024-03-24 15:31:48,573 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:48,598 adv_eval.py 219  INFO  Cosine similarity: 0.56219482421875
+2024-03-24 15:31:49,896 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:50,304 adv_eval.py 161  INFO  ==================Task 80=========================
+2024-03-24 15:31:50,564 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:50,564 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this situation
+2024-03-24 15:31:50,564 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:50,586 adv_eval.py 219  INFO  Cosine similarity: 0.6152448058128357
+2024-03-24 15:31:51,496 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:51,741 adv_eval.py 161  INFO  ==================Task 81=========================
+2024-03-24 15:31:51,970 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:51,970 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this display
+2024-03-24 15:31:51,970 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:51,992 adv_eval.py 219  INFO  Cosine similarity: 0.5279669761657715
+2024-03-24 15:31:52,902 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:53,680 adv_eval.py 161  INFO  ==================Task 82=========================
+2024-03-24 15:31:53,928 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:53,928 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:31:53,928 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:53,957 adv_eval.py 219  INFO  Cosine similarity: 0.7568019032478333
+2024-03-24 15:31:54,849 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:55,279 adv_eval.py 161  INFO  ==================Task 83=========================
+2024-03-24 15:31:55,598 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:55,598 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:31:55,598 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:55,624 adv_eval.py 219  INFO  Cosine similarity: 0.7613184452056885
+2024-03-24 15:31:56,408 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:56,670 adv_eval.py 161  INFO  ==================Task 84=========================
+2024-03-24 15:31:56,908 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:56,908 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:31:56,908 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:56,930 adv_eval.py 219  INFO  Cosine similarity: 0.7150670886039734
+2024-03-24 15:31:57,808 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:31:58,134 adv_eval.py 161  INFO  ==================Task 85=========================
+2024-03-24 15:31:58,820 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:31:58,820 adv_eval.py 172  INFO  The rephrasing intention: Rework this setting
+2024-03-24 15:31:58,820 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:31:58,844 adv_eval.py 219  INFO  Cosine similarity: 0.3608235716819763
+2024-03-24 15:32:01,637 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:32:01,911 adv_eval.py 161  INFO  ==================Task 86=========================
+2024-03-24 15:32:02,193 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:02,193 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:02,193 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:02,214 adv_eval.py 219  INFO  Cosine similarity: 0.7286921143531799
+2024-03-24 15:32:03,068 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:03,493 adv_eval.py 161  INFO  ==================Task 87=========================
+2024-03-24 15:32:03,755 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:03,755 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:03,755 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:03,779 adv_eval.py 219  INFO  Cosine similarity: 0.781782865524292
+2024-03-24 15:32:04,572 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:04,839 adv_eval.py 161  INFO  ==================Task 88=========================
+2024-03-24 15:32:05,114 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:05,114 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:05,114 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:05,136 adv_eval.py 219  INFO  Cosine similarity: 0.7155695557594299
+2024-03-24 15:32:05,561 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:05,890 adv_eval.py 161  INFO  ==================Task 89=========================
+2024-03-24 15:32:06,243 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:06,243 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this scenario
+2024-03-24 15:32:06,243 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:06,264 adv_eval.py 219  INFO  Cosine similarity: 0.5907953381538391
+2024-03-24 15:32:06,655 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:06,918 adv_eval.py 161  INFO  ==================Task 90=========================
+2024-03-24 15:32:07,140 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:07,140 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:32:07,140 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:07,161 adv_eval.py 219  INFO  Cosine similarity: 0.5276360511779785
+2024-03-24 15:32:07,561 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:08,027 adv_eval.py 161  INFO  ==================Task 91=========================
+2024-03-24 15:32:08,308 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:08,308 adv_eval.py 172  INFO  The rephrasing intention: Rework to this setting
+2024-03-24 15:32:08,308 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:08,331 adv_eval.py 219  INFO  Cosine similarity: 0.5564479231834412
+2024-03-24 15:32:09,619 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:10,192 adv_eval.py 161  INFO  ==================Task 92=========================
+2024-03-24 15:32:10,422 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:10,423 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:10,423 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:10,446 adv_eval.py 219  INFO  Cosine similarity: 0.8028082251548767
+2024-03-24 15:32:11,743 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:12,258 adv_eval.py 161  INFO  ==================Task 93=========================
+2024-03-24 15:32:12,624 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:12,624 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:12,624 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:12,647 adv_eval.py 219  INFO  Cosine similarity: 0.8003039360046387
+2024-03-24 15:32:13,961 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:14,233 adv_eval.py 161  INFO  ==================Task 94=========================
+2024-03-24 15:32:14,465 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:14,465 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:32:14,465 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:14,485 adv_eval.py 219  INFO  Cosine similarity: 0.7039492130279541
+2024-03-24 15:32:14,884 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:15,310 adv_eval.py 161  INFO  ==================Task 95=========================
+2024-03-24 15:32:15,582 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:15,582 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the arrangement of this scenario
+2024-03-24 15:32:15,582 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:15,604 adv_eval.py 219  INFO  Cosine similarity: 0.3520558476448059
+2024-03-24 15:32:16,437 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:16,770 adv_eval.py 161  INFO  ==================Task 96=========================
+2024-03-24 15:32:17,060 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:17,060 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:17,060 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:17,084 adv_eval.py 219  INFO  Cosine similarity: 0.7832353115081787
+2024-03-24 15:32:17,884 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:18,199 adv_eval.py 161  INFO  ==================Task 97=========================
+2024-03-24 15:32:18,464 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:18,464 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this scenario
+2024-03-24 15:32:18,464 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:18,489 adv_eval.py 219  INFO  Cosine similarity: 0.5318893790245056
+2024-03-24 15:32:18,902 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:19,463 adv_eval.py 161  INFO  ==================Task 98=========================
+2024-03-24 15:32:19,728 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:19,728 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:19,729 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:19,752 adv_eval.py 219  INFO  Cosine similarity: 0.8019778728485107
+2024-03-24 15:32:21,020 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:21,381 adv_eval.py 161  INFO  ==================Task 99=========================
+2024-03-24 15:32:21,610 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:21,610 adv_eval.py 172  INFO  The rephrasing intention: Redefine this setting
+2024-03-24 15:32:21,610 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:21,632 adv_eval.py 219  INFO  Cosine similarity: 0.3520922362804413
+2024-03-24 15:32:22,261 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:32:22,537 adv_eval.py 161  INFO  ==================Task 100=========================
+2024-03-24 15:32:23,131 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:23,131 adv_eval.py 172  INFO  The rephrasing intention: Reorganize in this setting
+2024-03-24 15:32:23,131 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:23,154 adv_eval.py 219  INFO  Cosine similarity: 0.5271556377410889
+2024-03-24 15:32:23,996 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:24,416 adv_eval.py 161  INFO  ==================Task 101=========================
+2024-03-24 15:32:24,668 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:24,668 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:24,668 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:24,692 adv_eval.py 219  INFO  Cosine similarity: 0.7922537326812744
+2024-03-24 15:32:25,561 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:25,841 adv_eval.py 161  INFO  ==================Task 102=========================
+2024-03-24 15:32:26,117 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:26,117 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:32:26,117 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:26,140 adv_eval.py 219  INFO  Cosine similarity: 0.7680456638336182
+2024-03-24 15:32:26,931 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:27,203 adv_eval.py 161  INFO  ==================Task 103=========================
+2024-03-24 15:32:27,461 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:27,461 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this setting
+2024-03-24 15:32:27,461 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:27,482 adv_eval.py 219  INFO  Cosine similarity: 0.5826151371002197
+2024-03-24 15:32:28,314 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:28,965 adv_eval.py 161  INFO  ==================Task 104=========================
+2024-03-24 15:32:29,269 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:29,269 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting to this scenario
+2024-03-24 15:32:29,269 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:29,293 adv_eval.py 219  INFO  Cosine similarity: 0.423936128616333
+2024-03-24 15:32:32,197 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:32:32,599 adv_eval.py 161  INFO  ==================Task 105=========================
+2024-03-24 15:32:32,872 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:32,872 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:32,872 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:32,897 adv_eval.py 219  INFO  Cosine similarity: 0.7810836434364319
+2024-03-24 15:32:33,805 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:34,257 adv_eval.py 161  INFO  ==================Task 106=========================
+2024-03-24 15:32:34,537 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:34,537 adv_eval.py 172  INFO  The rephrasing intention: Reorder to this setting
+2024-03-24 15:32:34,537 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:34,562 adv_eval.py 219  INFO  Cosine similarity: 0.4954882860183716
+2024-03-24 15:32:35,384 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:35,760 adv_eval.py 161  INFO  ==================Task 107=========================
+2024-03-24 15:32:36,056 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:36,056 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:36,056 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:36,080 adv_eval.py 219  INFO  Cosine similarity: 0.713080644607544
+2024-03-24 15:32:36,926 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:37,381 adv_eval.py 161  INFO  ==================Task 108=========================
+2024-03-24 15:32:37,631 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:37,631 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this scenario
+2024-03-24 15:32:37,631 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:37,654 adv_eval.py 219  INFO  Cosine similarity: 0.6019947528839111
+2024-03-24 15:32:38,502 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:39,233 adv_eval.py 161  INFO  ==================Task 109=========================
+2024-03-24 15:32:39,533 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:39,533 adv_eval.py 172  INFO  The rephrasing intention: Reorder to this setting
+2024-03-24 15:32:39,533 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:39,558 adv_eval.py 219  INFO  Cosine similarity: 0.5748533010482788
+2024-03-24 15:32:40,772 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:41,128 adv_eval.py 161  INFO  ==================Task 110=========================
+2024-03-24 15:32:41,375 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:41,376 adv_eval.py 172  INFO  The rephrasing intention: Rework to this scenario
+2024-03-24 15:32:41,376 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:41,398 adv_eval.py 219  INFO  Cosine similarity: 0.3591575622558594
+2024-03-24 15:32:41,749 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:42,076 adv_eval.py 161  INFO  ==================Task 111=========================
+2024-03-24 15:32:42,348 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:42,348 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this setting
+2024-03-24 15:32:42,348 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:42,370 adv_eval.py 219  INFO  Cosine similarity: 0.5820769667625427
+2024-03-24 15:32:43,238 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:43,704 adv_eval.py 161  INFO  ==================Task 112=========================
+2024-03-24 15:32:43,978 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:43,979 adv_eval.py 172  INFO  The rephrasing intention: Rework to this setting
+2024-03-24 15:32:43,979 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:44,003 adv_eval.py 219  INFO  Cosine similarity: 0.3603377342224121
+2024-03-24 15:32:44,392 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:45,006 adv_eval.py 161  INFO  ==================Task 113=========================
+2024-03-24 15:32:45,466 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:45,466 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:45,466 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:45,488 adv_eval.py 219  INFO  Cosine similarity: 0.7779948711395264
+2024-03-24 15:32:46,320 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:46,869 adv_eval.py 161  INFO  ==================Task 114=========================
+2024-03-24 15:32:47,178 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:47,178 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:32:47,178 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:47,201 adv_eval.py 219  INFO  Cosine similarity: 0.8103313446044922
+2024-03-24 15:32:48,567 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:49,020 adv_eval.py 161  INFO  ==================Task 115=========================
+2024-03-24 15:32:49,277 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:49,277 adv_eval.py 172  INFO  The rephrasing intention: Rework this setting
+2024-03-24 15:32:49,277 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:49,299 adv_eval.py 219  INFO  Cosine similarity: 0.33487749099731445
+2024-03-24 15:32:50,530 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:50,923 adv_eval.py 161  INFO  ==================Task 116=========================
+2024-03-24 15:32:51,196 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:51,196 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:32:51,196 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:51,219 adv_eval.py 219  INFO  Cosine similarity: 0.737443745136261
+2024-03-24 15:32:51,644 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:51,982 adv_eval.py 161  INFO  ==================Task 117=========================
+2024-03-24 15:32:52,363 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:52,363 adv_eval.py 172  INFO  The rephrasing intention: Reshuffle to this setting
+2024-03-24 15:32:52,363 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:52,387 adv_eval.py 219  INFO  Cosine similarity: 0.6376906633377075
+2024-03-24 15:32:53,177 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:53,639 adv_eval.py 161  INFO  ==================Task 118=========================
+2024-03-24 15:32:53,855 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:53,855 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:32:53,855 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:53,880 adv_eval.py 219  INFO  Cosine similarity: 0.6636320352554321
+2024-03-24 15:32:55,184 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:55,517 adv_eval.py 161  INFO  ==================Task 119=========================
+2024-03-24 15:32:55,784 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:55,784 adv_eval.py 172  INFO  The rephrasing intention: Rework to this setting
+2024-03-24 15:32:55,784 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:55,809 adv_eval.py 219  INFO  Cosine similarity: 0.5004235506057739
+2024-03-24 15:32:56,661 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:57,171 adv_eval.py 161  INFO  ==================Task 120=========================
+2024-03-24 15:32:57,416 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:57,416 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting
+2024-03-24 15:32:57,416 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:57,442 adv_eval.py 219  INFO  Cosine similarity: 0.6588664054870605
+2024-03-24 15:32:58,718 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:32:59,127 adv_eval.py 161  INFO  ==================Task 121=========================
+2024-03-24 15:32:59,402 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:32:59,402 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:32:59,402 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:32:59,429 adv_eval.py 219  INFO  Cosine similarity: 0.8034939169883728
+2024-03-24 15:33:00,736 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:01,170 adv_eval.py 161  INFO  ==================Task 122=========================
+2024-03-24 15:33:01,469 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:01,469 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:33:01,469 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:01,493 adv_eval.py 219  INFO  Cosine similarity: 0.6937934160232544
+2024-03-24 15:33:01,920 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:02,610 adv_eval.py 161  INFO  ==================Task 123=========================
+2024-03-24 15:33:02,855 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:02,855 adv_eval.py 172  INFO  The rephrasing intention: Modify this setting
+2024-03-24 15:33:02,855 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:02,879 adv_eval.py 219  INFO  Cosine similarity: 0.3951980769634247
+2024-03-24 15:33:04,208 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:04,617 adv_eval.py 161  INFO  ==================Task 124=========================
+2024-03-24 15:33:04,887 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:04,887 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:04,888 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:04,909 adv_eval.py 219  INFO  Cosine similarity: 0.7763196229934692
+2024-03-24 15:33:05,708 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:05,992 adv_eval.py 161  INFO  ==================Task 125=========================
+2024-03-24 15:33:06,317 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:06,317 adv_eval.py 172  INFO  The rephrasing intention: Using other wordsReconfigure this scenario
+2024-03-24 15:33:06,317 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:06,341 adv_eval.py 219  INFO  Cosine similarity: 0.08297398686408997
+2024-03-24 15:33:09,284 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:33:09,693 adv_eval.py 161  INFO  ==================Task 126=========================
+2024-03-24 15:33:10,039 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:10,039 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting to this tableau
+2024-03-24 15:33:10,039 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:10,064 adv_eval.py 219  INFO  Cosine similarity: 0.34924790263175964
+2024-03-24 15:33:10,978 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:11,415 adv_eval.py 161  INFO  ==================Task 127=========================
+2024-03-24 15:33:11,752 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:11,753 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setup of this scenario
+2024-03-24 15:33:11,753 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:11,778 adv_eval.py 219  INFO  Cosine similarity: 0.36749517917633057
+2024-03-24 15:33:14,821 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:33:15,198 adv_eval.py 161  INFO  ==================Task 128=========================
+2024-03-24 15:33:15,444 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:15,444 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:33:15,444 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:15,466 adv_eval.py 219  INFO  Cosine similarity: 0.7591878175735474
+2024-03-24 15:33:16,290 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:16,651 adv_eval.py 161  INFO  ==================Task 129=========================
+2024-03-24 15:33:16,920 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:16,920 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:16,920 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:16,944 adv_eval.py 219  INFO  Cosine similarity: 0.7698584794998169
+2024-03-24 15:33:17,731 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:18,158 adv_eval.py 161  INFO  ==================Task 130=========================
+2024-03-24 15:33:18,432 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:18,432 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:18,432 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:18,455 adv_eval.py 219  INFO  Cosine similarity: 0.7729072570800781
+2024-03-24 15:33:19,181 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:19,421 adv_eval.py 161  INFO  ==================Task 131=========================
+2024-03-24 15:33:19,744 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:19,744 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scenario
+2024-03-24 15:33:19,744 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:19,767 adv_eval.py 219  INFO  Cosine similarity: 0.6932225227355957
+2024-03-24 15:33:20,138 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:20,523 adv_eval.py 161  INFO  ==================Task 132=========================
+2024-03-24 15:33:20,855 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:20,856 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:20,856 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:20,878 adv_eval.py 219  INFO  Cosine similarity: 0.7809257507324219
+2024-03-24 15:33:21,667 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:21,975 adv_eval.py 161  INFO  ==================Task 133=========================
+2024-03-24 15:33:22,217 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:22,217 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:22,218 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:22,241 adv_eval.py 219  INFO  Cosine similarity: 0.7688026428222656
+2024-03-24 15:33:23,055 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:23,535 adv_eval.py 161  INFO  ==================Task 134=========================
+2024-03-24 15:33:23,820 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:23,820 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:23,820 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:23,843 adv_eval.py 219  INFO  Cosine similarity: 0.7874876260757446
+2024-03-24 15:33:24,591 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:24,915 adv_eval.py 161  INFO  ==================Task 135=========================
+2024-03-24 15:33:25,198 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:25,198 adv_eval.py 172  INFO  The rephrasing intention:  Reshuffle the setting to this scenario
+2024-03-24 15:33:25,198 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:25,221 adv_eval.py 219  INFO  Cosine similarity: 0.30437856912612915
+2024-03-24 15:33:26,155 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:26,407 adv_eval.py 161  INFO  ==================Task 136=========================
+2024-03-24 15:33:26,668 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:26,669 adv_eval.py 172  INFO  The rephrasing intention: Redefine this situation
+2024-03-24 15:33:26,669 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:26,691 adv_eval.py 219  INFO  Cosine similarity: 0.3398544192314148
+2024-03-24 15:33:27,105 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:27,628 adv_eval.py 161  INFO  ==================Task 137=========================
+2024-03-24 15:33:28,124 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:28,124 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:28,124 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:28,147 adv_eval.py 219  INFO  Cosine similarity: 0.7767703533172607
+2024-03-24 15:33:28,961 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:29,240 adv_eval.py 161  INFO  ==================Task 138=========================
+2024-03-24 15:33:29,464 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:29,464 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:33:29,464 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:29,487 adv_eval.py 219  INFO  Cosine similarity: 0.5460986495018005
+2024-03-24 15:33:30,349 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:31,199 adv_eval.py 161  INFO  ==================Task 139=========================
+2024-03-24 15:33:31,483 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:31,483 adv_eval.py 172  INFO  The rephrasing intention: Rearranging the setting
+2024-03-24 15:33:31,483 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:31,509 adv_eval.py 219  INFO  Cosine similarity: 0.3997410237789154
+2024-03-24 15:33:32,796 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:33,520 adv_eval.py 161  INFO  ==================Task 140=========================
+2024-03-24 15:33:33,776 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:33,776 adv_eval.py 172  INFO  The rephrasing intention: Rearrangement of this panorama
+2024-03-24 15:33:33,776 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:33,798 adv_eval.py 219  INFO  Cosine similarity: 0.6861476898193359
+2024-03-24 15:33:36,598 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:33:37,016 adv_eval.py 161  INFO  ==================Task 141=========================
+2024-03-24 15:33:37,263 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:37,263 adv_eval.py 172  INFO  The rephrasing intention: Rework this setting
+2024-03-24 15:33:37,263 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:37,291 adv_eval.py 219  INFO  Cosine similarity: 0.28606271743774414
+2024-03-24 15:33:37,694 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:38,057 adv_eval.py 161  INFO  ==================Task 142=========================
+2024-03-24 15:33:38,282 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:38,282 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this setting
+2024-03-24 15:33:38,282 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:38,304 adv_eval.py 219  INFO  Cosine similarity: 0.539795994758606
+2024-03-24 15:33:38,697 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:39,010 adv_eval.py 161  INFO  ==================Task 143=========================
+2024-03-24 15:33:39,412 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:39,413 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting to this area
+2024-03-24 15:33:39,413 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:39,437 adv_eval.py 219  INFO  Cosine similarity: 0.33981651067733765
+2024-03-24 15:33:42,002 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:33:42,369 adv_eval.py 161  INFO  ==================Task 144=========================
+2024-03-24 15:33:42,916 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:42,916 adv_eval.py 172  INFO  The rephrasing intention: Rearranging this scenario
+2024-03-24 15:33:42,916 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:42,942 adv_eval.py 219  INFO  Cosine similarity: 0.35404878854751587
+2024-03-24 15:33:45,991 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:33:46,781 adv_eval.py 161  INFO  ==================Task 145=========================
+2024-03-24 15:33:46,991 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:46,992 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:46,992 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:47,015 adv_eval.py 219  INFO  Cosine similarity: 0.8158067464828491
+2024-03-24 15:33:48,452 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:48,706 adv_eval.py 161  INFO  ==================Task 146=========================
+2024-03-24 15:33:49,205 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:49,205 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:49,205 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:49,228 adv_eval.py 219  INFO  Cosine similarity: 0.7368555068969727
+2024-03-24 15:33:50,109 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:50,402 adv_eval.py 161  INFO  ==================Task 147=========================
+2024-03-24 15:33:50,649 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:50,649 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:50,649 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:50,676 adv_eval.py 219  INFO  Cosine similarity: 0.7300659418106079
+2024-03-24 15:33:51,538 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:51,922 adv_eval.py 161  INFO  ==================Task 148=========================
+2024-03-24 15:33:52,130 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:52,130 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting
+2024-03-24 15:33:52,130 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:52,153 adv_eval.py 219  INFO  Cosine similarity: 0.7856048345565796
+2024-03-24 15:33:52,973 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:53,375 adv_eval.py 161  INFO  ==================Task 149=========================
+2024-03-24 15:33:53,635 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:53,635 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting to this scenario
+2024-03-24 15:33:53,635 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:53,660 adv_eval.py 219  INFO  Cosine similarity: 0.37673434615135193
+2024-03-24 15:33:54,497 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:54,775 adv_eval.py 161  INFO  ==================Task 150=========================
+2024-03-24 15:33:55,025 adv_eval.py 171  INFO  The rephrasing type: Noun
+2024-03-24 15:33:55,025 adv_eval.py 172  INFO  The rephrasing intention: Reorganize to this setting
+2024-03-24 15:33:55,026 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:33:55,052 adv_eval.py 219  INFO  Cosine similarity: 0.5790772438049316
+2024-03-24 15:33:55,462 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:33:55,829 adv_eval.py 364 WARNING  ==================Evaluation Done=========================
+2024-03-24 15:33:55,829 adv_eval.py 366  INFO  Success rate: 93.33333333333333%
+2024-03-24 15:33:55,829 adv_eval.py 367  INFO  Average cosine similarity: 63.71873474121094%

@@ -1,0 +1,904 @@
+2024-03-24 15:16:53,873 adv_eval.py 103  INFO  cfg: {'partition': 'placement_generalization', 'task': 'rearrange', 'rephrasings': 'Color Rephrase', 'vis_atk': 'None', 'device': 'cuda', 'reuse': False, 'save_dir': 'adv_scripts/output', 'ckpt': 'models/VIMA/200M.ckpt', 'debug_flag': True, 'hide_arm': True, 'seed': 42}
+2024-03-24 15:16:59,290 adv_eval.py 161  INFO  ==================Task 1=========================
+2024-03-24 15:17:00,174 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:00,174 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque vignette adorned with various shades, tones, and hues, evoking a sense of visual delight and aesthetic pleasure
+2024-03-24 15:17:00,174 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:00,201 adv_eval.py 219  INFO  Cosine similarity: 0.42795926332473755
+2024-03-24 15:17:01,001 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:01,364 adv_eval.py 161  INFO  ==================Task 2=========================
+2024-03-24 15:17:01,649 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:01,649 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vibrant display
+2024-03-24 15:17:01,649 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:01,671 adv_eval.py 219  INFO  Cosine similarity: 0.7046518921852112
+2024-03-24 15:17:02,485 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:02,893 adv_eval.py 161  INFO  ==================Task 3=========================
+2024-03-24 15:17:03,925 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:03,925 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vivid, vibrant, and kaleidoscopic scene bursting with shades of crimson, cerulean, and emerald, showcasing mesmerizing swirls, stripes, and polka dots upon a canvas filled with objects such as tables, chairs, and lamps
+2024-03-24 15:17:03,925 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:03,947 adv_eval.py 219  INFO  Cosine similarity: 0.39561811089515686
+2024-03-24 15:17:04,351 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:04,688 adv_eval.py 161  INFO  ==================Task 4=========================
+2024-03-24 15:17:05,037 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:05,037 adv_eval.py 172  INFO  The rephrasing intention: Reorganize the elements of this particular setting
+2024-03-24 15:17:05,037 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:05,063 adv_eval.py 219  INFO  Cosine similarity: 0.2932947874069214
+2024-03-24 15:17:07,739 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:08,145 adv_eval.py 161  INFO  ==================Task 5=========================
+2024-03-24 15:17:08,614 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:08,614 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this elaborate and lively scene of vibrant and captivating hues and intricate and distinctive designs
+2024-03-24 15:17:08,614 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:08,637 adv_eval.py 219  INFO  Cosine similarity: 0.3970986604690552
+2024-03-24 15:17:09,568 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:09,940 adv_eval.py 161  INFO  ==================Task 6=========================
+2024-03-24 15:17:10,383 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:10,383 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque landscape, adorned with a plethora of vibrant shades and intricate designs
+2024-03-24 15:17:10,383 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:10,405 adv_eval.py 219  INFO  Cosine similarity: 0.3226165771484375
+2024-03-24 15:17:10,829 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:11,286 adv_eval.py 161  INFO  ==================Task 7=========================
+2024-03-24 15:17:11,668 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:11,668 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the aesthetically pleasing and visually appealing composition of this scene
+2024-03-24 15:17:11,668 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:11,695 adv_eval.py 219  INFO  Cosine similarity: 0.3463691771030426
+2024-03-24 15:17:14,391 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:14,765 adv_eval.py 161  INFO  ==================Task 8=========================
+2024-03-24 15:17:15,077 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:15,077 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the view of this setting
+2024-03-24 15:17:15,077 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:15,100 adv_eval.py 219  INFO  Cosine similarity: 0.35172009468078613
+2024-03-24 15:17:15,936 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:16,281 adv_eval.py 161  INFO  ==================Task 9=========================
+2024-03-24 15:17:16,683 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:16,683 adv_eval.py 172  INFO  The rephrasing intention: Rearrange and reorganize the placement and positioning of elements and props within this particular visual setting or setup
+2024-03-24 15:17:16,683 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:16,709 adv_eval.py 219  INFO  Cosine similarity: 0.28819048404693604
+2024-03-24 15:17:17,142 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:17,593 adv_eval.py 161  INFO  ==================Task 10=========================
+2024-03-24 15:17:18,067 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:18,068 adv_eval.py 172  INFO  The rephrasing intention: Rework and reorganize the elements in this spectacular, vibrant, multicolored setting
+2024-03-24 15:17:18,068 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:18,092 adv_eval.py 219  INFO  Cosine similarity: 0.17595604062080383
+2024-03-24 15:17:18,479 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:19,028 adv_eval.py 161  INFO  ==================Task 11=========================
+2024-03-24 15:17:20,497 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:20,497 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this magnificent, breathtaking, awe-inspiring, splendid, resplendent, stunning, glorious, magnificent, astounding, exquisite, beautiful, remarkable, marvelous, wonderful, superb, glorious, enchanting, charming, picturesque, scenic, idyllic, delightful, lush, verdant, vibrant, beaming, radiant, gleaming, shimmering, twinkling scene
+2024-03-24 15:17:20,497 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:20,523 adv_eval.py 219  INFO  Cosine similarity: 0.4577255845069885
+2024-03-24 15:17:21,874 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:22,216 adv_eval.py 161  INFO  ==================Task 12=========================
+2024-03-24 15:17:22,628 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:22,628 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this strikingly vivid and vibrant visual display
+2024-03-24 15:17:22,628 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:22,655 adv_eval.py 219  INFO  Cosine similarity: 0.38545942306518555
+2024-03-24 15:17:23,561 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:23,934 adv_eval.py 161  INFO  ==================Task 13=========================
+2024-03-24 15:17:24,351 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:24,351 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this landscape to capture a colorful array of hues and intricate designs that adorn the view before me
+2024-03-24 15:17:24,351 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:24,373 adv_eval.py 219  INFO  Cosine similarity: 0.3045133948326111
+2024-03-24 15:17:27,304 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:27,951 adv_eval.py 161  INFO  ==================Task 14=========================
+2024-03-24 15:17:28,484 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:28,484 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this tableau, arrangement, display, composition, configuration, setup, spectacle, panorama, vista, view
+2024-03-24 15:17:28,484 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:28,509 adv_eval.py 219  INFO  Cosine similarity: 0.4583677351474762
+2024-03-24 15:17:29,756 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:30,084 adv_eval.py 161  INFO  ==================Task 15=========================
+2024-03-24 15:17:30,544 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:30,544 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vividly hued and intricately detailed depiction
+2024-03-24 15:17:30,544 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:30,571 adv_eval.py 219  INFO  Cosine similarity: 0.36579909920692444
+2024-03-24 15:17:30,967 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:31,558 adv_eval.py 161  INFO  ==================Task 16=========================
+2024-03-24 15:17:31,873 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:31,874 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque, scenic view
+2024-03-24 15:17:31,874 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:31,900 adv_eval.py 219  INFO  Cosine similarity: 0.4292876720428467
+2024-03-24 15:17:33,227 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:33,534 adv_eval.py 161  INFO  ==================Task 17=========================
+2024-03-24 15:17:34,295 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:34,295 adv_eval.py 172  INFO  The rephrasing intention: (Light, pale, shadeless, bland colors ;Flowers)Rearrange to this setting with light, faint, hue-free, unadorned shades and flowers
+2024-03-24 15:17:34,295 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:34,317 adv_eval.py 219  INFO  Cosine similarity: 0.23025894165039062
+2024-03-24 15:17:36,773 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:37,129 adv_eval.py 161  INFO  ==================Task 18=========================
+2024-03-24 15:17:37,592 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:37,592 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque tableau, adorned with a plethora of vibrant hues and intricate designs
+2024-03-24 15:17:37,592 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:37,614 adv_eval.py 219  INFO  Cosine similarity: 0.38638821244239807
+2024-03-24 15:17:38,020 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:38,523 adv_eval.py 161  INFO  ==================Task 19=========================
+2024-03-24 15:17:38,978 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:38,978 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the layout of this picturesque setting, swapping and adjusting the placement of objects to create a new composition
+2024-03-24 15:17:38,978 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:39,005 adv_eval.py 219  INFO  Cosine similarity: 0.3268333673477173
+2024-03-24 15:17:41,991 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:42,382 adv_eval.py 161  INFO  ==================Task 20=========================
+2024-03-24 15:17:42,696 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:42,696 adv_eval.py 172  INFO  The rephrasing intention: Transform this scenery into a breathtaking, visually captivating composition
+2024-03-24 15:17:42,697 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:42,719 adv_eval.py 219  INFO  Cosine similarity: 0.19109100103378296
+2024-03-24 15:17:45,667 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:46,111 adv_eval.py 161  INFO  ==================Task 21=========================
+2024-03-24 15:17:46,377 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:46,377 adv_eval.py 172  INFO  The rephrasing intention: Modify and alter the arrangement of this particular setting
+2024-03-24 15:17:46,377 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:46,407 adv_eval.py 219  INFO  Cosine similarity: 0.27854353189468384
+2024-03-24 15:17:48,950 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:49,494 adv_eval.py 161  INFO  ==================Task 22=========================
+2024-03-24 15:17:50,021 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:50,021 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the overall visual composition of this particular scenario
+2024-03-24 15:17:50,021 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:50,045 adv_eval.py 219  INFO  Cosine similarity: 0.3664235770702362
+2024-03-24 15:17:52,924 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:53,193 adv_eval.py 161  INFO  ==================Task 23=========================
+2024-03-24 15:17:53,770 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:53,770 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque scene featuring an array of vibrant shades and intricate designs that add depth and dimension to the overall composition
+2024-03-24 15:17:53,770 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:53,792 adv_eval.py 219  INFO  Cosine similarity: 0.3068201243877411
+2024-03-24 15:17:54,197 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:17:54,547 adv_eval.py 161  INFO  ==================Task 24=========================
+2024-03-24 15:17:55,102 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:55,102 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the elements in this visual scene, incorporating a variety of different hues, shades, and tones, as well as various intricate designs, intricate patterns, and elaborate motifs
+2024-03-24 15:17:55,102 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:55,123 adv_eval.py 219  INFO  Cosine similarity: 0.343471884727478
+2024-03-24 15:17:55,537 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:55,894 adv_eval.py 161  INFO  ==================Task 25=========================
+2024-03-24 15:17:56,646 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:56,646 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vibrant and visually appealing setting filled with an array of hues and tones that are both vibrant and eye-catching
+2024-03-24 15:17:56,646 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:56,668 adv_eval.py 219  INFO  Cosine similarity: 0.401669442653656
+2024-03-24 15:17:57,480 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:57,746 adv_eval.py 161  INFO  ==================Task 26=========================
+2024-03-24 15:17:58,321 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:17:58,322 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque display, adorned with a diverse array of hues and intricate designs, showcasing an enchanting arrangement of objects
+2024-03-24 15:17:58,322 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:17:58,344 adv_eval.py 219  INFO  Cosine similarity: 0.34141647815704346
+2024-03-24 15:17:59,220 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:17:59,632 adv_eval.py 161  INFO  ==================Task 27=========================
+2024-03-24 15:18:00,151 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:00,151 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this landscape, with its hues of emerald, sapphire, and marigold, dotted with polka dots, stripes, and floral designs
+2024-03-24 15:18:00,151 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:00,176 adv_eval.py 219  INFO  Cosine similarity: 0.4426484704017639
+2024-03-24 15:18:01,085 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:01,340 adv_eval.py 161  INFO  ==================Task 28=========================
+2024-03-24 15:18:01,760 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:01,761 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque composition adorned with vibrant hues and bold motifs
+2024-03-24 15:18:01,761 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:01,784 adv_eval.py 219  INFO  Cosine similarity: 0.35611051321029663
+2024-03-24 15:18:02,162 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:02,481 adv_eval.py 161  INFO  ==================Task 29=========================
+2024-03-24 15:18:02,771 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:02,771 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting or backdrop
+2024-03-24 15:18:02,771 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:02,794 adv_eval.py 219  INFO  Cosine similarity: 0.4381561875343323
+2024-03-24 15:18:03,186 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:03,510 adv_eval.py 161  INFO  ==================Task 30=========================
+2024-03-24 15:18:04,027 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:04,027 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this particular spectacle, filled with varying hues and tones, meticulously placed in an orderly manner for aesthetic appeal
+2024-03-24 15:18:04,027 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:04,055 adv_eval.py 219  INFO  Cosine similarity: 0.4447002410888672
+2024-03-24 15:18:04,849 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:05,193 adv_eval.py 161  INFO  ==================Task 31=========================
+2024-03-24 15:18:05,605 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:05,605 adv_eval.py 172  INFO  The rephrasing intention: Reposition the contents of this particular setting, environment, or surrounding area
+2024-03-24 15:18:05,605 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:05,630 adv_eval.py 219  INFO  Cosine similarity: 0.2840282618999481
+2024-03-24 15:18:08,359 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:18:08,676 adv_eval.py 161  INFO  ==================Task 32=========================
+2024-03-24 15:18:13,761 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:13,762 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this composition, arrangement, setup, setting, layout, display, tableau, canvas, picture, spectacle, vista, view, landscape, vista, panorama, prospect, tableau, exhibition, arrangement, montage, mosaic, patchwork, kaleidoscope, symphony, collage, potpourri, miscellany, anthology, array, assemblage, collage, medley, motley, jumble, clutter, clutter, confusion, mishmash, agglomeration, mishmosh, melange, hodgepodge, variety, diversity, multiplicity, assortment, assortment, mixture, concoction, smorgasbord, potpourri, mishmash, jumble, confusion, chaos, commotion, design, shape, form, build, structure, edifice, configuration, outline, figure, framework, frame, composition, pattern, design, layout, motif, ornamentation, detail, decoration, trim, embellishment, adorning, decoration, coloring, dyeing, coloring, tinting, staining, shading, tinge, hue, tone, saturation, chroma, pigmentation, undertone, nuance, gradation, spectrum, rainbow, palette, color wheel, paintbox, color scheme, color combination, color palette, color pattern, color motif, color variation, color contrast, color harmony, color coordination, color match, color clash, color mix, color blend, color fusion, color medley, color jumble, color collision, color medley, color diversity, color assortment, color potpourri, color array
+2024-03-24 15:18:13,762 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:13,791 adv_eval.py 219  INFO  Cosine similarity: 0.3681008219718933
+2024-03-24 15:18:14,650 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:18:15,159 adv_eval.py 161  INFO  ==================Task 33=========================
+2024-03-24 15:18:15,493 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:15,493 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the current set-up of this visual display
+2024-03-24 15:18:15,493 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:15,518 adv_eval.py 219  INFO  Cosine similarity: 0.4855618178844452
+2024-03-24 15:18:16,797 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:17,100 adv_eval.py 161  INFO  ==================Task 34=========================
+2024-03-24 15:18:17,452 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:17,452 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this landscape of vibrant hues and intricate designs
+2024-03-24 15:18:17,452 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:17,483 adv_eval.py 219  INFO  Cosine similarity: 0.32107406854629517
+2024-03-24 15:18:18,397 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:18,763 adv_eval.py 161  INFO  ==================Task 35=========================
+2024-03-24 15:18:19,030 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:19,030 adv_eval.py 172  INFO  The rephrasing intention: Alter the arrangement of this precise visual composition
+2024-03-24 15:18:19,030 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:19,055 adv_eval.py 219  INFO  Cosine similarity: 0.2922796607017517
+2024-03-24 15:18:19,927 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:20,281 adv_eval.py 161  INFO  ==================Task 36=========================
+2024-03-24 15:18:21,060 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:21,061 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque view filled with a variety of vibrant hues such as luscious shades of emerald green, stunning tones of sapphire blue, and warm, earthy shades of golden amber
+2024-03-24 15:18:21,061 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:21,083 adv_eval.py 219  INFO  Cosine similarity: 0.34126418828964233
+2024-03-24 15:18:21,498 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:22,065 adv_eval.py 161  INFO  ==================Task 37=========================
+2024-03-24 15:18:22,315 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:22,315 adv_eval.py 172  INFO  The rephrasing intention: Modify the arrangement of this visual composition
+2024-03-24 15:18:22,315 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:22,345 adv_eval.py 219  INFO  Cosine similarity: 0.2668790817260742
+2024-03-24 15:18:25,244 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:18:25,600 adv_eval.py 161  INFO  ==================Task 38=========================
+2024-03-24 15:18:26,075 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:26,075 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque view, adorned with a vast array of vibrant hues and intricate designs, all meticulously placed to create an aesthetic masterpiece
+2024-03-24 15:18:26,075 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:26,097 adv_eval.py 219  INFO  Cosine similarity: 0.31180813908576965
+2024-03-24 15:18:26,480 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:18:26,919 adv_eval.py 161  INFO  ==================Task 39=========================
+2024-03-24 15:18:27,318 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:27,318 adv_eval.py 172  INFO  The rephrasing intention: Rework and modify this setting, rearrange and alter this particular picture
+2024-03-24 15:18:27,318 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:27,341 adv_eval.py 219  INFO  Cosine similarity: 0.29180243611335754
+2024-03-24 15:18:28,268 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:28,590 adv_eval.py 161  INFO  ==================Task 40=========================
+2024-03-24 15:18:28,943 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:28,943 adv_eval.py 172  INFO  The rephrasing intention: Reorganize the setup of this particular view or setting
+2024-03-24 15:18:28,943 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:28,968 adv_eval.py 219  INFO  Cosine similarity: 0.22708727419376373
+2024-03-24 15:18:30,210 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:18:30,599 adv_eval.py 161  INFO  ==================Task 41=========================
+2024-03-24 15:18:31,112 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:31,112 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this composition of diverse colors and intricate designs, rearranged into a beautiful and mesmerizing arrangement
+2024-03-24 15:18:31,112 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:31,139 adv_eval.py 219  INFO  Cosine similarity: 0.4028462767601013
+2024-03-24 15:18:32,004 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:32,254 adv_eval.py 161  INFO  ==================Task 42=========================
+2024-03-24 15:18:32,541 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:32,541 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the various items and elements within this particular setting
+2024-03-24 15:18:32,541 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:32,565 adv_eval.py 219  INFO  Cosine similarity: 0.2779284417629242
+2024-03-24 15:18:32,986 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:18:33,294 adv_eval.py 161  INFO  ==================Task 43=========================
+2024-03-24 15:18:33,850 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:33,850 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque and vividly hued setting, adorned with an assortment of vibrant shades and unique designs
+2024-03-24 15:18:33,851 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:33,878 adv_eval.py 219  INFO  Cosine similarity: 0.39472031593322754
+2024-03-24 15:18:34,742 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:35,053 adv_eval.py 161  INFO  ==================Task 44=========================
+2024-03-24 15:18:35,352 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:35,352 adv_eval.py 172  INFO  The rephrasing intention: Change the layout of this particular setting, environment, or backdrop
+2024-03-24 15:18:35,352 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:35,379 adv_eval.py 219  INFO  Cosine similarity: 0.28682422637939453
+2024-03-24 15:18:36,209 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:36,639 adv_eval.py 161  INFO  ==================Task 45=========================
+2024-03-24 15:18:37,212 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:37,212 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this visually appealing and aesthetically pleasing scene, abundant with a plethora of vibrant hues and striking designs
+2024-03-24 15:18:37,212 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:37,236 adv_eval.py 219  INFO  Cosine similarity: 0.39207643270492554
+2024-03-24 15:18:38,104 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:38,527 adv_eval.py 161  INFO  ==================Task 46=========================
+2024-03-24 15:18:44,148 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:44,149 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vista, view, tableau, landscape, panorama, spectacle, sight, display, picture, image, tableau vivant, depiction, representation, visual, spectacle, scenery, countryside, countryside, scenery, country, the great outdoors, outdoors, natural world, earth, nature, environment, locale, domain, place, realm, realm, realm, sphere, patch, patchwork, patchwork, mosaic, medley, hodgepodge, mishmash, melange, potpourri, assortment, diversity, smorgasbord, variety, selection, assemblage, mix, blend, assortment, diversity, amalgamation, conglomeration, aggregate, aggregation, collection, compilation, array, range, spectrum, palette, hues, tints, tones, shades, pigments, dyes, colors, color scheme, color combination, color palette, colorway, pattern, designs, motifs, prints, textures, fabric, material, materiality, substance, thread, yarn, weave, composition, layout, arrangement, organization, configuration, disposition, display, showcase, exhibit, flaunt, array, present, show off, unveil, demonstrate, feature, highlight, showcase, highlight, spotlight, flaunt, reveal, exhibit, manifest, display, demonstrate, present, brandish, boast, parade, proclaim, magnify, celebrate, extol, admire, showcase, vaunt, crow, show, put on display, put on view, put on exhibit, put on show, put on parade, put on spectacle, put on view, put on panorama, put on sight, put on vista, put on landscape, put on tableau
+2024-03-24 15:18:44,149 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:44,176 adv_eval.py 219  INFO  Cosine similarity: 0.45155489444732666
+2024-03-24 15:18:44,998 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:45,260 adv_eval.py 161  INFO  ==================Task 47=========================
+2024-03-24 15:18:47,152 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:47,153 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this panorama, this vista, this landscape, this tableau, this view, this prospect, this tableau vivant, this diorama, this pictorial representation, this picturesque vista, this scenic display, this visual array, this kaleidoscope of visuals, this medley of hues and shades and tints and tones and pigments and colors, this patchwork of textures and motifs and designs and arrangements and configurations, this mosaic of shapes and forms and figures and patterns and symbols, this stunning composition of elements and details and features, this masterful depiction of objects and elements and entities and subjects
+2024-03-24 15:18:47,153 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:47,179 adv_eval.py 219  INFO  Cosine similarity: 0.34449970722198486
+2024-03-24 15:18:47,621 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:48,012 adv_eval.py 161  INFO  ==================Task 48=========================
+2024-03-24 15:18:48,903 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:48,903 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque and vibrant scene, with hues and shades of every color in the rainbow splashed throughout
+2024-03-24 15:18:48,903 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:48,927 adv_eval.py 219  INFO  Cosine similarity: 0.3988833427429199
+2024-03-24 15:18:49,806 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:50,087 adv_eval.py 161  INFO  ==================Task 49=========================
+2024-03-24 15:18:50,498 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:50,498 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque view, adorned with a plethora of vibrant hues and intricate designs
+2024-03-24 15:18:50,498 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:50,523 adv_eval.py 219  INFO  Cosine similarity: 0.3875128924846649
+2024-03-24 15:18:50,927 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:51,411 adv_eval.py 161  INFO  ==================Task 50=========================
+2024-03-24 15:18:51,777 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:51,777 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this elaborate and meticulously crafted composition
+2024-03-24 15:18:51,777 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:51,801 adv_eval.py 219  INFO  Cosine similarity: 0.33745497465133667
+2024-03-24 15:18:54,451 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:18:54,794 adv_eval.py 161  INFO  ==================Task 51=========================
+2024-03-24 15:18:55,104 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:55,104 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting to this particular situation
+2024-03-24 15:18:55,104 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:55,128 adv_eval.py 219  INFO  Cosine similarity: 0.34206128120422363
+2024-03-24 15:18:56,068 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:56,605 adv_eval.py 161  INFO  ==================Task 52=========================
+2024-03-24 15:18:57,608 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:57,608 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vividly hued landscape, adorned with an array of rich and dynamic tones dancing in harmony
+2024-03-24 15:18:57,609 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:57,634 adv_eval.py 219  INFO  Cosine similarity: 0.4593932032585144
+2024-03-24 15:18:58,944 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:18:59,250 adv_eval.py 161  INFO  ==================Task 53=========================
+2024-03-24 15:18:59,783 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:18:59,783 adv_eval.py 172  INFO  The rephrasing intention: Change the layout of this tableau and enhance it with vibrant hues and intricate designs without altering the familiar elements within this composition
+2024-03-24 15:18:59,783 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:18:59,807 adv_eval.py 219  INFO  Cosine similarity: 0.3686229884624481
+2024-03-24 15:19:00,655 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:01,113 adv_eval.py 161  INFO  ==================Task 54=========================
+2024-03-24 15:19:01,617 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:01,617 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this striking, vibrant, and visually stunning representation
+2024-03-24 15:19:01,617 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:01,644 adv_eval.py 219  INFO  Cosine similarity: 0.41141659021377563
+2024-03-24 15:19:02,538 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:02,940 adv_eval.py 161  INFO  ==================Task 55=========================
+2024-03-24 15:19:03,397 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:03,398 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the composition of this visual representation, altering the placement and configuration of its elements
+2024-03-24 15:19:03,398 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:03,427 adv_eval.py 219  INFO  Cosine similarity: 0.3612794280052185
+2024-03-24 15:19:06,086 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:19:06,488 adv_eval.py 161  INFO  ==================Task 56=========================
+2024-03-24 15:19:07,083 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:07,083 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this majestic, vivid, and vibrant tableau of hues and designs, adorning the landscape with their dazzling, eye-catching, and intricate forms, summoning a sense of awe and wonder
+2024-03-24 15:19:07,083 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:07,110 adv_eval.py 219  INFO  Cosine similarity: 0.4326290488243103
+2024-03-24 15:19:07,980 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:08,448 adv_eval.py 161  INFO  ==================Task 57=========================
+2024-03-24 15:19:09,159 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:09,159 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the layout and composition of this particular setting, environment, or scenery, without altering the objects or items portrayed in their original depiction, representation, or appearance
+2024-03-24 15:19:09,159 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:09,182 adv_eval.py 219  INFO  Cosine similarity: 0.34751757979393005
+2024-03-24 15:19:10,069 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:10,393 adv_eval.py 161  INFO  ==================Task 58=========================
+2024-03-24 15:19:10,718 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:10,718 adv_eval.py 172  INFO  The rephrasing intention: Adjust and revise to this environment or setting
+2024-03-24 15:19:10,718 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:10,745 adv_eval.py 219  INFO  Cosine similarity: 0.2451898753643036
+2024-03-24 15:19:11,691 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:12,071 adv_eval.py 161  INFO  ==================Task 59=========================
+2024-03-24 15:19:12,332 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:12,332 adv_eval.py 172  INFO  The rephrasing intention: Reshape the arrangement of this setting
+2024-03-24 15:19:12,332 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:12,357 adv_eval.py 219  INFO  Cosine similarity: 0.2754725217819214
+2024-03-24 15:19:13,240 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:13,852 adv_eval.py 161  INFO  ==================Task 60=========================
+2024-03-24 15:19:14,468 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:14,468 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scene full of vivid hues and vibrant tones, characterized by a kaleidoscope of vibrant shades and a myriad of diverse patterns
+2024-03-24 15:19:14,468 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:14,494 adv_eval.py 219  INFO  Cosine similarity: 0.45137107372283936
+2024-03-24 15:19:15,906 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:16,299 adv_eval.py 161  INFO  ==================Task 61=========================
+2024-03-24 15:19:16,598 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:16,598 adv_eval.py 172  INFO  The rephrasing intention: Rework the arrangement within this picturesque setting
+2024-03-24 15:19:16,598 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:16,627 adv_eval.py 219  INFO  Cosine similarity: 0.2769571542739868
+2024-03-24 15:19:17,486 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:17,875 adv_eval.py 161  INFO  ==================Task 62=========================
+2024-03-24 15:19:18,407 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:18,408 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this assemblage of objects, adorned with an array of hues and designs, meticulously positioned in this setting
+2024-03-24 15:19:18,408 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:18,432 adv_eval.py 219  INFO  Cosine similarity: 0.46027040481567383
+2024-03-24 15:19:19,909 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:20,226 adv_eval.py 161  INFO  ==================Task 63=========================
+2024-03-24 15:19:20,589 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:20,589 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the surroundings to this vivid and vibrant tableau
+2024-03-24 15:19:20,589 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:20,612 adv_eval.py 219  INFO  Cosine similarity: 0.37383154034614563
+2024-03-24 15:19:21,450 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:21,754 adv_eval.py 161  INFO  ==================Task 64=========================
+2024-03-24 15:19:22,137 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:22,137 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the layout of this visual display in front of us
+2024-03-24 15:19:22,137 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:22,161 adv_eval.py 219  INFO  Cosine similarity: 0.33978766202926636
+2024-03-24 15:19:23,021 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:23,494 adv_eval.py 161  INFO  ==================Task 65=========================
+2024-03-24 15:19:24,080 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:24,081 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque scene filled with a multitude of vibrant hues and intricate designs
+2024-03-24 15:19:24,081 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:24,106 adv_eval.py 219  INFO  Cosine similarity: 0.4213811755180359
+2024-03-24 15:19:25,428 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:25,738 adv_eval.py 161  INFO  ==================Task 66=========================
+2024-03-24 15:19:26,099 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:26,099 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vibrant, kaleidoscopic display
+2024-03-24 15:19:26,099 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:26,123 adv_eval.py 219  INFO  Cosine similarity: 0.4424144923686981
+2024-03-24 15:19:26,932 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:27,344 adv_eval.py 161  INFO  ==================Task 67=========================
+2024-03-24 15:19:27,854 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:27,854 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this tableau
+2024-03-24 15:19:27,854 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:27,876 adv_eval.py 219  INFO  Cosine similarity: 0.6972997188568115
+2024-03-24 15:19:28,708 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:29,033 adv_eval.py 161  INFO  ==================Task 68=========================
+2024-03-24 15:19:29,490 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:29,490 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this elaborate, vibrant, and intricate scene teeming with various hues and intricate geometric designs
+2024-03-24 15:19:29,490 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:29,514 adv_eval.py 219  INFO  Cosine similarity: 0.3873670697212219
+2024-03-24 15:19:30,351 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:30,655 adv_eval.py 161  INFO  ==================Task 69=========================
+2024-03-24 15:19:31,317 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:31,317 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the placement of various objects in this particular setting
+2024-03-24 15:19:31,317 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:31,340 adv_eval.py 219  INFO  Cosine similarity: 0.31367748975753784
+2024-03-24 15:19:32,152 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:32,542 adv_eval.py 161  INFO  ==================Task 70=========================
+2024-03-24 15:19:33,613 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:33,613 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque setting, with its vibrant hues of crimson, emerald, and sapphire interwoven in a mesmerizing display of nature's palette
+2024-03-24 15:19:33,613 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:33,635 adv_eval.py 219  INFO  Cosine similarity: 0.40146908164024353
+2024-03-24 15:19:34,421 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:34,708 adv_eval.py 161  INFO  ==================Task 71=========================
+2024-03-24 15:19:35,246 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:35,246 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this visually appealing scene filled with vibrant hues and intricate designs that catch the eye and add depth to the space
+2024-03-24 15:19:35,246 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:35,268 adv_eval.py 219  INFO  Cosine similarity: 0.3852418065071106
+2024-03-24 15:19:36,027 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:36,282 adv_eval.py 161  INFO  ==================Task 72=========================
+2024-03-24 15:19:37,033 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:37,033 adv_eval.py 172  INFO  The rephrasing intention: Refurbish this particular view with a plethora of colorful hues, ranging from vibrant shades reminiscent of the dawn's first light to muted tones evoking the wistful melancholy of twilight
+2024-03-24 15:19:37,033 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:37,056 adv_eval.py 219  INFO  Cosine similarity: 0.27312803268432617
+2024-03-24 15:19:37,456 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:37,776 adv_eval.py 161  INFO  ==================Task 73=========================
+2024-03-24 15:19:38,674 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:38,674 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this captivating landscape, adorned with a stunning array of vibrant hues and intricately crafted designs
+2024-03-24 15:19:38,674 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:38,698 adv_eval.py 219  INFO  Cosine similarity: 0.3544761836528778
+2024-03-24 15:19:39,127 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:39,554 adv_eval.py 161  INFO  ==================Task 74=========================
+2024-03-24 15:19:40,313 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:40,313 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this textual representation of this particular arrangement of elements and shapes, omitting any direct references to hues or designs, while keeping the terminology to identify the various physical items unchanged
+2024-03-24 15:19:40,313 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:40,339 adv_eval.py 219  INFO  Cosine similarity: 0.4080321490764618
+2024-03-24 15:19:41,157 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:41,776 adv_eval.py 161  INFO  ==================Task 75=========================
+2024-03-24 15:19:42,219 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:42,219 adv_eval.py 172  INFO  The rephrasing intention:  And get a look at this object with the vibrant hues and bold designs that adorn it
+2024-03-24 15:19:42,219 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:42,242 adv_eval.py 219  INFO  Cosine similarity: 0.322262704372406
+2024-03-24 15:19:45,013 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:19:45,546 adv_eval.py 161  INFO  ==================Task 76=========================
+2024-03-24 15:19:45,897 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:45,897 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the landscape of this particular setting, adjusting the placement of elements and objects within the environment
+2024-03-24 15:19:45,897 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:45,922 adv_eval.py 219  INFO  Cosine similarity: 0.37962788343429565
+2024-03-24 15:19:48,682 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:19:48,925 adv_eval.py 161  INFO  ==================Task 77=========================
+2024-03-24 15:19:49,784 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:49,784 adv_eval.py 172  INFO  The rephrasing intention: Reorganize the current tableau with a diverse, captivating array of vivid, vibrant hues and intricate, elaborate designs, while still maintaining the presence of familiar, recognizable objects
+2024-03-24 15:19:49,785 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:49,807 adv_eval.py 219  INFO  Cosine similarity: 0.27516886591911316
+2024-03-24 15:19:50,237 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:19:50,612 adv_eval.py 161  INFO  ==================Task 78=========================
+2024-03-24 15:19:51,725 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:51,725 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vibrant, chromatic, multi-colored, kaleidoscopic, polychromatic, prismatic, variegated, rainbow-hued, technicolor spectacle
+2024-03-24 15:19:51,725 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:51,746 adv_eval.py 219  INFO  Cosine similarity: 0.36554014682769775
+2024-03-24 15:19:52,639 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:53,271 adv_eval.py 161  INFO  ==================Task 79=========================
+2024-03-24 15:19:53,960 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:53,960 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the overall imagery of this setting
+2024-03-24 15:19:53,960 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:53,983 adv_eval.py 219  INFO  Cosine similarity: 0.3749534487724304
+2024-03-24 15:19:56,606 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:19:57,017 adv_eval.py 161  INFO  ==================Task 80=========================
+2024-03-24 15:19:57,596 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:57,596 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the present spectacle with added embellishments
+2024-03-24 15:19:57,596 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:57,620 adv_eval.py 219  INFO  Cosine similarity: 0.33493781089782715
+2024-03-24 15:19:58,521 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:19:58,810 adv_eval.py 161  INFO  ==================Task 81=========================
+2024-03-24 15:19:59,253 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:19:59,253 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque view
+2024-03-24 15:19:59,253 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:19:59,275 adv_eval.py 219  INFO  Cosine similarity: 0.7019575834274292
+2024-03-24 15:20:00,149 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:00,956 adv_eval.py 161  INFO  ==================Task 82=========================
+2024-03-24 15:20:01,224 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:01,224 adv_eval.py 172  INFO  The rephrasing intention: Modify the arrangement of this scenery
+2024-03-24 15:20:01,224 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:01,250 adv_eval.py 219  INFO  Cosine similarity: 0.4574553370475769
+2024-03-24 15:20:02,219 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:02,688 adv_eval.py 161  INFO  ==================Task 83=========================
+2024-03-24 15:20:03,572 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:03,573 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque scenery featuring a lush, verdant emerald green meadow that stretches as far as the eye can see, dotted with bright, cheerful sunflowers and delicate, wispy dandelions dancing in the gentle breeze
+2024-03-24 15:20:03,573 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:03,602 adv_eval.py 219  INFO  Cosine similarity: 0.40051257610321045
+2024-03-24 15:20:04,439 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:04,726 adv_eval.py 161  INFO  ==================Task 84=========================
+2024-03-24 15:20:05,207 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:05,207 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picture-perfect setting adorned with a medley of vibrant hues and intricately woven motifs
+2024-03-24 15:20:05,207 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:05,231 adv_eval.py 219  INFO  Cosine similarity: 0.3622643053531647
+2024-03-24 15:20:05,633 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:20:05,966 adv_eval.py 161  INFO  ==================Task 85=========================
+2024-03-24 15:20:06,404 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:06,405 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the furniture in this setting, where vibrant hues, bold tones, and varied shades create a visually captivating ambiance
+2024-03-24 15:20:06,405 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:06,433 adv_eval.py 219  INFO  Cosine similarity: 0.3772538900375366
+2024-03-24 15:20:07,323 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:07,606 adv_eval.py 161  INFO  ==================Task 86=========================
+2024-03-24 15:20:08,594 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:08,594 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque scene filled with a vibrant and diverse array of hues and patterns, showcasing a stunning array of colors that dazzle the eye and elicit a sense of wonder
+2024-03-24 15:20:08,594 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:08,620 adv_eval.py 219  INFO  Cosine similarity: 0.32409748435020447
+2024-03-24 15:20:08,986 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:20:09,435 adv_eval.py 161  INFO  ==================Task 87=========================
+2024-03-24 15:20:10,710 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:10,710 adv_eval.py 172  INFO  The rephrasing intention: Rearrange and rearrange again the various objects and elements within this particular environment or setting, while carefully omitting or purposely avoiding any mention or reference to the specific shades or hues they may possess or the particular designs or motifs they may exhibit
+2024-03-24 15:20:10,710 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:10,734 adv_eval.py 219  INFO  Cosine similarity: 0.33147984743118286
+2024-03-24 15:20:11,504 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:11,770 adv_eval.py 161  INFO  ==================Task 88=========================
+2024-03-24 15:20:12,421 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:12,421 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the arrangement of the various components in this particular visual composition
+2024-03-24 15:20:12,421 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:12,445 adv_eval.py 219  INFO  Cosine similarity: 0.22422173619270325
+2024-03-24 15:20:12,868 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:13,177 adv_eval.py 161  INFO  ==================Task 89=========================
+2024-03-24 15:20:14,117 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:14,117 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque tableau filled with an array of vibrant hues and intricate designs
+2024-03-24 15:20:14,117 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:14,147 adv_eval.py 219  INFO  Cosine similarity: 0.3610648512840271
+2024-03-24 15:20:14,546 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:14,833 adv_eval.py 161  INFO  ==================Task 90=========================
+2024-03-24 15:20:15,247 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:15,247 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the placement of all the objects in this particular setting or scenario
+2024-03-24 15:20:15,247 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:15,270 adv_eval.py 219  INFO  Cosine similarity: 0.30572840571403503
+2024-03-24 15:20:15,646 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:16,125 adv_eval.py 161  INFO  ==================Task 91=========================
+2024-03-24 15:20:16,738 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:16,739 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the composition of this visual depiction, with its multitude of chromatic hues and intricate markings, portraying a compilation of various forms and elements
+2024-03-24 15:20:16,739 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:16,763 adv_eval.py 219  INFO  Cosine similarity: 0.41113245487213135
+2024-03-24 15:20:17,981 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:18,541 adv_eval.py 161  INFO  ==================Task 92=========================
+2024-03-24 15:20:19,333 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:19,333 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this stunningly vibrant and visually pleasing sight, replete with a kaleidoscope of shades and hues that span the entire color spectrum
+2024-03-24 15:20:19,333 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:19,358 adv_eval.py 219  INFO  Cosine similarity: 0.4172830581665039
+2024-03-24 15:20:20,598 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:21,135 adv_eval.py 161  INFO  ==================Task 93=========================
+2024-03-24 15:20:21,581 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:21,581 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the layout of this scenery to depict a stunning sight of magnificent proportions
+2024-03-24 15:20:21,581 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:21,607 adv_eval.py 219  INFO  Cosine similarity: 0.3957309126853943
+2024-03-24 15:20:22,937 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:23,206 adv_eval.py 161  INFO  ==================Task 94=========================
+2024-03-24 15:20:23,541 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:23,541 adv_eval.py 172  INFO  The rephrasing intention: Adjust the positioning of items and elements in this particular setting
+2024-03-24 15:20:23,541 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:23,566 adv_eval.py 219  INFO  Cosine similarity: 0.14841538667678833
+2024-03-24 15:20:23,969 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:24,390 adv_eval.py 161  INFO  ==================Task 95=========================
+2024-03-24 15:20:25,334 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:25,335 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this incredibly colorful and visually stimulating composition, depicting a vast array of pigments and designs, all meticulously placed and intricately woven together to create a stunning and awe-inspiring work of art
+2024-03-24 15:20:25,335 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:25,360 adv_eval.py 219  INFO  Cosine similarity: 0.3510514199733734
+2024-03-24 15:20:26,222 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:26,565 adv_eval.py 161  INFO  ==================Task 96=========================
+2024-03-24 15:20:27,004 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:27,005 adv_eval.py 172  INFO  The rephrasing intention: Alter this setting to the current landscape, characterized by a plethora of vibrant hues and intricate designs, carefully intertwined to create a visually stimulating environment
+2024-03-24 15:20:27,005 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:27,028 adv_eval.py 219  INFO  Cosine similarity: 0.2699490785598755
+2024-03-24 15:20:30,034 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:20:30,365 adv_eval.py 161  INFO  ==================Task 97=========================
+2024-03-24 15:20:31,717 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:31,717 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque view filled with a plethora of vibrant and vivid hues, ranging from lush emerald greens to fiery crimson reds, graced with intricate and elaborate designs and motifs, all juxtaposed against a backdrop of glittering golden accents
+2024-03-24 15:20:31,717 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:31,740 adv_eval.py 219  INFO  Cosine similarity: 0.303707480430603
+2024-03-24 15:20:32,196 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:32,759 adv_eval.py 161  INFO  ==================Task 98=========================
+2024-03-24 15:20:33,063 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:33,063 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the arrangement of this sight
+2024-03-24 15:20:33,063 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:33,089 adv_eval.py 219  INFO  Cosine similarity: 0.38472044467926025
+2024-03-24 15:20:34,504 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:34,894 adv_eval.py 161  INFO  ==================Task 99=========================
+2024-03-24 15:20:35,439 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:35,439 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this visually stimulating and aesthetically captivating arrangement of objects in this breathtakingly beautiful and artistically arranged environment
+2024-03-24 15:20:35,439 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:35,463 adv_eval.py 219  INFO  Cosine similarity: 0.3406950831413269
+2024-03-24 15:20:38,536 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:20:38,812 adv_eval.py 161  INFO  ==================Task 100=========================
+2024-03-24 15:20:39,452 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:39,452 adv_eval.py 172  INFO  The rephrasing intention: Change the overall arrangement of this environment, including both the layout and placement of objects, but maintain the same general setting
+2024-03-24 15:20:39,452 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:39,486 adv_eval.py 219  INFO  Cosine similarity: 0.1535882204771042
+2024-03-24 15:20:41,465 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:41,888 adv_eval.py 161  INFO  ==================Task 101=========================
+2024-03-24 15:20:42,434 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:42,434 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the elements present in this particular setting and setting, with various colors and designs dispersed throughout, in a visually appealing manner
+2024-03-24 15:20:42,434 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:42,464 adv_eval.py 219  INFO  Cosine similarity: 0.366951584815979
+2024-03-24 15:20:45,347 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:20:45,684 adv_eval.py 161  INFO  ==================Task 102=========================
+2024-03-24 15:20:45,975 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:45,975 adv_eval.py 172  INFO  The rephrasing intention: Reorganize the configuration of this scenario
+2024-03-24 15:20:45,975 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:46,000 adv_eval.py 219  INFO  Cosine similarity: 0.3320617079734802
+2024-03-24 15:20:48,664 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:20:48,964 adv_eval.py 161  INFO  ==================Task 103=========================
+2024-03-24 15:20:50,541 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:50,541 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vibrant, colorful, and intricate display of objects, rich with a multitude of hues, tones, and shades, creating a dazzling and mesmerizing visual feast for the eyes to behold
+2024-03-24 15:20:50,541 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:50,569 adv_eval.py 219  INFO  Cosine similarity: 0.30100491642951965
+2024-03-24 15:20:50,986 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:20:51,689 adv_eval.py 161  INFO  ==================Task 104=========================
+2024-03-24 15:20:52,034 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:52,034 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this aesthetically pleasing display of visual elements
+2024-03-24 15:20:52,034 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:52,058 adv_eval.py 219  INFO  Cosine similarity: 0.4585910439491272
+2024-03-24 15:20:53,398 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:53,794 adv_eval.py 161  INFO  ==================Task 105=========================
+2024-03-24 15:20:54,489 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:54,489 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this elaborate tableau, lavishly adorned with a rich palette of vibrant hues and elaborate motifs that evoke a feeling of opulence and grandeur
+2024-03-24 15:20:54,489 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:54,511 adv_eval.py 219  INFO  Cosine similarity: 0.4390449523925781
+2024-03-24 15:20:55,392 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:20:55,826 adv_eval.py 161  INFO  ==================Task 106=========================
+2024-03-24 15:20:56,401 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:20:56,401 adv_eval.py 172  INFO  The rephrasing intention: Rework, adjust, and reshuffle this particular view
+2024-03-24 15:20:56,401 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:20:56,425 adv_eval.py 219  INFO  Cosine similarity: 0.2728336751461029
+2024-03-24 15:20:59,305 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:20:59,649 adv_eval.py 161  INFO  ==================Task 107=========================
+2024-03-24 15:21:00,771 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:00,771 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the overall composition and arrangement of this specific visual setting or environment, incorporating certain elements and details such as shapes, textures, and motifs, while also incorporating alterations to the overall color palette and design scheme
+2024-03-24 15:21:00,771 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:00,793 adv_eval.py 219  INFO  Cosine similarity: 0.26199835538864136
+2024-03-24 15:21:01,222 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:21:01,678 adv_eval.py 161  INFO  ==================Task 108=========================
+2024-03-24 15:21:01,929 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:01,929 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this panorama
+2024-03-24 15:21:01,929 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:01,953 adv_eval.py 219  INFO  Cosine similarity: 0.7631910443305969
+2024-03-24 15:21:02,822 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:03,629 adv_eval.py 161  INFO  ==================Task 109=========================
+2024-03-24 15:21:04,248 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:04,248 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque view, filled with vibrant hues and intricate designs, lending an air of splendor to the already breathtaking setting
+2024-03-24 15:21:04,248 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:04,273 adv_eval.py 219  INFO  Cosine similarity: 0.4734470248222351
+2024-03-24 15:21:05,675 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:06,012 adv_eval.py 161  INFO  ==================Task 110=========================
+2024-03-24 15:21:07,403 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:07,404 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this splendid, eye-catching, highly visual, aesthetically pleasing, picturesque, magnificent, stunning, striking, gorgeous, beautiful, charming, appealing, ravishing, delightful, attractive, alluring, dazzling, resplendent, radiant, resplendent, resplendent, breathtaking, dazzling, awe-inspiring, wondrous, superb, spectacular, fantastic scene
+2024-03-24 15:21:07,404 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:07,429 adv_eval.py 219  INFO  Cosine similarity: 0.3806230425834656
+2024-03-24 15:21:07,826 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:08,180 adv_eval.py 161  INFO  ==================Task 111=========================
+2024-03-24 15:21:08,529 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:08,529 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the items in this setting
+2024-03-24 15:21:08,529 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:08,555 adv_eval.py 219  INFO  Cosine similarity: 0.3094980716705322
+2024-03-24 15:21:08,976 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:21:09,469 adv_eval.py 161  INFO  ==================Task 112=========================
+2024-03-24 15:21:10,802 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:10,802 adv_eval.py 172  INFO  The rephrasing intention:  Rearrange to this vibrant, eye-catching, visually appealing, aesthetically pleasing arrangement filled with a multitude of intricate, intricate, detailed designs and embellishments, each individually crafted and uniquely patterned, creating a kaleidoscope of hues and shades that dance and mingle together in perfect harmony, transforming this scene into a mesmerizing display of artistry and creativity
+2024-03-24 15:21:10,802 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:10,829 adv_eval.py 219  INFO  Cosine similarity: 0.3682527542114258
+2024-03-24 15:21:11,268 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:11,881 adv_eval.py 161  INFO  ==================Task 113=========================
+2024-03-24 15:21:12,494 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:12,494 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this picturesque landscape, with its vividly-hued foliage and ornately patterned flora, is a breathtaking sight to behold
+2024-03-24 15:21:12,494 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:12,518 adv_eval.py 219  INFO  Cosine similarity: 0.4295765459537506
+2024-03-24 15:21:13,347 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:13,913 adv_eval.py 161  INFO  ==================Task 114=========================
+2024-03-24 15:21:15,159 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:15,160 adv_eval.py 172  INFO  The rephrasing intention: Reposition to this visual, pictorial, or graphic representation full of vibrant hues, tones, shades, and tints, exemplifying an array of various color families, while incorporating a myriad of intricate designs and intricate motifs, without revealing the original descriptive terminology of the chromatic and decorative elements, while maintaining the unchanged descriptors of the tangible items present in the depicted setting
+2024-03-24 15:21:15,160 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:15,185 adv_eval.py 219  INFO  Cosine similarity: 0.3834896385669708
+2024-03-24 15:21:17,457 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:21:17,895 adv_eval.py 161  INFO  ==================Task 115=========================
+2024-03-24 15:21:18,765 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:18,765 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this breathtaking, visually-stunning, aesthetically-pleasing display
+2024-03-24 15:21:18,765 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:18,789 adv_eval.py 219  INFO  Cosine similarity: 0.39409855008125305
+2024-03-24 15:21:19,594 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:20,001 adv_eval.py 161  INFO  ==================Task 116=========================
+2024-03-24 15:21:20,333 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:20,333 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this visually captivating and aesthetically pleasing tableau
+2024-03-24 15:21:20,334 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:20,359 adv_eval.py 219  INFO  Cosine similarity: 0.3743744492530823
+2024-03-24 15:21:20,740 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:21,088 adv_eval.py 161  INFO  ==================Task 117=========================
+2024-03-24 15:21:21,580 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:21,580 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the arrangement of various objects and elements within this particular setting or environment
+2024-03-24 15:21:21,580 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:21,608 adv_eval.py 219  INFO  Cosine similarity: 0.30195221304893494
+2024-03-24 15:21:22,494 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:22,992 adv_eval.py 161  INFO  ==================Task 118=========================
+2024-03-24 15:21:23,770 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:23,770 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure this scenario with copious amounts of superfluous information or employ lengthy, extended alternatives to replace descriptors denoting shades or designs, all while maintaining the same descriptors for objects: Alter the current arrangement of this setting
+2024-03-24 15:21:23,770 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:23,797 adv_eval.py 219  INFO  Cosine similarity: 0.37904080748558044
+2024-03-24 15:21:26,717 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:21:27,072 adv_eval.py 161  INFO  ==================Task 119=========================
+2024-03-24 15:21:27,555 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:27,555 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vividly picturesque scene featuring a vibrant spectrum of hues and an array of intricate, ornate designs
+2024-03-24 15:21:27,555 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:27,580 adv_eval.py 219  INFO  Cosine similarity: 0.38612648844718933
+2024-03-24 15:21:28,458 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:28,990 adv_eval.py 161  INFO  ==================Task 120=========================
+2024-03-24 15:21:29,557 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:29,557 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scene of vibrant hues and mesmerizing motifs, adorned with splashes of rich pigments and intricate designs
+2024-03-24 15:21:29,558 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:29,585 adv_eval.py 219  INFO  Cosine similarity: 0.45924699306488037
+2024-03-24 15:21:30,894 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:31,337 adv_eval.py 161  INFO  ==================Task 121=========================
+2024-03-24 15:21:31,619 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:31,619 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vibrant hue and intricate design
+2024-03-24 15:21:31,619 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:31,643 adv_eval.py 219  INFO  Cosine similarity: 0.45521247386932373
+2024-03-24 15:21:32,870 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:33,313 adv_eval.py 161  INFO  ==================Task 122=========================
+2024-03-24 15:21:33,848 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:33,848 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the scenery of this particular setting or landscape, altering the composition or layout in order to modify the visual appearance and atmosphere
+2024-03-24 15:21:33,848 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:33,870 adv_eval.py 219  INFO  Cosine similarity: 0.2383352518081665
+2024-03-24 15:21:36,511 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:21:37,202 adv_eval.py 161  INFO  ==================Task 123=========================
+2024-03-24 15:21:37,860 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:37,860 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scene adorned with vibrant, lively hues of the rainbow, ranging from fiery reds and sunny yellows to soothing blues and purples
+2024-03-24 15:21:37,860 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:37,883 adv_eval.py 219  INFO  Cosine similarity: 0.4732990264892578
+2024-03-24 15:21:39,117 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:39,541 adv_eval.py 161  INFO  ==================Task 124=========================
+2024-03-24 15:21:40,133 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:40,133 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this composition filled with an array of vibrant hues and intricate designs, creating a visual spectacle that will leave you in awe
+2024-03-24 15:21:40,133 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:40,155 adv_eval.py 219  INFO  Cosine similarity: 0.3866389989852905
+2024-03-24 15:21:41,016 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:41,299 adv_eval.py 161  INFO  ==================Task 125=========================
+2024-03-24 15:21:41,547 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:41,547 adv_eval.py 172  INFO  The rephrasing intention: Modify this particular setting to this specific backdrop
+2024-03-24 15:21:41,547 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:41,570 adv_eval.py 219  INFO  Cosine similarity: 0.1726347804069519
+2024-03-24 15:21:41,945 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:42,342 adv_eval.py 161  INFO  ==================Task 126=========================
+2024-03-24 15:21:42,763 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:42,763 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this visually appealing display, where a variety of hues dance in harmony, creating a picturesque aesthetic
+2024-03-24 15:21:42,763 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:42,787 adv_eval.py 219  INFO  Cosine similarity: 0.39982402324676514
+2024-03-24 15:21:43,586 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:43,995 adv_eval.py 161  INFO  ==================Task 127=========================
+2024-03-24 15:21:44,789 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:44,789 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this picturesque scene, filled with vibrant and lively hues, capturing the beauty of nature and the world around us
+2024-03-24 15:21:44,789 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:44,812 adv_eval.py 219  INFO  Cosine similarity: 0.36770641803741455
+2024-03-24 15:21:45,605 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:45,980 adv_eval.py 161  INFO  ==================Task 128=========================
+2024-03-24 15:21:46,383 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:46,383 adv_eval.py 172  INFO  The rephrasing intention: Reconfigure the arrangement of elements within this picturesque setting
+2024-03-24 15:21:46,383 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:46,405 adv_eval.py 219  INFO  Cosine similarity: 0.28295204043388367
+2024-03-24 15:21:47,200 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:47,549 adv_eval.py 161  INFO  ==================Task 129=========================
+2024-03-24 15:21:48,202 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:48,202 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the scene with a plethora of hues, tones, and shades to create a beautiful array of colors that merge and blend seamlessly together
+2024-03-24 15:21:48,202 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:48,226 adv_eval.py 219  INFO  Cosine similarity: 0.4229428172111511
+2024-03-24 15:21:49,004 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:49,407 adv_eval.py 161  INFO  ==================Task 130=========================
+2024-03-24 15:21:49,778 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:49,778 adv_eval.py 172  INFO  The rephrasing intention: Rework the arrangement of objects in the visual display before us
+2024-03-24 15:21:49,778 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:49,800 adv_eval.py 219  INFO  Cosine similarity: 0.308648943901062
+2024-03-24 15:21:50,552 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:50,814 adv_eval.py 161  INFO  ==================Task 131=========================
+2024-03-24 15:21:51,595 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:51,595 adv_eval.py 172  INFO  The rephrasing intention: Rearrange, reorganize, shift, or alter the placement, positioning, or order of the varied, diverse, assorted objects, items, or articles within this particular, precise, specific or exact physical space, environment, or location
+2024-03-24 15:21:51,595 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:51,618 adv_eval.py 219  INFO  Cosine similarity: 0.24517205357551575
+2024-03-24 15:21:52,017 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:21:52,414 adv_eval.py 161  INFO  ==================Task 132=========================
+2024-03-24 15:21:52,700 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:52,700 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the landscape of this particular setting
+2024-03-24 15:21:52,700 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:52,723 adv_eval.py 219  INFO  Cosine similarity: 0.3382277488708496
+2024-03-24 15:21:55,681 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:21:55,996 adv_eval.py 161  INFO  ==================Task 133=========================
+2024-03-24 15:21:56,370 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:21:56,370 adv_eval.py 172  INFO  The rephrasing intention: Reorganize the elements within this particular visual display
+2024-03-24 15:21:56,370 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:21:56,393 adv_eval.py 219  INFO  Cosine similarity: 0.2955739200115204
+2024-03-24 15:21:59,240 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:21:59,736 adv_eval.py 161  INFO  ==================Task 134=========================
+2024-03-24 15:22:00,560 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:00,560 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scene embellished with a spectrum of hues, shades, and tones, adorned with a plethora of diverse patterns and designs, all while maintaining the integrity and composition of the objects within
+2024-03-24 15:22:00,560 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:00,583 adv_eval.py 219  INFO  Cosine similarity: 0.41115885972976685
+2024-03-24 15:22:01,375 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:01,703 adv_eval.py 161  INFO  ==================Task 135=========================
+2024-03-24 15:22:02,481 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:02,481 adv_eval.py 172  INFO  The rephrasing intention: Rethink the positioning of objects in this picturesque setting, where various hues and intricate designs come together in a harmonious display
+2024-03-24 15:22:02,481 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:02,505 adv_eval.py 219  INFO  Cosine similarity: 0.26674848794937134
+2024-03-24 15:22:03,387 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:03,613 adv_eval.py 161  INFO  ==================Task 136=========================
+2024-03-24 15:22:04,221 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:04,221 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this particular setting or placement, featuring a variety of remarkable objects and items with distinct physical attributes, such as forms, shapes, and figures, but without showcasing the initial description of hues or patterns
+2024-03-24 15:22:04,221 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:04,243 adv_eval.py 219  INFO  Cosine similarity: 0.3760147988796234
+2024-03-24 15:22:04,647 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:05,189 adv_eval.py 161  INFO  ==================Task 137=========================
+2024-03-24 15:22:05,488 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:05,489 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this splendid, resplendent, visual tableau
+2024-03-24 15:22:05,489 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:05,513 adv_eval.py 219  INFO  Cosine similarity: 0.42933598160743713
+2024-03-24 15:22:06,353 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:06,625 adv_eval.py 161  INFO  ==================Task 138=========================
+2024-03-24 15:22:06,878 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:06,878 adv_eval.py 172  INFO  The rephrasing intention: Adjust the layout of this particular view
+2024-03-24 15:22:06,878 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:06,902 adv_eval.py 219  INFO  Cosine similarity: 0.45973050594329834
+2024-03-24 15:22:07,555 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:22:08,397 adv_eval.py 161  INFO  ==================Task 139=========================
+2024-03-24 15:22:08,717 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:08,717 adv_eval.py 172  INFO  The rephrasing intention: Rework the arrangement of these elements in this setting
+2024-03-24 15:22:08,717 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:08,741 adv_eval.py 219  INFO  Cosine similarity: 0.3286711871623993
+2024-03-24 15:22:11,823 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:22:12,508 adv_eval.py 161  INFO  ==================Task 140=========================
+2024-03-24 15:22:12,862 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:12,862 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the elements and components in this particular setting
+2024-03-24 15:22:12,862 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:12,885 adv_eval.py 219  INFO  Cosine similarity: 0.40618792176246643
+2024-03-24 15:22:14,242 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:14,690 adv_eval.py 161  INFO  ==================Task 141=========================
+2024-03-24 15:22:16,511 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:16,511 adv_eval.py 172  INFO  The rephrasing intention: Reorganize, reshuffle, or remodel to this specific, distinct, or particular scenery, backdrop, or setting, full of vivid, vibrant, or striking hues or shades, or intricate, elaborate, or ornate designs, without displaying the original terminology detailing the various shades or patterns, all while retaining the wording denoting the different articles, commodities, or elements in the picture
+2024-03-24 15:22:16,512 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:16,534 adv_eval.py 219  INFO  Cosine similarity: 0.2264394462108612
+2024-03-24 15:22:19,152 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:22:19,536 adv_eval.py 161  INFO  ==================Task 142=========================
+2024-03-24 15:22:20,042 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:20,042 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scene filled with a vast expanse of brilliant sapphire skies dotted with fluffy, white clouds
+2024-03-24 15:22:20,042 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:20,069 adv_eval.py 219  INFO  Cosine similarity: 0.3602359890937805
+2024-03-24 15:22:20,481 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:20,813 adv_eval.py 161  INFO  ==================Task 143=========================
+2024-03-24 15:22:21,437 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:21,437 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this setting or arrangement of surroundings or environment or ambiance or backdrop or backdrop or landscape or decor or milieu or tone or palette or color scheme or aesthetic or pattern or design or motif or style or composition or layout 
+2024-03-24 15:22:21,437 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:21,465 adv_eval.py 219  INFO  Cosine similarity: 0.42692267894744873
+2024-03-24 15:22:22,287 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:22,708 adv_eval.py 161  INFO  ==================Task 144=========================
+2024-03-24 15:22:23,361 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:23,361 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this visually stimulating and aesthetically pleasing display, adorned with vibrant hues and intricate designs, depicting various objects in a masterfully rearranged composition
+2024-03-24 15:22:23,361 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:23,384 adv_eval.py 219  INFO  Cosine similarity: 0.395943284034729
+2024-03-24 15:22:24,293 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:25,064 adv_eval.py 161  INFO  ==================Task 145=========================
+2024-03-24 15:22:25,820 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:25,820 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this vividly-colored, intricately-patterned, visually-stimulating scene filled with an array of variously-hued, aesthetically-pleasing objects
+2024-03-24 15:22:25,820 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:25,844 adv_eval.py 219  INFO  Cosine similarity: 0.46273404359817505
+2024-03-24 15:22:27,099 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:27,386 adv_eval.py 161  INFO  ==================Task 146=========================
+2024-03-24 15:22:31,785 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:31,785 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the setting or arrangement to this particular, specific or precise picturesque, scenic, idyllic, charming, delightful, lovely, beautiful, pretty, stunning, striking, captivating, alluring, enchanting or beguiling vignette, tableaux, composition, diorama, panorama, tableau vivant, still life or tableau vivant replete with an assortment or variety of objects, articles, items, possessions, trinkets, pieces, knick knacks or belongings, all of which are imbued or saturated with vivid, bold, vibrant, rich, intense, saturated, deep, glaring, bright, eye-catching, head-turning, attention-grabbing, vivid, flamboyant or elaborate hues, shades, tones, tints, pigments, dyes, colors, tinges or washes, ranging from warm, earthy, fiery, fiery, fiery, fiery, fiery, sunny, cheerful, lively, warm, radiant, vibrant, sunny, energetic, exuberant, passionate, vivid, bright, intense, bold, striking, flamboyant, eye-catching, head-turning, attention-grabbing, vivid, flamboyant or elaborate reds, oranges, yellows, pinks, purples, blues, greens, or an amalgamation or combination of all these colors, arranged or juxtaposed in a kaleidoscopic, mesmerizing, hypnotic, spellbinding or enchanting manner, creating a harmonious, cohesive, seamless or unified whole, a feast for the senses, an aesthetic marvel, a visual extravaganza, a feast for the eyes that will surely leave a lasting, indelible or unforgettable impression on all spectators or viewers
+2024-03-24 15:22:31,785 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:31,813 adv_eval.py 219  INFO  Cosine similarity: 0.31468355655670166
+2024-03-24 15:22:32,210 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:22:32,466 adv_eval.py 161  INFO  ==================Task 147=========================
+2024-03-24 15:22:32,841 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:32,841 adv_eval.py 172  INFO  The rephrasing intention: Rearrange the composition of this visual assemblage
+2024-03-24 15:22:32,841 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:32,863 adv_eval.py 219  INFO  Cosine similarity: 0.28121137619018555
+2024-03-24 15:22:33,260 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:22:33,644 adv_eval.py 161  INFO  ==================Task 148=========================
+2024-03-24 15:22:33,943 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:33,943 adv_eval.py 172  INFO  The rephrasing intention: "Rearrange to this particular setting, place, or scenario
+2024-03-24 15:22:33,943 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:33,966 adv_eval.py 219  INFO  Cosine similarity: 0.23449578881263733
+2024-03-24 15:22:36,811 adv_eval.py 360  INFO  Succeeded: False
+2024-03-24 15:22:37,190 adv_eval.py 161  INFO  ==================Task 149=========================
+2024-03-24 15:22:37,782 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:37,782 adv_eval.py 172  INFO  The rephrasing intention: Rearrange to this scene filled with a diverse array of hues, tones, and tinges, adorned with an eclectic mix of designs, motifs, and prints
+2024-03-24 15:22:37,782 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:37,805 adv_eval.py 219  INFO  Cosine similarity: 0.4291623532772064
+2024-03-24 15:22:38,611 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:38,914 adv_eval.py 161  INFO  ==================Task 150=========================
+2024-03-24 15:22:39,211 adv_eval.py 171  INFO  The rephrasing type: Color Rephrase
+2024-03-24 15:22:39,211 adv_eval.py 172  INFO  The rephrasing intention: Rearrange this elaborate, intricate and complexly detailed scenario
+2024-03-24 15:22:39,211 adv_eval.py 173  INFO  The visual attack type: None
+2024-03-24 15:22:39,233 adv_eval.py 219  INFO  Cosine similarity: 0.3036331534385681
+2024-03-24 15:22:39,668 adv_eval.py 360  INFO  Succeeded: True
+2024-03-24 15:22:40,026 adv_eval.py 364 WARNING  ==================Evaluation Done=========================
+2024-03-24 15:22:40,026 adv_eval.py 366  INFO  Success rate: 70.0%
+2024-03-24 15:22:40,027 adv_eval.py 367  INFO  Average cosine similarity: 36.30953598022461%
