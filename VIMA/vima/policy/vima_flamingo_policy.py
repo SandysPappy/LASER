@@ -17,6 +17,7 @@ class VIMAFlamingoPolicy(nn.Module):
         xattn_n_heads: int,
     ):
         super().__init__()
+        # print("flamingo")
 
         self.embed_dim = embed_dim
 

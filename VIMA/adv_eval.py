@@ -2,22 +2,45 @@ from __future__ import annotations
 
 import os
 
-import numpy as np
 from tokenizers import Tokenizer
 from tokenizers import AddedToken
 from einops import rearrange
-import cv2
 from vima.utils import *
 from vima import create_policy_from_ckpt
 from vima_bench import *
 from gym.wrappers import TimeLimit as _TimeLimit
 from gym import Wrapper
 import torch
-import argparse
+import logging
+from easydict import EasyDict
+from visual_attack import *
+import json
+
+from rephrase_attack import *
+
+
+def create_logger(log_file=None, rank=0, log_level=logging.INFO):
+    logger = logging.getLogger(__name__)
+
+    if logger.hasHandlers():
+        logger.handlers.clear()
+
+    logger.setLevel(log_level if rank == 0 else "ERROR")
+    formatter = logging.Formatter("%(asctime)s %(filename)s %(lineno)d %(levelname)5s  %(message)s")
+    console = logging.StreamHandler()
+    console.setLevel(log_level if rank == 0 else "ERROR")
+    console.setFormatter(formatter)
+    logger.addHandler(console)
+    if log_file is not None:
+        file_handler = logging.FileHandler(filename=log_file)
+        file_handler.setLevel(log_level if rank == 0 else "ERROR")
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+    logger.propagate = False
+    return logger
 
 
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
-
 
 _kwargs = {
     "single_word": True,
@@ -76,12 +99,14 @@ tokenizer.add_tokens(PLACEHOLDER_TOKENS)
 
 
 @torch.no_grad()
-def main(cfg):
+def main(cfg, logger):
+    logger.info("cfg: {}".format(cfg))
+    debug_flag = cfg.debug_flag
     assert cfg.partition in ALL_PARTITIONS
     assert cfg.task in PARTITION_TO_SPECS["test"][cfg.partition]
 
     seed = 42
-    policy = create_policy_from_ckpt(cfg.ckpt, cfg.device)
+    policy = create_policy_from_ckpt(cfg.ckpt, cfg.device).to(cfg.device)
     env = TimeLimitWrapper(
         ResetFaultToleranceWrapper(
             make(
@@ -97,6 +122,20 @@ def main(cfg):
         bonus_steps=2,
     )
 
+    task_id = 0
+    all_infos = []
+
+    result_folder = (
+            cfg.save_dir + "/" + cfg.partition + "/" + cfg.task + "/" +
+            "/" + cfg.rephrasings + "/" + cfg.vis_atk
+    )
+    if not os.path.exists(result_folder):
+        os.makedirs(result_folder)
+    eval_res_name = cfg.partition + "_" + cfg.task + "_" + cfg.rephrasings + "_" + cfg.vis_atk + ".json"
+    eval_result_file_path = os.path.join(result_folder, eval_res_name)
+
+    avg_sim = 0
+
     while True:
         env.global_seed = seed
 
@@ -109,24 +148,83 @@ def main(cfg):
         elapsed_steps = 0
         inference_cache = {}
 
+        objs_0 = list(prompt_assets.keys())[0]
+        img = prompt_assets[objs_0]["rgb"]["top"]
+        obj_id = list(meta_info["obj_id_to_info"].keys())
+        vis = visual_attack(cfg.vis_atk, visual_attack_cfg, img, obj_id)
+
+        task_id += 1
+
+        if task_id > 150:
+            break
+
+        logger.info(f"==================Task {task_id}=========================")
+        whole_task, _, _ = prompt_pure_language(
+            prompt=prompt, prompt_assets=prompt_assets, task=cfg.task)
+
+        original_phrase = whole_task
+
+        if cfg.rephrasings == "None":
+            whole_task = whole_task
+        else:
+            whole_task = rephrase_attack(rephrasing_list[cfg.rephrasings], whole_task)
+        logger.info(f"The rephrasing type: {cfg.rephrasings}")
+        logger.info(f"The rephrasing intention: {whole_task}")
+        logger.info(f"The visual attack type: {cfg.vis_atk}")
+        done = False
+
         while True:
+            info = None
             if elapsed_steps == 0:
                 prompt_token_type, word_batch, image_batch = prepare_prompt(
                     prompt=prompt, prompt_assets=prompt_assets, views=["front", "top"]
                 )
+                
+                orig_word_batch = word_batch
+                orig_image_batch = image_batch
 
+                orig_word_batch = orig_word_batch.to(cfg.device)
+                orig_image_batch = orig_image_batch.to_torch_tensor(device=cfg.device)
+
+                orig_prompt_tokens, _ = policy.forward_prompt_assembly(
+                    (prompt_token_type, orig_word_batch, orig_image_batch)
+                )
+
+                if cfg.rephrasings != "None":
+                    word_batch = prepare_prompt_rephrased(prompt=whole_task)
+                # print(word_batch, whole_task)
                 word_batch = word_batch.to(cfg.device)
                 image_batch = image_batch.to_torch_tensor(device=cfg.device)
+
                 prompt_tokens, prompt_masks = policy.forward_prompt_assembly(
                     (prompt_token_type, word_batch, image_batch)
                 )
+
+
+
+                # Calculate the cosine similarity between the original and rephrased prompts
+
+
+                # print(prompt_tokens.shape)
+
+                # Add noise in range [-1, 1] to prompt tokens, then scale
+                # scale = 3 # 10
+                # prompt_tokens = prompt_tokens + (torch.rand_like(prompt_tokens) * 2 - 1) * scale
+
+
+                # print("Original prompt tokens shape: ", orig_prompt_tokens.shape)
+                # print("Rephrased prompt tokens shape: ", prompt_tokens.shape)
+
+                sim = torch.nn.functional.cosine_similarity(orig_prompt_tokens.flatten(), prompt_tokens.flatten(), dim=0)
+                logger.info(f"Cosine similarity: {sim}")
+                avg_sim += sim
 
                 inference_cache["obs_tokens"] = []
                 inference_cache["obs_masks"] = []
                 inference_cache["action_tokens"] = []
             obs["ee"] = np.asarray(obs["ee"])
             obs = add_batch_dim(obs)
-            obs = prepare_obs(obs=obs, rgb_dict=None, meta=meta_info).to_torch_tensor(
+            obs = prepare_obs(obs=obs, rgb_dict=None, meta=meta_info, vis_atk=vis).to_torch_tensor(
                 device=cfg.device
             )
             obs_token_this_step, obs_mask_this_step = policy.forward_obs_token(obs)
@@ -213,12 +311,12 @@ def main(cfg):
                 action_bounds_high, dtype=torch.float32, device=cfg.device
             )
             actions["pose0_position"] = (
-                actions["pose0_position"] * (action_bounds_high - action_bounds_low)
-                + action_bounds_low
+                    actions["pose0_position"] * (action_bounds_high - action_bounds_low)
+                    + action_bounds_low
             )
             actions["pose1_position"] = (
-                actions["pose1_position"] * (action_bounds_high - action_bounds_low)
-                + action_bounds_low
+                    actions["pose1_position"] * (action_bounds_high - action_bounds_low)
+                    + action_bounds_low
             )
             actions["pose0_position"] = torch.clamp(
                 actions["pose0_position"], min=action_bounds_low, max=action_bounds_high
@@ -238,8 +336,122 @@ def main(cfg):
             actions = any_slice(actions, np.s_[0, 0])
             obs, _, done, info = env.step(actions)
             elapsed_steps += 1
+
             if done:
                 break
+
+        if done and info:
+            task_info = {
+                "task_id": task_id,
+                "steps": elapsed_steps,
+                "success": info["success"],
+                "failure": info["failure"],
+            }
+        else:
+            task_info = {
+                "task_id": task_id,
+                "steps": elapsed_steps,
+                "success": False,
+                "failure": False,
+            }
+
+        all_infos.append(task_info)
+
+        logger.info(f"Succeeded: {task_info['success']}")
+
+    success_rate = sum([info["success"] for info in all_infos]) / len(all_infos)
+    avg_sim /= len(all_infos)
+    logger.warning(msg="==================Evaluation Done=========================")
+    # logger.info(cfg)
+    logger.info("Success rate: {}%".format(success_rate*100))
+    logger.info("Average cosine similarity: {}%".format(avg_sim * 100))
+    env.env.close()
+    del env
+
+
+def prompt_pure_language(
+        prompt: str, prompt_assets: dict, task: str = "rotate"
+):
+    words = prompt.split(" ")
+
+    prompt_words_dots = []
+    for word in words:
+        if "." in word:
+            word = word.replace(".", "")
+            prompt_words_dots.append(word)
+            prompt_words_dots.append(".")
+        else:
+            prompt_words_dots.append(word)
+    prompt_words = prompt_words_dots
+
+    filled_prompt = []
+    obj_counter = 1
+    cfg = {}
+    # print(prompt)
+    for word in prompt_words:
+        if word not in PLACEHOLDERS:
+            # print(word)
+            assert "{" not in word and "}" not in word
+            filled_prompt.append(word)
+            if task == "rotate":
+                if word.isdigit():
+                    cfg["degrees"] = int(word)
+        else:
+            assert word.startswith("{") and word.endswith("}")
+            asset_name = word[1:-1]
+            assert asset_name in prompt_assets, f"missing prompt asset {asset_name}"
+            asset = prompt_assets[asset_name]
+            placeholder_type = asset["placeholder_type"]
+            if placeholder_type == "scene":
+                cfg["query"] = "scene"
+                filled_prompt.append("scene")
+                continue
+            obj_info = asset["segm"]["obj_info"]
+            obj_desription = obj_info["obj_color"] + " " + obj_info["obj_name"]
+            filled_prompt.append(obj_desription)
+            if task == "rotate":
+                cfg["query"] = " 'the " + str(obj_desription) + "' "
+            elif task == "visual_manipulation" or task == "pick_in_order_then_restore":
+                query_name = "query_" + str(obj_counter)
+                cfg[query_name] = " 'the " + str(obj_desription) + "' "
+                obj_counter += 1
+
+    if task == "scene_understanding":
+        query_name = "query_" + str(obj_counter)
+        cfg[query_name] = " 'the " + prompt.split("Put the")[-1].split("in")[0].strip() + "' "
+        obj_counter += 1
+        query_name = "query_" + str(obj_counter)
+        cfg[query_name] = " 'the" + prompt.split("into the")[-1].strip() + "' "
+
+    full_task = ""
+    for word in filled_prompt:
+        if word != ".":
+            full_task += word + " "
+        else:
+            full_task += word
+
+    return full_task, None, cfg
+
+
+def prepare_prompt_rephrased(*, prompt: str):
+    encoding = tokenizer.encode(prompt, add_special_tokens=True)
+    prompt_ids, prompt_tokens = encoding.ids, encoding.tokens
+
+    filled_prompt = []
+    for id, token in zip(prompt_ids, prompt_tokens):
+        filled_prompt.append(id)
+
+    raw_prompt = [filled_prompt]
+
+    word_batch = []
+    for prompt in raw_prompt:
+        for token in prompt:
+            word_batch.append(token)
+
+    word_batch = any_stack(word_batch, dim=0)
+
+    word_batch = any_to_torch_tensor(word_batch)
+    return word_batch
 
 
 def prepare_prompt(*, prompt: str, prompt_assets: dict, views: list[str]):
@@ -283,7 +495,7 @@ def prepare_prompt(*, prompt: str, prompt_assets: dict, views: list[str]):
                     x_center, y_center = (xmin + xmax) / 2, (ymin + ymax) / 2
                     h, w = ymax - ymin, xmax - xmin
                     bboxes.append([int(x_center), int(y_center), int(h), int(w)])
-                    cropped_img = rgb_this_view[:, ymin : ymax + 1, xmin : xmax + 1]
+                    cropped_img = rgb_this_view[:, ymin: ymax + 1, xmin: xmax + 1]
                     if cropped_img.shape[1] != cropped_img.shape[2]:
                         diff = abs(cropped_img.shape[1] - cropped_img.shape[2])
                         pad_before, pad_after = int(diff / 2), diff - int(diff / 2)
@@ -374,10 +586,11 @@ def prepare_prompt(*, prompt: str, prompt_assets: dict, views: list[str]):
 
 
 def prepare_obs(
-    *,
-    obs: dict,
-    rgb_dict: dict | None = None,
-    meta: dict,
+        *,
+        obs: dict,
+        rgb_dict: dict | None = None,
+        meta: dict,
+        vis_atk: None
 ):
     assert not (rgb_dict is not None and "rgb" in obs)
     rgb_dict = rgb_dict or obs.pop("rgb")
@@ -403,6 +616,9 @@ def prepare_obs(
         for view in views:
             rgb_this_view = rgb_dict_this_step[view]
             segm_this_view = segm_dict_this_step[view]
+
+            rgb_this_view, segm_this_view = vis_atk.implement_attack(rgb_this_view, segm_this_view)
+
             bboxes = []
             cropped_imgs = []
             n_pad = 0
@@ -416,7 +632,7 @@ def prepare_obs(
                 x_center, y_center = (xmin + xmax) / 2, (ymin + ymax) / 2
                 h, w = ymax - ymin, xmax - xmin
                 bboxes.append([int(x_center), int(y_center), int(h), int(w)])
-                cropped_img = rgb_this_view[:, ymin : ymax + 1, xmin : xmax + 1]
+                cropped_img = rgb_this_view[:, ymin: ymax + 1, xmin: xmax + 1]
                 if cropped_img.shape[1] != cropped_img.shape[2]:
                     diff = abs(cropped_img.shape[1] - cropped_img.shape[2])
                     pad_before, pad_after = int(diff / 2), diff - int(diff / 2)
@@ -437,6 +653,26 @@ def prepare_obs(
                 )
                 cropped_img = rearrange(cropped_img, "h w c -> c h w")
                 cropped_imgs.append(cropped_img)
+
+            if len(bboxes) == 0:
+                C, W, H = rgb_this_view.shape
+                xmin, xmax = 0, W
+                ymin, ymax = 0, H
+                x_center, y_center = (xmin + xmax) / 2, (ymin + ymax) / 2
+                h, w = ymax - ymin, xmax - xmin
+                bboxes.append([int(x_center), int(y_center), int(h), int(w)])
+                cropped_img = rgb_this_view
+                cropped_img = rearrange(cropped_img, "c h w -> h w c")
+                cropped_img = np.asarray(cropped_img)
+                cropped_img = cv2.resize(
+                    cropped_img,
+                    (32, 32),
+                    interpolation=cv2.INTER_AREA,
+                )
+                cropped_img = rearrange(cropped_img, "h w c -> c h w")
+                cropped_imgs.append(cropped_img)
+                n_pad -= 1
+
             bboxes = np.asarray(bboxes)
             cropped_imgs = np.asarray(cropped_imgs)
             mask = np.ones(len(bboxes), dtype=bool)
@@ -455,6 +691,7 @@ def prepare_obs(
                     axis=0,
                 )
                 mask = np.concatenate([mask, np.zeros(n_pad, dtype=bool)], axis=0)
+
             obs_list["objects"]["bbox"][view].append(bboxes)
             obs_list["objects"]["cropped_img"][view].append(cropped_imgs)
             obs_list["objects"]["mask"][view].append(mask)
@@ -498,11 +735,100 @@ class TimeLimitWrapper(_TimeLimit):
         super().__init__(env, env.task.oracle_max_steps + bonus_steps)
 
 
+rephrasing_list = {
+    "None": "",
+    "Simple": "Generate a paraphrase by keeping the meaning constant: ",
+    "Extend": "Generate a very length paraphrase with over 50 words by keeping the meaning constant: ",
+    "Color Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing colors or patterns without showing the initial words describing the colors or patterns, while keeping words describing objects the same: ",
+    "Object Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing objects without showing the initial words describing the objects, while keeping words describing colors or patterns the same: ",
+    "Noun": "Replace the nouns in the prompt with synonyms: ",
+}
+
+visual_attack_cfg = {
+    "None": {},
+    "blurring": {"size": [11, 11]},
+    "noise": {"mean": 0, "std": 25},
+    "filter": {},
+    "affine_transforms": {"x_affine": [-0.05, 0.05], "y_affine": [-0.05, 0.05]},
+    "rotate_transforms": {"rot_scope": [-5, 5]},
+    "cropping": {"x_min": [0, 0.02], "y_min": [0, 0.02], "x_max": [0.98, 1], "y_max": [0.98, 1]},
+    "distortion": {"x_min": [0, 0.02], "y_min": [0, 0.02], "x_max": [0.98, 1], "y_max": [0.98, 1]},
+    "addition_seg": {"x_pos": [0.2, 0.8], "y_pos": [0.2, 0.8], "x_size": [0.1, 0.3], "y_size": [0.1, 0.3]},
+    "addition_rgb": {"x_pos": [0.2, 0.8], "y_pos": [0.2, 0.8], "x_size": [0.1, 0.3], "y_size": [0.1, 0.3]}
+}
+
 if __name__ == "__main__":
-    arg = argparse.ArgumentParser()
-    arg.add_argument("--partition", type=str, default="placement_generalization")
-    arg.add_argument("--task", type=str, default="visual_manipulation")
-    arg.add_argument("--ckpt", type=str, required=True)
-    arg.add_argument("--device", default="cpu")
-    arg = arg.parse_args()
-    main(arg)
+    tasks = [
+        "visual_manipulation",
+        # "rotate",
+        # "pick_in_order_then_restore",
+        # "rearrange_then_restore",
+        "rearrange",
+        "scene_understanding",
+    ]
+    partitions = [
+        "placement_generalization",
+        # "combinatorial_generalization",
+        # "novel_object_generalization",
+    ]
+
+    rephrasings = [
+        "None",
+        # "Simple",
+        # "Extend",
+        # "Color Rephrase",
+        # "Object Rephrase",
+        # "Noun",
+    ]
+
+    visual_attack_list = [
+        # "None",
+        "blurring",
+        "noise",
+        "filter",
+        "affine_transforms",
+        "rotate_transforms",
+        "cropping",
+        "distortion",
+        "addition_seg",
+        "addition_rgb"
+    ]
+
+    save_dir = "adv_scripts/output"
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+    seed = 42
+    hide_arm = True  # False for demo usage, True for eval usage
+    for task in tasks:
+        for partition in partitions:
+            for rephrasing in rephrasings:
+                for vis_atk in visual_attack_list:
+                    eval_cfg = {
+                        "partition": partition,
+                        "task": task,
+                        "rephrasings": rephrasing,
+                        "vis_atk": vis_atk,
+                        "device": "cuda",
+                        "reuse": False,
+                        "save_dir": save_dir,
+                        "ckpt": "models/VIMA/200M.ckpt",
+                        "debug_flag": True,
+                        "hide_arm": hide_arm,
+                        "seed": seed,
+                    }
+                    logger_file = (
+                            save_dir
+                            + "/eval_on_seed_{}_hide_arm_{}_{}_{}_{}_{}.log".format(
+                        eval_cfg["seed"],
+                        eval_cfg["hide_arm"],
+                        partition,
+                        task,
+                        rephrasing,
+                        vis_atk
+                    )
+                    )
+                    if os.path.exists(path=logger_file):
+                        os.remove(logger_file)
+                    logger = create_logger(logger_file)
+                    main(EasyDict(eval_cfg), logger)
+                    del logger

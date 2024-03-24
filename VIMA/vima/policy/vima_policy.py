@@ -184,7 +184,11 @@ class VIMAPolicy(nn.Module):
             assembled_mask = []
             for item in raw_prompt:
                 if item == 0:
-                    assembled_prompt.append(batch_word_emb[word_ptr])
+                    num_words, emb_dim = batch_word_emb.shape
+                    if word_ptr >= num_words:
+                        assembled_prompt.append(torch.zeros_like(batch_word_emb[0]))
+                    else:
+                        assembled_prompt.append(batch_word_emb[word_ptr])
                     word_ptr += 1
                     assembled_mask.append(True)
                 elif item == 1:
