@@ -378,7 +378,7 @@ def main(cfg, logger):
                 "success": info["success"],
                 "failure": info["failure"],
             }
-            pred["success"] = True
+            pred["success"] = info["success"]
         else:
             task_info = {
                 "task_id": task_id,
@@ -403,7 +403,7 @@ def main(cfg, logger):
     logger.info("Average cosine similarity: {}%".format(avg_sim * 100))
 
     rand_str = generate_random_string(8)
-    json_out = f"tsne_json/partitions_{partitions[0]}_rephrasing_color_visual_attacks{'True' if not visual_attack_list else 'False'}_succrate_{success_rate*100:.0f}_{rand_str}.json"
+    json_out = f"tsne_json/seed_{seed}_partitions_{partitions[0]}_rephrasing_{rephrasings[0]}_visual_attacks{'True' if not visual_attack_list else 'False'}_succrate_{success_rate*100:.0f}_{rand_str}.json"
 
     with open(json_out, "w") as json_file:
         json.dump(predicitons, json_file, indent=2)
@@ -781,7 +781,7 @@ class TimeLimitWrapper(_TimeLimit):
 rephrasing_list = {
     "None": "",
     "Simple": "Generate a paraphrase by keeping the meaning constant: ",
-    "Extend": "Generate a very length paraphrase with over 50 words by keeping the meaning constant: ",
+    "Extend": "Generate a very lengthy paraphrase with over 50 words by keeping the meaning constant: ",
     "Color Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing colors or patterns without showing the initial words describing the colors or patterns, while keeping words describing objects the same: ",
     "Object Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing objects without showing the initial words describing the objects, while keeping words describing colors or patterns the same: ",
     "Noun": "Replace the nouns in the prompt with synonyms: ",
@@ -816,8 +816,8 @@ if __name__ == "__main__":
     ]
 
     rephrasings = [
-        # "None",
-        "Simple",
+        "None",
+        # "Simple",
         # "Extend",
         # "Color Rephrase",
         # "Object Rephrase",
@@ -840,7 +840,7 @@ if __name__ == "__main__":
     save_dir = "adv_scripts/output"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    seed = 42
+    seed = 43
     hide_arm = True  # False for demo usage, True for eval usage
     for task in tasks:
         for partition in partitions:
