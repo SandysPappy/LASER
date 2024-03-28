@@ -115,7 +115,6 @@ def main(cfg, logger):
     assert cfg.partition in ALL_PARTITIONS
     assert cfg.task in PARTITION_TO_SPECS["test"][cfg.partition]
 
-    seed = 42
     policy = create_policy_from_ckpt(cfg.ckpt, cfg.device).to(cfg.device)
     env = TimeLimitWrapper(
         ResetFaultToleranceWrapper(
@@ -123,7 +122,7 @@ def main(cfg, logger):
                 cfg.task,
                 modalities=["segm", "rgb"],
                 task_kwargs=PARTITION_TO_SPECS["test"][cfg.partition][cfg.task],
-                seed=seed,
+                seed=cfg.seed,
                 render_prompt=True,
                 display_debug_window=True,
                 hide_arm_rgb=False,
@@ -403,7 +402,7 @@ def main(cfg, logger):
     logger.info("Average cosine similarity: {}%".format(avg_sim * 100))
 
     rand_str = generate_random_string(8)
-    json_out = f"tsne_json/seed_{seed}_partitions_{partitions[0]}_rephrasing_{rephrasings[0]}_visual_attacks{'True' if not visual_attack_list else 'False'}_succrate_{success_rate*100:.0f}_{rand_str}.json"
+    json_out = f"tsne_json/seed_{env.global_seed}_partitions_{partitions[0]}_rephrasing_{rephrasings[0]}_visual_attacks{'True' if not visual_attack_list else 'False'}_succrate_{success_rate*100:.0f}_{rand_str}.json"
 
     with open(json_out, "w") as json_file:
         json.dump(predicitons, json_file, indent=2)
@@ -816,8 +815,8 @@ if __name__ == "__main__":
     ]
 
     rephrasings = [
-        "None",
-        # "Simple",
+        # "None",
+        "Simple",
         # "Extend",
         # "Color Rephrase",
         # "Object Rephrase",
@@ -840,7 +839,7 @@ if __name__ == "__main__":
     save_dir = "adv_scripts/output"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    seed = 43
+    seed = 42
     hide_arm = True  # False for demo usage, True for eval usage
     for task in tasks:
         for partition in partitions:
