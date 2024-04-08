@@ -402,7 +402,7 @@ def main(cfg, logger):
     logger.info("Average cosine similarity: {}%".format(avg_sim * 100))
 
     rand_str = generate_random_string(8)
-    json_out = f"tsne_json/seed_{env.global_seed}_partitions_{partitions[0]}_rephrasing_{rephrasings[0]}_visual_attacks{'True' if not visual_attack_list else 'False'}_succrate_{success_rate*100:.0f}_{rand_str}.json"
+    json_out = f"gen_dataset/seed_{env.global_seed}_partitions_{partitions[0]}_rephrasing_{rephrasings[0]}_visual_attacks{'True' if not visual_attack_list else 'False'}_succrate_{success_rate*100:.0f}_{rand_str}.json"
 
     with open(json_out, "w") as json_file:
         json.dump(predicitons, json_file, indent=2)
