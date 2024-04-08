@@ -242,7 +242,7 @@ def main(cfg, logger):
                 # print("Rephrased prompt tokens shape: ", prompt_tokens.shape)
 
 
-                pred["embedding"] = prompt_tokens.flatten().tolist()
+                pred["embedding"] = prompt_tokens.tolist()
 
                 sim = torch.nn.functional.cosine_similarity(orig_prompt_tokens.flatten(), prompt_tokens.flatten(), dim=0)
 
