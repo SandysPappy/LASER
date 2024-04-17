@@ -42,7 +42,7 @@ laser_dataset = {
     ]
 }
 
-def get_laser_dataset(task="", partition="", pad_len = 30):
+def get_laser_dataset(task=None, partition=None, pad_len = 30):
     if task == None or partition == None:
         return KeyError("Include correct dataset task and partition")
     
