@@ -42,6 +42,9 @@ laser_dataset = {
     ]
 }
 
+# Exmaples
+# dataset = get_laser_dataset(task="visual_manipulation", partition="placement_generalization")
+# dataset = get_laser_dataset(task="all", partition="all")
 def get_laser_dataset(task=None, partition=None, pad_len = 30):
     if task == None or partition == None:
         return KeyError("Include correct dataset task and partition")
