@@ -26,9 +26,9 @@ class MLPWithHeads(nn.Module):
         super().__init__() 
         self.heads = Heads(in_features=hidden_size, num_heads=output_size)
 
-        self.fc1 = nn.Linear(input_size, hidden_size, bias=False)
-        self.fc2 = nn.Linear(hidden_size, hidden_size, bias=False)
-        self.fc3 = nn.Linear(hidden_size, hidden_size, bias=False)
+        self.fc1 = nn.Linear(input_size, hidden_size//2, bias=False)
+        self.fc2 = nn.Linear(hidden_size//2, hidden_size//2, bias=False)
+        self.fc3 = nn.Linear(hidden_size//2, hidden_size, bias=False)
 
     def forward(self, x, num_embeddings):
         x = x.flatten()
