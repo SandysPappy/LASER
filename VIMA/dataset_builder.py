@@ -1,26 +1,22 @@
 import torch
-import pandas as pd
-import numpy as np
-from torchvision.transforms import ToTensor
 from torch.utils.data import Dataset
-from torch.nn.utils.rnn import pad_sequence
 
 #Add your file path
 attack_file_path = "LASER_Dataset/attack_prompts/"
 base_file_path = "LASER_Dataset/base_prompts/"
 
 laser_dataset = {
-    "combinational/base_combinatorial_generalization_rearrange_42_dataset.pt": [
+    "combinatorial/base_combinatorial_generalization_rearrange_42_dataset.pt": [
     "combinatorial/attack_combinatorial_generalization_Color Rephrase_rearrange_42_dataset.pt",
     "combinatorial/attack_combinatorial_generalization_Extend_rearrange_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Noun_rearrange_42_dataset.pt"  
+    "combinatorial/attack_combinatorial_generalization_Noun_rearrange_42_dataset.pt" 
     ],
-    "combinational/base_combinatorial_generalization_scene_understanding_42_dataset.pt": [
+    "combinatorial/base_combinatorial_generalization_scene_understanding_42_dataset.pt": [
     "combinatorial/attack_combinatorial_generalization_Color Rephrase_scene_understanding_42_dataset.pt",
     "combinatorial/attack_combinatorial_generalization_Extend_scene_understanding_42_dataset.pt",
     "combinatorial/attack_combinatorial_generalization_Noun_scene_understanding_42_dataset.pt" 
     ],
-    "combinational/base_combinatorial_generalization_visual_manipulation_42_dataset.pt" : [
+    "combinatorial/base_combinatorial_generalization_visual_manipulation_42_dataset.pt" : [
     "combinatorial/attack_combinatorial_generalization_Color Rephrase_visual_manipulation_42_dataset.pt",
     "combinatorial/attack_combinatorial_generalization_Extend_visual_manipulation_42_dataset.pt",
     "combinatorial/attack_combinatorial_generalization_Noun_visual_manipulation_42_dataset.pt"
@@ -78,12 +74,17 @@ class PromptEmbeddingsDataset(Dataset):
         for base_dataset, attack_datasets in dataset.items():
             #Load base file
             base = torch.load(base_file_path + base_dataset)
+
             for attack_dataset in attack_datasets:
-                # Load attack file
-                attack = torch.load(attack_file_path + attack_dataset)
+                if "attack" in attack_dataset:
+                    attack = torch.load(attack_file_path + attack_dataset)
+                elif "base" in attack_dataset:
+                    attack = torch.load(base_file_path + attack_dataset)
+
+                attack_size = len(attack)
 
                 # Loop through base and attack file
-                for i in range(9):
+                for i in range(attack_size):
                     for j in range(150):
                         attack_emb, base_emb = attack[i][j]["embedding"], base[0][j]["embedding"]
                         success = attack[i][j]["success"]
