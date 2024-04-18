@@ -6,17 +6,18 @@ from torchinfo import summary
 class Heads(nn.Module):
     def __init__(self, in_features, num_heads):
         super().__init__()
-        heads = []
+        heads = {}
 
         # list of linear heads with output dimentions [1, num_heads]
         for i in range (num_heads):
-            head = nn.Linear(in_features=in_features, out_features=i+1, bias=False)
-            heads.append(head)
+            with torch.no_grad():
+                head = nn.Linear(in_features=in_features, out_features=i+1, bias=False)
+                heads[str(i)]=head
+        self.heads = nn.ParameterDict(heads)
 
-        self.heads = torch.nn.ModuleList([head for head in heads])
-
+    # key of heads must be string
     def forward(self, x, idx):
-        t = self.heads[idx]
+        t = self.heads[str(idx)]
         x = t(x)
         return x
 
@@ -34,8 +35,9 @@ class MLPWithHeads(nn.Module):
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = self.fc3(x)
-        head_idx = num_embeddings # torch does 1 index, eww
-        self.heads(x, head_idx)
+        head_idx = num_embeddings-1  
+        with torch.no_grad():
+            x =self.heads(x, head_idx)
         return x
 
 class MLP(nn.Module):
@@ -61,6 +63,6 @@ if __name__ == '__main__':
     mlp = MLPWithHeads(input_size=23040, hidden_size=269, output_size=30)
     model_info = summary(mlp)
 
-    out = mlp(t, num_embeddings=0)
+    out = mlp(t, num_embeddings=9)
     print(out.shape)   
     out.shape
