@@ -10,7 +10,9 @@ class MLP(nn.Module):
         self.fc3 = nn.Linear(hidden_size, output_size)
 
     def forward(self, x):
+        x = x.flatten()
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = self.fc3(x)
+        x = x.reshape(30, 1, 768)
         return x
