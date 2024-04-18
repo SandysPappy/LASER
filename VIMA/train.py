@@ -8,49 +8,53 @@ from mlp import MLP
 # Example usage
 if __name__ == "__main__":
 
-    model = MLP(input_size=128, hidden_size=256,
-                output_size=10)
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-    criterion = nn.CrossEntropyLoss()
+    lr = 1e-3
+    num_epochs = 10
+    model = MLP(input_size=768, hidden_size=256,
+                output_size=768)
+    optimizer = torch.optim.Adam(model.parameters(), lr)
+    criterion = nn.MSELoss()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
 
     dataset = get_laser_dataset(task="all", partition="all")
     dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+    num_batches = 0
 
-    for batch in dataloader:
-        # Access the first tensor in the batch
-        base_embedding = batch["base_embeddings"][0].shape
-        attack_embedding = batch["attack_embeddings"][0].shape
-        num_of_embeddings = int(batch["num_of_embeddings"][0])
-        success = bool(batch["success"][0])
-        base_prompt = batch["base_prompt"][0]
-        attack_prompt = batch["attack_prompt"][0]
-        rephrasings = batch["rephrasings"][0]
-        seed = int(batch["seed"][0])
-        partition = batch["partition"][0]
-        task = batch["task"][0]
+    model.train()
+    for epoch in range(num_epochs):
+        for batch in dataloader:
+            # Access the first tensor in the batch
+            success = bool(batch["success"][0])
+            base_embedding = batch["base_embeddings"][0]
+            attack_embedding = batch["attack_embeddings"][0]
+            num_of_embeddings = int(batch["num_of_embeddings"][0])
+
+            # forward pass
+            embedding_output = model(attack_embedding)
+            loss = criterion(embedding_output, 256)
+
+            # backward pass and optimization
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+        print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item()}")
 
         # Print the values
-        print("Base Embeddings shape:", base_embedding)
-        print("Attack Embeddings shape:", attack_embedding)
-        print("Number of Embeddings:", num_of_embeddings)
-        print("Success:", success)
-        print("Base Prompt:", base_prompt)
-        print("Attack Prompt:", attack_prompt)
-        print("Rephrasings:", rephrasings)
-        print("Seed:", seed)
-        print("Partition:", partition)
-        print("Task:", task)
+        # print("Base Embeddings shape:", base_embedding)
+        # print("Attack Embeddings shape:", attack_embedding)
+        # print("Number of Embeddings:", num_of_embeddings)
 
-        # If we want to grab the unpadded embeddings
-        first_embeddings_base = batch["base_embeddings"][0][:num_of_embeddings]
-        first_embeddings_attack = batch["attack_embeddings"][0][:num_of_embeddings]
+        # # If we want to grab the unpadded embeddings
+        # first_embeddings_base = batch["base_embeddings"][0][:num_of_embeddings]
+        # first_embeddings_attack = batch["attack_embeddings"][0][:num_of_embeddings]
 
-        print("Original base embeddings: ", first_embeddings_base.shape)
-        print("Original base embeddings: ", first_embeddings_base)
+        # print("Original base embeddings: ", first_embeddings_base.shape)
+        # print("Original base embeddings: ", first_embeddings_base)
 
-        print("Original attack embeddings: ", first_embeddings_attack.shape)
-        print("Original attack embeddings: ", first_embeddings_attack)
+        # print("Original attack embeddings: ",
+        #       first_embeddings_attack.shape)
+        # print("Original attack embeddings: ", first_embeddings_attack)
 
-        break  # Exit loop after printing the first tensor
+        # break  # Exit loop after printing the first tensor
