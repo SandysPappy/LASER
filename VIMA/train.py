@@ -1,9 +1,19 @@
 import torch
+import torch.nn as nn
 from torch.utils.data import DataLoader
 from dataset_builder import get_laser_dataset
+from mlp import MLP
+
 
 # Example usage
 if __name__ == "__main__":
+
+    model = MLP(input_size=128, hidden_size=256,
+                output_size=10)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+    criterion = nn.CrossEntropyLoss()
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
 
     dataset = get_laser_dataset(task="all", partition="all")
     dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
@@ -40,7 +50,7 @@ if __name__ == "__main__":
         print("Original base embeddings: ", first_embeddings_base.shape)
         print("Original base embeddings: ", first_embeddings_base)
 
-        print("Original attack embeddings: ", first_embeddings_attack.shape) 
-        print("Original attack embeddings: ", first_embeddings_attack) 
+        print("Original attack embeddings: ", first_embeddings_attack.shape)
+        print("Original attack embeddings: ", first_embeddings_attack)
 
-        break # Exit loop after printing the first tensor
+        break  # Exit loop after printing the first tensor
