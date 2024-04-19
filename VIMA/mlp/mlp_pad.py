@@ -41,23 +41,22 @@ class MLPWithHeads(nn.Module):
         return x
 
 class MLP(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, batch):
+    def __init__(self, input_size, hidden_size, output_size):
         super().__init__()
-        self.batch = batch
-        self.fc1 = nn.Linear(input_size * batch, hidden_size)
+        self.fc1 = nn.Linear(input_size, hidden_size)
         self.fc2 = nn.Linear(hidden_size, hidden_size)
-        self.fc3 = nn.Linear(hidden_size, output_size * batch)
+        self.fc3 = nn.Linear(hidden_size, output_size)
 
     def forward(self, x):
         #print("in", x.shape)
-        x = x.flatten()
+        #x = x.flatten()
         #print("after flatten", x.shape)
         x = F.relu(self.fc1(x))
         #print("after fc1", x.shape)
         x = F.relu(self.fc2(x))
         #print("after fc2", x.shape)
         x = self.fc3(x)
-        x = x.reshape(self.batch, 30, 1, 768)
+        #x = x.reshape(30, 1, 768)
         return x
 
 
