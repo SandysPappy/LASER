@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 
+from random import randint
 from tokenizers import Tokenizer
 from tokenizers import AddedToken
 from einops import rearrange
@@ -17,8 +18,21 @@ from visual_attack import *
 import json
 import string
 import random
+from mlp import MLP
 
 from rephrase_attack import *
+
+all_predictions = []
+
+mlp = MLP(768, 128, 768)
+checkpoint = torch.load("MLP_5.pth", map_location=torch.device('cpu'))
+mlp.fc1.weight.data = checkpoint['fc1.weight']
+mlp.fc1.bias.data = checkpoint['fc1.bias']
+mlp.fc2.weight.data = checkpoint['fc2.weight']
+mlp.fc2.bias.data = checkpoint['fc2.bias']
+mlp.fc3.weight.data = checkpoint['fc3.weight']
+mlp.fc3.bias.data = checkpoint['fc3.bias']
+
 
 def generate_random_string(length):
     # Define the characters from which the random string will be composed
@@ -115,6 +129,14 @@ def main(cfg, logger):
     assert cfg.partition in ALL_PARTITIONS
     assert cfg.task in PARTITION_TO_SPECS["test"][cfg.partition]
 
+    #if torch.cuda.is_available() and cfg.device == 'cuda':
+    #    device = torch.device('cuda')
+    #else:
+    #    device = torch.device('cpu')
+
+# Load the model checkpoint with the correct device mapping
+    #policy = create_policy_from_ckpt(cfg.ckpt, device).to(device)
+
     policy = create_policy_from_ckpt(cfg.ckpt, cfg.device).to(cfg.device)
     env = TimeLimitWrapper(
         ResetFaultToleranceWrapper(
@@ -134,13 +156,17 @@ def main(cfg, logger):
     task_id = 0
     all_infos = []
 
-    result_folder = (
-            cfg.save_dir + "/" + cfg.partition + "/" + cfg.task + "/" +
-            "/" + cfg.rephrasings + "/" + cfg.vis_atk
-    )
+    #result_folder = (
+    #        cfg.save_dir + "/" + cfg.partition + "/" + cfg.task + "/" +
+    #        "/" + cfg.rephrasings + "/" + cfg.vis_atk
+    #)
+
+    result_folder = (cfg.save_dir + "/" + cfg.partition + "_" + cfg.rephrasings)
+
     if not os.path.exists(result_folder):
         os.makedirs(result_folder)
-    eval_res_name = cfg.partition + "_" + cfg.task + "_" + cfg.rephrasings + "_" + cfg.vis_atk + ".json"
+    #eval_res_name = cfg.partition + "_" + cfg.task + "_" + cfg.rephrasings + "_" + cfg.vis_atk + ".json"
+    eval_res_name = cfg.partition + "_" + cfg.rephrasings + ".json"
     eval_result_file_path = os.path.join(result_folder, eval_res_name)
 
     avg_sim = 0
@@ -199,6 +225,12 @@ def main(cfg, logger):
         else:
             pred["attack_prompt"] = whole_task
 
+        pred["task"] = cfg.task
+        pred["rephrasings"] = cfg.rephrasings
+        pred["partition"] = cfg.partition
+        pred["vis_atk"] = cfg.vis_atk
+        pred["seed"] = cfg.seed
+
         while True:
             info = None
             if elapsed_steps == 0:
@@ -209,6 +241,8 @@ def main(cfg, logger):
                 orig_word_batch = word_batch
                 orig_image_batch = image_batch
 
+                #orig_word_batch = orig_word_batch.to(device)
+                #orig_image_batch = orig_image_batch.to_torch_tensor(device=device)
                 orig_word_batch = orig_word_batch.to(cfg.device)
                 orig_image_batch = orig_image_batch.to_torch_tensor(device=cfg.device)
 
@@ -218,16 +252,19 @@ def main(cfg, logger):
 
                 if cfg.rephrasings != "None":
                     word_batch = prepare_prompt_rephrased(prompt=whole_task)
+
                 # print(word_batch, whole_task)
                 word_batch = word_batch.to(cfg.device)
                 image_batch = image_batch.to_torch_tensor(device=cfg.device)
+
+                logger.info(f"Word batch shape: {word_batch.shape}")
+                #logger.info(f"Image bactch shape: {image_batch}")
 
                 prompt_tokens, prompt_masks = policy.forward_prompt_assembly(
                     (prompt_token_type, word_batch, image_batch)
                 )
 
-
-
+                logger.info(f"Prompt shape: {prompt_tokens.shape}")
                 # Calculate the cosine similarity between the original and rephrased prompts
 
 
@@ -241,9 +278,30 @@ def main(cfg, logger):
                 # print("Original prompt tokens shape: ", orig_prompt_tokens.shape)
                 # print("Rephrased prompt tokens shape: ", prompt_tokens.shape)
 
+                #pred["embedding"] = prompt_tokens.flatten().tolist()   
+                pred["embedding"] = prompt_tokens#.flatten()
 
-                pred["embedding"] = prompt_tokens.flatten().tolist()
+                # Slice the tensor to keep only the last dimension B
+                #prompt_tokens = prompt_tokens[-B:]
+                #logger.info(f"Prompt shape: {prompt_tokens.shape}")
+                #logger.info(f"embedding shape: {prompt_tokens}")
+                #logger.info(f"last embedding: {last_layer}")
+                #logger.info(f"last embedding shape: {last_layer.shape}")
 
+                mlp.eval()
+                tokens = []
+                #size = prompt_tokens.size(0)
+                for i in range(prompt_tokens.size(0)):
+                    prompt_token = prompt_tokens[i, :, :]
+                    #print("Prompt token shape: ", prompt_token.shape)
+                    output_token = mlp(prompt_token)
+                    tokens.append(output_token)
+                    #print("Output shape: ", output_token.shape)
+
+                combined_tokens = torch.stack(tokens, dim=0)
+                print("Token Prediction shape: ", combined_tokens.shape)
+
+                prompt_tokens = combined_tokens
                 sim = torch.nn.functional.cosine_similarity(orig_prompt_tokens.flatten(), prompt_tokens.flatten(), dim=0)
 
                 logger.info(f"Cosine similarity: {sim}")
@@ -387,12 +445,12 @@ def main(cfg, logger):
             }
             pred["success"] = False
         
+        #logger.info(pred)
+
         predicitons.append(pred)
         all_infos.append(task_info)
 
         logger.info(f"Succeeded: {task_info['success']}")
-
-    
 
     success_rate = sum([info["success"] for info in all_infos]) / len(all_infos)
     avg_sim /= len(all_infos)
@@ -402,11 +460,29 @@ def main(cfg, logger):
     logger.info("Average cosine similarity: {}%".format(avg_sim * 100))
 
     rand_str = generate_random_string(8)
-    json_out = f"tsne_json/seed_{env.global_seed}_partitions_{partitions[0]}_rephrasing_{rephrasings[0]}_visual_attacks{'True' if not visual_attack_list else 'False'}_succrate_{success_rate*100:.0f}_{rand_str}.json"
+    #json_out = f"tsne_json/seed_{env.global_seed}_partitions_{partitions[0]}_rephrasing_{rephrasings[0]}_visual_attacks{'True' if not visual_attack_list else 'False'}_succrate_{success_rate*100:.0f}_{rand_str}.json"
+    
+    #dataset_type = ""
+    #result_folder = ("dataset/" + cfg.partition + "_" + cfg.rephrasings)
+    #os.makedirs(dataset_folder, exist_ok=True)
 
-    with open(json_out, "w") as json_file:
-        json.dump(predicitons, json_file, indent=2)
+    #with open(json_out, "w") as json_file:
+    #    json.dump(predicitons, json_file, indent=2)
 
+    #file = "dataset/base_dataset.pt"
+
+    #dataset_folder = "dataset"
+    #os.makedirs(dataset_folder, exist_ok=True)  # Create the folder if it doesn't exist
+
+    # Define the file path within the dataset folder
+    #json_out = os.path.join(dataset_folder, dataset_type)
+
+    # Save the predictions to the JSON file with indentation
+    #with open(json_out, "w") as json_file:
+    #    torch.save(predicitons, json_file, indent=2)
+
+    #torch.save(all_predictions, file)
+    all_predictions.append(predicitons) 
     env.env.close()
     del env
 
@@ -778,7 +854,7 @@ class TimeLimitWrapper(_TimeLimit):
 
 
 rephrasing_list = {
-    "None": "",
+#    "None": "",
     "Simple": "Generate a paraphrase by keeping the meaning constant: ",
     "Extend": "Generate a very lengthy paraphrase with over 50 words by keeping the meaning constant: ",
     "Color Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing colors or patterns without showing the initial words describing the colors or patterns, while keeping words describing objects the same: ",
@@ -802,25 +878,25 @@ visual_attack_cfg = {
 if __name__ == "__main__":
     tasks = [
         "visual_manipulation",
-        # "rotate",
+        #"rotate",
         # "pick_in_order_then_restore",
         # "rearrange_then_restore",
-        # "rearrange",
-        # "scene_understanding",
+        #"rearrange",
+        #"scene_understanding",
     ]
     partitions = [
         "placement_generalization",
-        # "combinatorial_generalization",
+        #"combinatorial_generalization",
         # "novel_object_generalization",
     ]
 
     rephrasings = [
-        # "None",
+        #"None",
         "Simple",
-        # "Extend",
-        # "Color Rephrase",
+        #"Extend",
+        #"Color Rephrase",
         # "Object Rephrase",
-        # "Noun",
+        #"Noun",
     ]
 
     visual_attack_list = [
@@ -836,41 +912,64 @@ if __name__ == "__main__":
         # "addition_rgb"
     ]
 
+    #if torch.cuda.is_available():
+    # If GPU is available, use it
+        #device = torch.device('cuda')
+        #print("CUDA (GPU) is available. Using GPU.")
+    #else:
+    # If GPU is not available, fallback to CPU
+    device = torch.device('cpu')
+    print("CUDA (GPU) is not available. Using CPU.")
+
     save_dir = "adv_scripts/output"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    seed = 42
+
+    #seed = randint(0,100000)
+    seed = 65 #42
     hide_arm = True  # False for demo usage, True for eval usage
+    
+    #for i in range(10):
     for task in tasks:
         for partition in partitions:
             for rephrasing in rephrasings:
-                for vis_atk in visual_attack_list:
-                    eval_cfg = {
-                        "partition": partition,
-                        "task": task,
-                        "rephrasings": rephrasing,
-                        "vis_atk": vis_atk,
-                        "device": "cuda",
-                        "reuse": False,
-                        "save_dir": save_dir,
-                        "ckpt": "models/VIMA/200M.ckpt",
-                        "debug_flag": True,
-                        "hide_arm": hide_arm,
-                        "seed": seed,
-                    }
-                    logger_file = (
-                            save_dir
-                            + "/eval_on_seed_{}_hide_arm_{}_{}_{}_{}_{}.log".format(
-                        eval_cfg["seed"],
-                        eval_cfg["hide_arm"],
-                        partition,
-                        task,
-                        rephrasing,
-                        vis_atk
-                    )
-                    )
-                    if os.path.exists(path=logger_file):
-                        os.remove(logger_file)
-                    logger = create_logger(logger_file)
-                    main(EasyDict(eval_cfg), logger)
-                    del logger
+                for i in range(1):
+                    for vis_atk in visual_attack_list:
+                        #seed = randint(0,100000)
+                        eval_cfg = {
+                            "partition": partition,
+                            "task": task,
+                            "rephrasings": rephrasing,
+                            "vis_atk": vis_atk,
+                            "device": "cpu",
+                            "reuse": False,
+                            "save_dir": save_dir,
+                            "ckpt": "models/VIMA/200M.ckpt",
+                            "debug_flag": True,
+                            "hide_arm": hide_arm,
+                            "seed": seed,
+                        }
+                        logger_file = (
+                                save_dir
+                                + "/eval_on_seed_{}_hide_arm_{}_{}_{}_{}_{}.log".format(
+                            eval_cfg["seed"],
+                            eval_cfg["hide_arm"],
+                            partition,
+                            task,
+                            rephrasing,
+                            vis_atk
+                        )
+                        )
+
+                        if os.path.exists(path=logger_file):
+                            os.remove(logger_file)
+                        logger = create_logger(logger_file)
+                        main(EasyDict(eval_cfg), logger)
+                        del logger
+
+                file = "datasets/base_"+ partition + "_" + task + "_" + str(seed) + "_dataset.pt"
+                #torch.save(all_predictions, file)
+                all_predictions = []
+
+    #file = "datasets/attack_"+ partitions[0] + "_" + rephrasings[0] + tasks[0] + "_" + str(seed) + "_dataset.pt"
+    #torch.save(all_predictions, file)
