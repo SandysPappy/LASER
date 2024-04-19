@@ -18,12 +18,15 @@ from visual_attack import *
 import json
 import string
 import random
-from mlp import MLP
+#from VIMA.mlp.mlp import MLP
+from model_builder import ModelBuilder 
 
 from rephrase_attack import *
 
 all_predictions = []
+#mlp = ModelBuilder(model_type="mlp_unpad")
 
+'''
 mlp = MLP(768, 128, 768)
 checkpoint = torch.load("MLP_5.pth", map_location=torch.device('cpu'))
 mlp.fc1.weight.data = checkpoint['fc1.weight']
@@ -32,7 +35,7 @@ mlp.fc2.weight.data = checkpoint['fc2.weight']
 mlp.fc2.bias.data = checkpoint['fc2.bias']
 mlp.fc3.weight.data = checkpoint['fc3.weight']
 mlp.fc3.bias.data = checkpoint['fc3.bias']
-
+'''
 
 def generate_random_string(length):
     # Define the characters from which the random string will be composed
@@ -125,17 +128,13 @@ tokenizer.add_tokens(PLACEHOLDER_TOKENS)
 @torch.no_grad()
 def main(cfg, logger):
     logger.info("cfg: {}".format(cfg))
+
+    # Load mlp checkpoint
+    mlp = ModelBuilder(model_type=cfg.mlp_model)
+
     debug_flag = cfg.debug_flag
     assert cfg.partition in ALL_PARTITIONS
     assert cfg.task in PARTITION_TO_SPECS["test"][cfg.partition]
-
-    #if torch.cuda.is_available() and cfg.device == 'cuda':
-    #    device = torch.device('cuda')
-    #else:
-    #    device = torch.device('cpu')
-
-# Load the model checkpoint with the correct device mapping
-    #policy = create_policy_from_ckpt(cfg.ckpt, device).to(device)
 
     policy = create_policy_from_ckpt(cfg.ckpt, cfg.device).to(cfg.device)
     env = TimeLimitWrapper(
@@ -288,6 +287,7 @@ def main(cfg, logger):
                 #logger.info(f"last embedding: {last_layer}")
                 #logger.info(f"last embedding shape: {last_layer.shape}")
 
+                '''
                 mlp.eval()
                 tokens = []
                 #size = prompt_tokens.size(0)
@@ -302,6 +302,11 @@ def main(cfg, logger):
                 print("Token Prediction shape: ", combined_tokens.shape)
 
                 prompt_tokens = combined_tokens
+                '''
+
+                # MLP prompt_token evaluation
+                prompt_tokens = mlp.return_prediciton(prompt_tokens=prompt_tokens)
+                
                 sim = torch.nn.functional.cosine_similarity(orig_prompt_tokens.flatten(), prompt_tokens.flatten(), dim=0)
 
                 logger.info(f"Cosine similarity: {sim}")
@@ -927,6 +932,7 @@ if __name__ == "__main__":
 
     #seed = randint(0,100000)
     seed = 65 #42
+    mlp_model = "mlp_unpad"
     hide_arm = True  # False for demo usage, True for eval usage
     
     #for i in range(10):
@@ -948,6 +954,7 @@ if __name__ == "__main__":
                             "debug_flag": True,
                             "hide_arm": hide_arm,
                             "seed": seed,
+                            "mlp_model": mlp_model,
                         }
                         logger_file = (
                                 save_dir
