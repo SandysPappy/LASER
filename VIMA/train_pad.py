@@ -13,13 +13,13 @@ import torch.nn.functional as F
 # Example usage
 if __name__ == "__main__":
 
-    output_path="mlp_save_weight/save_model_weight.pt"
+    output_path="mlp_save_weight/save_model_weight.pth"
     lr = 1e-3
-    num_epochs = 10
+    num_epochs = 20
     batch_size = 32
 
     #model = MLPWithHeads(input_size=23040*batch_size, hidden_size=269, output_size=30)
-    model = MLP(input_size=30*1*768, hidden_size=269, output_size=30*1*768, batch=batch_size)
+    model = MLP(input_size=30*1*768, hidden_size=269, output_size=30*1*768)
     optimizer = torch.optim.AdamW(model.parameters(), lr)
     #criterion = nn.CrossEntropyLoss()
     criterion = nn.MSELoss()
@@ -53,7 +53,9 @@ if __name__ == "__main__":
             num_of_embeddings = batch["num_of_embeddings"]
             num_of_embeddings = num_of_embeddings.int()
             # forward pass
+            attack_embedding=attack_embedding.reshape(batch_size,30*1*768)
             embedding_output = model(attack_embedding)
+            embedding_output = embedding_output.reshape(batch_size,30, 1, 768)
             #embedding_output = F.normalize(embedding_output)
             loss = criterion(embedding_output, base_embedding)
             
