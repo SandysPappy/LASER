@@ -119,8 +119,8 @@ class PromptEmbeddingsDataset(Dataset):
         partition = self.partition[idx]
         task = self.task[idx]
 
-        base_embeddings = torch.nn.functional.pad(base_embeddings, (0, 0, 0, 0, 0, self.pad_len - num_of_embeddings), value=-1)
-        attack_embeddings = torch.nn.functional.pad(attack_embeddings, (0, 0, 0, 0, 0, self.pad_len - num_of_embeddings), value=-1)
+        base_embeddings = torch.nn.functional.pad(base_embeddings, (0, 0, 0, 0, 0, self.pad_len - num_of_embeddings), value=0)
+        attack_embeddings = torch.nn.functional.pad(attack_embeddings, (0, 0, 0, 0, 0, self.pad_len - num_of_embeddings), value=0)
 
         ret = {
             "base_embeddings": base_embeddings,
