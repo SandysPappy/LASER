@@ -40,7 +40,7 @@ class MLPWithHeads(nn.Module):
             x =self.heads(x, head_idx)
         return x
 
-class MLP(nn.Module):
+class MLP_Pad(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
         super().__init__()
         self.fc1 = nn.Linear(input_size, hidden_size)
@@ -48,6 +48,10 @@ class MLP(nn.Module):
         self.fc3 = nn.Linear(hidden_size, output_size)
 
     def forward(self, x):
+        #if torch.cuda.is_available():
+        #    device = ''
+        #x.to('cuda')
+
         #print("in", x.shape)
         #x = x.flatten()
         #print("after flatten", x.shape)
@@ -57,6 +61,9 @@ class MLP(nn.Module):
         #print("after fc2", x.shape)
         x = self.fc3(x)
         #x = x.reshape(30, 1, 768)
+        
+
+
         return x
 
 
