@@ -24,18 +24,6 @@ from model_builder import ModelBuilder
 from rephrase_attack import *
 
 all_predictions = []
-#mlp = ModelBuilder(model_type="mlp_unpad")
-
-'''
-mlp = MLP(768, 128, 768)
-checkpoint = torch.load("MLP_5.pth", map_location=torch.device('cpu'))
-mlp.fc1.weight.data = checkpoint['fc1.weight']
-mlp.fc1.bias.data = checkpoint['fc1.bias']
-mlp.fc2.weight.data = checkpoint['fc2.weight']
-mlp.fc2.bias.data = checkpoint['fc2.bias']
-mlp.fc3.weight.data = checkpoint['fc3.weight']
-mlp.fc3.bias.data = checkpoint['fc3.bias']
-'''
 
 def generate_random_string(length):
     # Define the characters from which the random string will be composed
@@ -287,25 +275,9 @@ def main(cfg, logger):
                 #logger.info(f"last embedding: {last_layer}")
                 #logger.info(f"last embedding shape: {last_layer.shape}")
 
-                '''
-                mlp.eval()
-                tokens = []
-                #size = prompt_tokens.size(0)
-                for i in range(prompt_tokens.size(0)):
-                    prompt_token = prompt_tokens[i, :, :]
-                    #print("Prompt token shape: ", prompt_token.shape)
-                    output_token = mlp(prompt_token)
-                    tokens.append(output_token)
-                    #print("Output shape: ", output_token.shape)
-
-                combined_tokens = torch.stack(tokens, dim=0)
-                print("Token Prediction shape: ", combined_tokens.shape)
-
-                prompt_tokens = combined_tokens
-                '''
-
                 # MLP prompt_token evaluation
-                prompt_tokens = mlp.return_prediciton(prompt_tokens=prompt_tokens)
+                if cfg.mlp_model != "None":
+                    prompt_tokens = mlp.return_prediciton(prompt_tokens=prompt_tokens)
                 
                 sim = torch.nn.functional.cosine_similarity(orig_prompt_tokens.flatten(), prompt_tokens.flatten(), dim=0)
 
@@ -859,12 +831,13 @@ class TimeLimitWrapper(_TimeLimit):
 
 
 rephrasing_list = {
-#    "None": "",
+    "None": "",
     "Simple": "Generate a paraphrase by keeping the meaning constant: ",
     "Extend": "Generate a very lengthy paraphrase with over 50 words by keeping the meaning constant: ",
     "Color Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing colors or patterns without showing the initial words describing the colors or patterns, while keeping words describing objects the same: ",
     "Object Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing objects without showing the initial words describing the objects, while keeping words describing colors or patterns the same: ",
     "Noun": "Replace the nouns in the prompt with synonyms: ",
+    "Stealth": "Generate a paraphrase such that it looks like the sentence with the same meaning to human but actually it means different or opposite: "
 }
 
 visual_attack_cfg = {
@@ -886,8 +859,8 @@ if __name__ == "__main__":
         #"rotate",
         # "pick_in_order_then_restore",
         # "rearrange_then_restore",
-        #"rearrange",
-        #"scene_understanding",
+        "rearrange",
+        "scene_understanding",
     ]
     partitions = [
         "placement_generalization",
@@ -897,11 +870,12 @@ if __name__ == "__main__":
 
     rephrasings = [
         #"None",
-        "Simple",
+        #"Simple",
         #"Extend",
         #"Color Rephrase",
         # "Object Rephrase",
         #"Noun",
+        "Stealth"
     ]
 
     visual_attack_list = [
@@ -931,15 +905,16 @@ if __name__ == "__main__":
         os.makedirs(save_dir)
 
     #seed = randint(0,100000)
-    seed = 65 #42
-    mlp_model = "mlp_unpad"
+    # 42 for dataset
+    # 65 for testing
+    seed = 42
+    mlp_model = "None"#"mlp_unpad"
     hide_arm = True  # False for demo usage, True for eval usage
     
-    #for i in range(10):
     for task in tasks:
         for partition in partitions:
             for rephrasing in rephrasings:
-                for i in range(1):
+                for i in range(10): #Size of dataset, set to 1 when testing
                     for vis_atk in visual_attack_list:
                         #seed = randint(0,100000)
                         eval_cfg = {
@@ -974,9 +949,8 @@ if __name__ == "__main__":
                         main(EasyDict(eval_cfg), logger)
                         del logger
 
-                file = "datasets/base_"+ partition + "_" + task + "_" + str(seed) + "_dataset.pt"
+                # Create dataset files
+                #file = "datasets/base_"+ partition + "_" + task + "_" + str(seed) + "_dataset.pt" 
+                #file = "datasets/attack_"+ partition + "_" + rephrasing + "_" + task + "_" + str(seed) + "_dataset.pt"
                 #torch.save(all_predictions, file)
                 all_predictions = []
-
-    #file = "datasets/attack_"+ partitions[0] + "_" + rephrasings[0] + tasks[0] + "_" + str(seed) + "_dataset.pt"
-    #torch.save(all_predictions, file)
