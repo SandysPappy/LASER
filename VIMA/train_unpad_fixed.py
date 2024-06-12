@@ -23,7 +23,7 @@ if __name__ == "__main__":
     # Prepare dataset and data loader
     dataset = get_laser_dataset(task="all", partition="all")
     dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
-    model.train()
+    model.train(True)
     num_epochs = 1
 
     for epoch in range(num_epochs):
@@ -39,34 +39,46 @@ if __name__ == "__main__":
             total_similarity_batch = 0
             total_samples_batch = 0
             total_loss_batch = 0
-
+            
             optimizer.zero_grad()  # Clear gradients at the start of each batch
 
             for i in range(len(list(batch.values())[0])):
-                for key, value in batch.items():
-                    num_of_embeddings = batch["num_of_embeddings"][i]
-                    attack_embeddings = batch["attack_embeddings"][i][:num_of_embeddings].to("cuda")
-                    base_embeddings = batch["base_embeddings"][i][:num_of_embeddings].to("cuda")
-                    #[768]
-                    for base_embedding, attack_embedding in zip(base_embeddings[:, 0], attack_embeddings[:, 0]):
-                        attack_emb = attack_embedding.to("cuda")
-                        base_emb = base_embedding.to("cuda")
+                num_of_embeddings = batch["num_of_embeddings"][i]
+                attack_embeddings = batch["attack_embeddings"][i][:num_of_embeddings].to("cuda")
+                base_embeddings = batch["base_embeddings"][i][:num_of_embeddings].to("cuda")
 
-                        embedding_output = model(attack_emb)
-                        similarity = torch.nn.functional.cosine_similarity(embedding_output, base_emb, dim=0)
-                        total_similarity_batch += similarity.item()  # Accumulate similarity for the batch
-                        total_samples_batch += 1
+                # embedding shape [token, 1, 768]
 
-                        loss = criterion(embedding_output, base_emb)
-                        total_loss_batch += loss.item()  # Accumulate loss for the batch
+                # reshape to [token, 768]
 
-                        pbar.set_description(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f}")
-                        loss.backward()  # Compute gradients
+                attack_embeddings = attack_embeddings.view(-1, 768)
+                base_embeddings = base_embeddings.view(-1, 768)
+
+                embedding_output = model(attack_embeddings)
+
+                # Compute similarity between the output embeddings and the base embeddings
+
+                similarity = torch.cosine_similarity(embedding_output, base_embeddings, dim=1)
+
+                # returns tensor of shape [token]
+
+                total_similarity_batch += similarity.sum().item() # Accumulate similarity for the batch
+
+                total_samples_batch += num_of_embeddings
+
+                loss = criterion(embedding_output, base_embeddings)
+
+                loss.backward()  # Compute gradients
+
+                total_loss_batch += loss.item()  # Accumulate loss for the batch
+
+                pbar.set_description(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f}")
+
 
             optimizer.step()  # Update model parameters after processing the entire batch
 
             average_similarity_batch = total_similarity_batch / total_samples_batch
-            average_loss_batch = total_loss_batch / total_samples_batch
+            average_loss_batch = total_loss_batch / len(list(batch.values())[0])
 
             total_similarity_epoch += total_similarity_batch
             total_samples_epoch += total_samples_batch
