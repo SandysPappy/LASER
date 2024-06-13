@@ -6,41 +6,41 @@ attack_file_path = "LASER_Dataset/attack_prompts/"
 base_file_path = "LASER_Dataset/base_prompts/"
 
 laser_dataset = {
-    "combinatorial/base_combinatorial_generalization_rearrange_42_dataset.pt": [
-    #"combinatorial/attack_combinatorial_generalization_Color Rephrase_rearrange_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Extend_rearrange_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Noun_rearrange_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Stealth_rearrange_42_dataset.pt" 
-    ],
-    "combinatorial/base_combinatorial_generalization_scene_understanding_42_dataset.pt": [
-    #"combinatorial/attack_combinatorial_generalization_Color Rephrase_scene_understanding_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Extend_scene_understanding_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Noun_scene_understanding_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Stealth_scene_understanding_42_dataset.pt" 
-    ],
-    "combinatorial/base_combinatorial_generalization_visual_manipulation_42_dataset.pt" : [
-    #"combinatorial/attack_combinatorial_generalization_Color Rephrase_visual_manipulation_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Extend_visual_manipulation_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Noun_visual_manipulation_42_dataset.pt",
-    "combinatorial/attack_combinatorial_generalization_Stealth_visual_manipulation_42_dataset.pt"
-    ],
+    # "combinatorial/base_combinatorial_generalization_rearrange_42_dataset.pt": [
+    # #"combinatorial/attack_combinatorial_generalization_Color Rephrase_rearrange_42_dataset.pt",
+    # "combinatorial/attack_combinatorial_generalization_Extend_rearrange_42_dataset.pt",
+    # "combinatorial/attack_combinatorial_generalization_Noun_rearrange_42_dataset.pt",
+    # # "combinatorial/attack_combinatorial_generalization_Stealth_rearrange_42_dataset.pt" 
+    # ],
+    # "combinatorial/base_combinatorial_generalization_scene_understanding_42_dataset.pt": [
+    # #"combinatorial/attack_combinatorial_generalization_Color Rephrase_scene_understanding_42_dataset.pt",
+    # "combinatorial/attack_combinatorial_generalization_Extend_scene_understanding_42_dataset.pt",
+    # "combinatorial/attack_combinatorial_generalization_Noun_scene_understanding_42_dataset.pt",
+    # # "combinatorial/attack_combinatorial_generalization_Stealth_scene_understanding_42_dataset.pt" 
+    # ],
+    # "combinatorial/base_combinatorial_generalization_visual_manipulation_42_dataset.pt" : [
+    # #"combinatorial/attack_combinatorial_generalization_Color Rephrase_visual_manipulation_42_dataset.pt",
+    # "combinatorial/attack_combinatorial_generalization_Extend_visual_manipulation_42_dataset.pt",
+    # "combinatorial/attack_combinatorial_generalization_Noun_visual_manipulation_42_dataset.pt",
+    # # "combinatorial/attack_combinatorial_generalization_Stealth_visual_manipulation_42_dataset.pt"
+    # ],
     "placement/base_placement_generalization_rearrange_42_dataset.pt" : [
     #"placement/attack_placement_generalization_Color Rephraserearrange_42_dataset.pt",
     "placement/attack_placement_generalization_Extendrearrange_42_dataset.pt",
-    "placement/attack_placement_generalization_Nounrearrange_42_dataset.pt",
-    "placement/attack_placement_generalization_Stealth_rearrange_42_dataset.pt"
+   # "placement/attack_placement_generalization_Nounrearrange_42_dataset.pt",
+    # "placement/attack_placement_generalization_Stealth_rearrange_42_dataset.pt"
     ],
     "placement/base_placement_generalization_scene_understanding_42_dataset.pt": [
     #"placement/attack_placement_generalization_Color Rephrasescene_understanding_42_dataset.pt",
     "placement/attack_placement_generalization_Extendscene_understanding_42_dataset.pt",
-    "placement/attack_placement_generalization_Nounscene_understanding_42_dataset.pt",
-    "placement/attack_placement_generalization_Stealth_scene_understanding_42_dataset.pt"
+   # "placement/attack_placement_generalization_Nounscene_understanding_42_dataset.pt",
+    # "placement/attack_placement_generalization_Stealth_scene_understanding_42_dataset.pt"
     ],
     "placement/base_placement_generalization_visual_manipulation_42_dataset.pt": [
     #"placement/attack_placement_generalization_Color Rephrasevisual_manipulation_42_dataset.pt",
     "placement/attack_placement_generalization_Extendvisual_manipulation_42_dataset.pt",
-    "placement/attack_placement_generalization_Nounvisual_manipulation_42_dataset.pt",
-    "placement/attack_placement_generalization_Stealth_visual_manipulation_42_dataset.pt"
+    # "placement/attack_placement_generalization_Nounvisual_manipulation_42_dataset.pt",
+    # "placement/attack_placement_generalization_Stealth_visual_manipulation_42_dataset.pt"
     ],
 }
 
@@ -68,14 +68,6 @@ class PromptEmbeddingsDataset(Dataset):
 
         self.base_embeddings = []
         self.attack_embeddings = []
-        self.success_labels = []
-        self.num_of_embeddings = []
-        self.base_prompt = []
-        self.attack_prompt = []
-        self.task = []
-        self.partition = []
-        self.seed = []
-        self.rephrasings = []
 
         for base_dataset, attack_datasets in dataset.items():
             #Load base file
@@ -96,16 +88,17 @@ class PromptEmbeddingsDataset(Dataset):
                         success = attack[i][j]["success"]
 
                         if attack_emb.shape == base_emb.shape:
-                            self.base_embeddings.append(base_emb)
-                            self.attack_embeddings.append(attack_emb)
-                            self.success_labels.append(success)
-                            self.num_of_embeddings.append(int(attack_emb.shape[0]))
-                            self.base_prompt.append(attack[i][j]["base_prompt"])
-                            self.attack_prompt.append(attack[i][j]["attack_prompt"])
-                            self.rephrasings.append(attack[i][j]["rephrasings"])
-                            self.seed.append(attack[i][j]["seed"])
-                            self.partition.append(attack[i][j]["partition"])
-                            self.task.append(attack[i][j]["task"])
+
+                            # Attack - Base pairs
+                            for attack_token, base_token in zip(attack_emb, base_emb):
+                                self.base_embeddings.append(base_token[0])
+                                self.attack_embeddings.append(attack_token[0])
+
+                            # Base - Base pairs, to make sure the model doesn't drift from the base embeddings
+                            for token in base_emb:
+                                self.base_embeddings.append(token[0])
+                                self.attack_embeddings.append(token[0])
+
                         else:
                             # Handle the case where the embeddings have different shapes (optional)
                             print(f"Warning: Embeddings at index ({i}, {j}) have different shapes.")
@@ -116,29 +109,5 @@ class PromptEmbeddingsDataset(Dataset):
     def __getitem__(self, idx):
         base_embeddings = self.base_embeddings[idx]
         attack_embeddings = self.attack_embeddings[idx]
-        success = self.success_labels[idx]
-        num_of_embeddings = self.num_of_embeddings[idx]
-        base_prompt = self.base_prompt[idx]
-        attack_prompt = self.attack_prompt[idx]
-        rephrasings = self.rephrasings[idx]
-        seed = self.seed[idx]
-        partition = self.partition[idx]
-        task = self.task[idx]
 
-        base_embeddings = torch.nn.functional.pad(base_embeddings, (0, 0, 0, 0, 0, self.pad_len - num_of_embeddings), value=0)
-        attack_embeddings = torch.nn.functional.pad(attack_embeddings, (0, 0, 0, 0, 0, self.pad_len - num_of_embeddings), value=0)
-
-        ret = {
-            "base_embeddings": base_embeddings,
-            "attack_embeddings": attack_embeddings,
-            "num_of_embeddings": num_of_embeddings,
-            "success": success,
-            "base_prompt": base_prompt,
-            "attack_prompt": attack_prompt,
-            "rephrasings": rephrasings,
-            "seed": seed,
-            "partition": partition,
-            "task": task
-        }
-
-        return ret
+        return attack_embeddings, base_embeddings

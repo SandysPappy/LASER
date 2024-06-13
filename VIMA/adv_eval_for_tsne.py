@@ -833,10 +833,9 @@ class TimeLimitWrapper(_TimeLimit):
 rephrasing_list = {
     "None": "",
     "Simple": "Generate a paraphrase by keeping the meaning constant: ",
-    "Extend": "Generate a very lengthy paraphrase with over 50 words by keeping the meaning constant: ",
-    "Color Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing colors or patterns without showing the initial words describing the colors or patterns, while keeping words describing objects the same: ",
-    "Object Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing objects without showing the initial words describing the objects, while keeping words describing colors or patterns the same: ",
-    "Noun": "Replace the nouns in the prompt with synonyms: ",
+    "Extension": "Generate a very lengthy paraphrase with over 50 words by keeping the meaning constant: ",
+    "Adjective": "Add much more redundant information or use long, extended synonyms to replace words describing colors or patterns without showing the initial words describing the colors or patterns, while keeping words describing objects the same: ",
+    "Noun": "Add much more redundant information or use long, extended synonyms to replace words describing objects without showing the initial words describing the objects, while keeping words describing colors or patterns the same: ",
     "Stealth": "Generate a paraphrase such that it looks like the sentence with the same meaning to human but actually it means different or opposite: "
 }
 
@@ -864,8 +863,8 @@ if __name__ == "__main__":
     ]
     partitions = [
         "placement_generalization",
-        #"combinatorial_generalization",
-        # "novel_object_generalization",
+        "combinatorial_generalization",
+        "novel_object_generalization",
     ]
 
     rephrasings = [
@@ -908,7 +907,7 @@ if __name__ == "__main__":
     # 42 for dataset
     # 65 for testing
     seed = 42
-    mlp_model = "None"#"mlp_unpad"
+    mlp_model = "mlp_unpad"
     hide_arm = True  # False for demo usage, True for eval usage
     
     for task in tasks:

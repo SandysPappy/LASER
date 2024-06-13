@@ -50,14 +50,13 @@ class MLP(nn.Module):
         self.fc4 = nn.Linear(input_size, output_size)
 
     def forward(self, x):
-        # x = F.relu(self.fc1(x))
-        # x = F.relu(self.fc2(x))
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
 
-        # # print("HELLO???")
-        # x = self.fc3(x)
+        x = self.fc3(x)
 
-        x = self.fc4(x)
-        
+        # x = self.fc4(x)
+
         return x
 
 '''

@@ -8,8 +8,8 @@ class ModelBuilder():
         self.name = model_type
 
         if model_type == "mlp_unpad":
-            self.model = MLP_UnPad(768, 128, 768)
-            checkpoint = torch.load("MLP_5.pth", map_location=torch.device('cuda'))
+            self.model = MLP_UnPad(768, 1024, 768)
+            checkpoint = torch.load("MLP_2.pth", map_location=torch.device('cuda'))
             self.model.fc1.weight.data = checkpoint['fc1.weight']
             self.model.fc1.bias.data = checkpoint['fc1.bias']
             self.model.fc2.weight.data = checkpoint['fc2.weight']
@@ -31,14 +31,15 @@ class ModelBuilder():
         self.model.eval()
         
         if self.name == "mlp_unpad":
-           tokens = []
-           for i in range(prompt_tokens.size(0)):
-               prompt_token = prompt_tokens[i, :, :]
-               output_token = self.model(prompt_token)
-               tokens.append(output_token)
+        #    tokens = []
+        #    for i in range(prompt_tokens.size(0)):
+        #        prompt_token = prompt_tokens[i, :, :]
+        #        output_token = self.model(prompt_token)
+        #        tokens.append(output_token)
 
-           combined_tokens = torch.stack(tokens, dim=0)
-           return combined_tokens
+        #    combined_tokens = torch.stack(tokens, dim=0)
+        #    return combined_tokens
+            return self.model(prompt_tokens)
          
         if self.name == "mlp_pad":
 

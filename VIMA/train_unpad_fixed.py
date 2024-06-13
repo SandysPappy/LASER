@@ -5,11 +5,11 @@ import torch.nn as nn
 import torch.optim as optim
 from mlp import MLP
 from tqdm import tqdm
-
+import matplotlib.pyplot as plt
 # Example usage
 if __name__ == "__main__":
 
-    hidden_size = 128
+    hidden_size = 1024
     output_size = 768  # Binary classification
     model = MLP(768, hidden_size, output_size)
     model = model.to("cuda")
@@ -19,12 +19,17 @@ if __name__ == "__main__":
 
     learning_rate = 1e-3
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+    # scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=1, gamma=0.1)
 
     # Prepare dataset and data loader
     dataset = get_laser_dataset(task="all", partition="all")
-    dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+    dataloader = DataLoader(dataset, batch_size=512, shuffle=True)
     model.train(True)
-    num_epochs = 1
+    num_epochs = 5
+
+    losses = []
+    similarities = []
+    lrs = []
 
     for epoch in range(num_epochs):
         total_similarity_epoch = 0
@@ -34,61 +39,53 @@ if __name__ == "__main__":
 
         pbar = tqdm(dataloader, total=len(dataloader))
 
-        for batch in pbar:
-        #[B,1,768]
-            total_similarity_batch = 0
-            total_samples_batch = 0
-            total_loss_batch = 0
-            
+        for attack_embs, base_embs in pbar:
+
+            attack_embs = attack_embs.to("cuda")
+            base_embs = base_embs.to("cuda")
+
             optimizer.zero_grad()  # Clear gradients at the start of each batch
 
-            for i in range(len(list(batch.values())[0])):
-                num_of_embeddings = batch["num_of_embeddings"][i]
-                attack_embeddings = batch["attack_embeddings"][i][:num_of_embeddings].to("cuda")
-                base_embeddings = batch["base_embeddings"][i][:num_of_embeddings].to("cuda")
+            embedding_output = model(attack_embs)
 
-                # embedding shape [token, 1, 768]
+            # Compute similarity between the output embeddings and the base embeddings  
+            similarity = torch.nn.functional.cosine_similarity(embedding_output, base_embs, dim=1)
 
-                # reshape to [token, 768]
+            loss = criterion(embedding_output, base_embs)
 
-                attack_embeddings = attack_embeddings.view(-1, 768)
-                base_embeddings = base_embeddings.view(-1, 768)
-
-                embedding_output = model(attack_embeddings)
-
-                # Compute similarity between the output embeddings and the base embeddings
-
-                similarity = torch.cosine_similarity(embedding_output, base_embeddings, dim=1)
-
-                # returns tensor of shape [token]
-
-                total_similarity_batch += similarity.sum().item() # Accumulate similarity for the batch
-
-                total_samples_batch += num_of_embeddings
-
-                loss = criterion(embedding_output, base_embeddings)
-
-                loss.backward()  # Compute gradients
-
-                total_loss_batch += loss.item()  # Accumulate loss for the batch
-
-                pbar.set_description(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f}")
-
+            loss.backward()  # Compute gradients
 
             optimizer.step()  # Update model parameters after processing the entire batch
 
-            average_similarity_batch = total_similarity_batch / total_samples_batch
-            average_loss_batch = total_loss_batch / len(list(batch.values())[0])
+            losses.append(loss.item())
+            similarities.append(similarity.mean().item())
 
-            total_similarity_epoch += total_similarity_batch
-            total_samples_epoch += total_samples_batch
-            total_loss_epoch += total_loss_batch
+            pbar.set_description(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f} Similarity: {similarity.mean().item():.4f}")
+
+            total_similarity_epoch += similarity.sum().item()  # Accumulate similarity for the epoch
+            total_samples_epoch += len(similarity)
+            total_loss_epoch += loss.item()
+
+        # scheduler.step()  # Update learning rate
 
         # Compute average similarity and loss for the epoch
         average_similarity_epoch = total_similarity_epoch / total_samples_epoch
-        average_loss_epoch = total_loss_epoch / total_samples_epoch
+        average_loss_epoch = total_loss_epoch / len(dataloader)
         print(f"Average similarity for epoch {epoch+1}: {average_similarity_epoch}")
         print(f"Average loss for epoch {epoch+1}: {average_loss_epoch}")
 
+    ax, fig = plt.subplots(1, 2, figsize=(15, 5))
+    fig[0].plot(losses)
+    fig[0].set_title("Loss")
+    fig[0].set_xlabel("Batch")
+    fig[0].set_ylabel("Loss")
+
+    fig[1].plot(similarities)
+    fig[1].set_title("Similarity")
+    fig[1].set_xlabel("Batch")
+    plt.show()
+
+    
+
     # Save the trained model
-    # torch.save(model.state_dict(), '/home/cap6412.student10/Vima/MLP_2.pth')
+    torch.save(model.state_dict(), 'MLP_2.pth')
