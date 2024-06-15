@@ -15,6 +15,7 @@ import logging
 from easydict import EasyDict
 from visual_attack import *
 import json
+from mlp import MLP
 
 from rephrase_attack import *
 
@@ -97,6 +98,11 @@ PLACEHOLDERS = [token.content for token in PLACEHOLDER_TOKENS]
 tokenizer = Tokenizer.from_pretrained("t5-base")
 tokenizer.add_tokens(PLACEHOLDER_TOKENS)
 
+model = MLP(768, 1024, 768)
+model.load_state_dict(torch.load("MLP_2.pth"))
+
+model = model.to("cuda")
+model.eval()
 
 @torch.no_grad()
 def main(cfg, logger):
@@ -114,8 +120,8 @@ def main(cfg, logger):
                 modalities=["segm", "rgb"],
                 task_kwargs=PARTITION_TO_SPECS["test"][cfg.partition][cfg.task],
                 seed=seed,
-                render_prompt=True,
-                display_debug_window=True,
+                render_prompt=False,
+                display_debug_window=False,
                 hide_arm_rgb=False,
             )
         ),
@@ -135,6 +141,7 @@ def main(cfg, logger):
     eval_result_file_path = os.path.join(result_folder, eval_res_name)
 
     avg_sim = 0
+    token_count = 0
 
     while True:
         env.global_seed = seed
@@ -169,6 +176,7 @@ def main(cfg, logger):
         else:
             whole_task = rephrase_attack(rephrasing_list[cfg.rephrasings], whole_task)
         logger.info(f"The rephrasing type: {cfg.rephrasings}")
+        logger.info(f"The original intention: {original_phrase}")
         logger.info(f"The rephrasing intention: {whole_task}")
         logger.info(f"The visual attack type: {cfg.vis_atk}")
         done = False
@@ -200,7 +208,7 @@ def main(cfg, logger):
                     (prompt_token_type, word_batch, image_batch)
                 )
 
-
+                # prompt_tokens = model(prompt_tokens)
 
                 # Calculate the cosine similarity between the original and rephrased prompts
 
@@ -211,13 +219,15 @@ def main(cfg, logger):
                 # scale = 3 # 10
                 # prompt_tokens = prompt_tokens + (torch.rand_like(prompt_tokens) * 2 - 1) * scale
 
-
                 # print("Original prompt tokens shape: ", orig_prompt_tokens.shape)
                 # print("Rephrased prompt tokens shape: ", prompt_tokens.shape)
 
-                sim = torch.nn.functional.cosine_similarity(orig_prompt_tokens.flatten(), prompt_tokens.flatten(), dim=0)
-                logger.info(f"Cosine similarity: {sim}")
-                avg_sim += sim
+                # Prompts are in the shape [# of tokens, 1, 768]
+                # The similarity should be length (# of tokens)
+                sim = torch.nn.functional.cosine_similarity(orig_prompt_tokens, prompt_tokens, dim=2)
+                logger.info(f"Cosine similarity: {sim.mean().item()}")
+                avg_sim += sim.sum().item()
+                token_count += len(sim)
 
                 inference_cache["obs_tokens"] = []
                 inference_cache["obs_masks"] = []
@@ -360,7 +370,7 @@ def main(cfg, logger):
         logger.info(f"Succeeded: {task_info['success']}")
 
     success_rate = sum([info["success"] for info in all_infos]) / len(all_infos)
-    avg_sim /= len(all_infos)
+    avg_sim /= token_count
     logger.warning(msg="==================Evaluation Done=========================")
     # logger.info(cfg)
     logger.info("Success rate: {}%".format(success_rate*100))
@@ -547,7 +557,7 @@ def prepare_prompt(*, prompt: str, prompt_assets: dict, views: list[str]):
                 }
                 # add mask
                 token["mask"] = {
-                    view: np.ones((n_objs_prompt[view],), dtype=np.bool)
+                    view: np.ones((n_objs_prompt[view],), dtype=np.bool_)
                     for view in views
                 }
                 n_objs_to_pad = {
@@ -567,7 +577,7 @@ def prepare_prompt(*, prompt: str, prompt_assets: dict, views: list[str]):
                         for view in views
                     },
                     "mask": {
-                        view: np.zeros((n_objs_to_pad[view]), dtype=np.bool)
+                        view: np.zeros((n_objs_to_pad[view]), dtype=np.bool_)
                         for view in views
                     },
                 }
@@ -738,10 +748,10 @@ class TimeLimitWrapper(_TimeLimit):
 rephrasing_list = {
     "None": "",
     "Simple": "Generate a paraphrase by keeping the meaning constant: ",
-    "Extend": "Generate a very length paraphrase with over 50 words by keeping the meaning constant: ",
-    "Color Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing colors or patterns without showing the initial words describing the colors or patterns, while keeping words describing objects the same: ",
-    "Object Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing objects without showing the initial words describing the objects, while keeping words describing colors or patterns the same: ",
-    "Noun": "Replace the nouns in the prompt with synonyms: ",
+    "Extension": "Generate a very length paraphrase with over 50 words by keeping the meaning constant: ",
+    "Adjective Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing colors or patterns without showing the initial words describing the colors or patterns, while keeping words describing objects the same: ",
+    "Noun Rephrase": "Add much more redundant information or use long, extended synonyms to replace words describing objects without showing the initial words describing the objects, while keeping words describing colors or patterns the same: ",
+    "Stealth": "Generate a paraphrase such that it looks like the sentence with the same meaning to human but actually it means different or opposite: ",
 }
 
 visual_attack_cfg = {
@@ -768,30 +778,30 @@ if __name__ == "__main__":
     ]
     partitions = [
         "placement_generalization",
-        # "combinatorial_generalization",
-        # "novel_object_generalization",
+        "combinatorial_generalization",
+        "novel_object_generalization",
     ]
 
     rephrasings = [
         "None",
-        # "Simple",
-        # "Extend",
-        # "Color Rephrase",
-        # "Object Rephrase",
-        # "Noun",
+        "Simple",
+        "Extension",
+        "Adjective Rephrase",
+        "Noun Rephrase",
+        "Stealth",
     ]
 
     visual_attack_list = [
-        # "None",
-        "blurring",
-        "noise",
-        "filter",
-        "affine_transforms",
-        "rotate_transforms",
-        "cropping",
-        "distortion",
-        "addition_seg",
-        "addition_rgb"
+        "None",
+        # "blurring",
+        # "noise",
+        # "filter",
+        # "affine_transforms",
+        # "rotate_transforms",
+        # "cropping",
+        # "distortion",
+        # "addition_seg",
+        # "addition_rgb"
     ]
 
     save_dir = "adv_scripts/output"
