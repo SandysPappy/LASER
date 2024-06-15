@@ -35,3 +35,5 @@ to sucessful ones in order to prevent these types of attacks.
 - 6 train MLP with loss against attack prompts using base encoding as ground truth target
 - 7 implement random noise into the target embedding space of the base prompt to adjust it slightly in order to learn mappings from various attack encodings to the area clustered around the base encoding
 - 8 Plug the model back into the VIMA pipeline and compare results
+
+- Link to CLARITY dataset: https://drive.google.com/file/d/1oSC-CXsJwlixRD3nAx44-d_1eh8lFq9k/view?usp=sharing 
