@@ -6,38 +6,38 @@ attack_file_path = "LASER_Dataset/attack_prompts/"
 base_file_path = "LASER_Dataset/base_prompts/"
 
 laser_dataset = {
-    #"combinatorial/base_combinatorial_generalization_rearrange_42_dataset.pt": [
-    #"combinatorial/attack_combinatorial_generalization_Extend_rearrange_42_dataset.pt",
-    #"combinatorial/attack_combinatorial_generalization_Noun_rearrange_42_dataset.pt",
-    #"combinatorial/attack_combinatorial_generalization_Stealth_rearrange_42_dataset.pt", 
-    # ],
-    #"combinatorial/base_combinatorial_generalization_scene_understanding_42_dataset.pt": [
-    #"combinatorial/attack_combinatorial_generalization_Extend_scene_understanding_42_dataset.pt",
-    #"combinatorial/attack_combinatorial_generalization_Noun_scene_understanding_42_dataset.pt",
-    #"combinatorial/attack_combinatorial_generalization_Stealth_scene_understanding_42_dataset.pt",
-    # ],
-    #"combinatorial/base_combinatorial_generalization_visual_manipulation_42_dataset.pt" : [
-    #"combinatorial/attack_combinatorial_generalization_Extend_visual_manipulation_42_dataset.pt",
-    #"combinatorial/attack_combinatorial_generalization_Noun_visual_manipulation_42_dataset.pt",
-    #"combinatorial/attack_combinatorial_generalization_Stealth_visual_manipulation_42_dataset.pt",
-    # ],
+    "combinatorial/base_combinatorial_generalization_rearrange_42_dataset.pt": [
+    "combinatorial/attack_combinatorial_generalization_Extend_rearrange_42_dataset.pt",
+    "combinatorial/attack_combinatorial_generalization_Noun_rearrange_42_dataset.pt",
+    "combinatorial/attack_combinatorial_generalization_Stealth_rearrange_42_dataset.pt", 
+    ],
+    "combinatorial/base_combinatorial_generalization_scene_understanding_42_dataset.pt": [
+    "combinatorial/attack_combinatorial_generalization_Extend_scene_understanding_42_dataset.pt",
+    "combinatorial/attack_combinatorial_generalization_Noun_scene_understanding_42_dataset.pt",
+    "combinatorial/attack_combinatorial_generalization_Stealth_scene_understanding_42_dataset.pt",
+    ],
+    "combinatorial/base_combinatorial_generalization_visual_manipulation_42_dataset.pt" : [
+    "combinatorial/attack_combinatorial_generalization_Extend_visual_manipulation_42_dataset.pt",
+    "combinatorial/attack_combinatorial_generalization_Noun_visual_manipulation_42_dataset.pt",
+    "combinatorial/attack_combinatorial_generalization_Stealth_visual_manipulation_42_dataset.pt",
+    ],
     "placement/base_placement_generalization_rearrange_42_dataset.pt" : [
     "placement/attack_placement_generalization_Extend_rearrange_42_dataset.pt",
-    #"placement/attack_placement_generalization_Nounrearrange_42_dataset.pt",
-    #"placement/attack_placement_generalization_Stealth_rearrange_42_dataset.pt",
-    #"placement/base_placement_generalization_rearrange_42_dataset.pt"
+    "placement/attack_placement_generalization_Nounrearrange_42_dataset.pt",
+    "placement/attack_placement_generalization_Stealth_rearrange_42_dataset.pt",
+    "placement/base_placement_generalization_rearrange_42_dataset.pt"
     ],
     "placement/base_placement_generalization_scene_understanding_42_dataset.pt": [
     "placement/attack_placement_generalization_Extend_scene_understanding_42_dataset.pt",
-    #"placement/attack_placement_generalization_Nouns_cene_understanding_42_dataset.pt",
-    # "placement/attack_placement_generalization_Stealth_scene_understanding_42_dataset.pt",
-    #"placement/base_placement_generalization_rearrange_42_dataset.pt"
+    "placement/attack_placement_generalization_Nouns_cene_understanding_42_dataset.pt",
+    "placement/attack_placement_generalization_Stealth_scene_understanding_42_dataset.pt",
+    "placement/base_placement_generalization_rearrange_42_dataset.pt"
     ],
     "placement/base_placement_generalization_visual_manipulation_42_dataset.pt": [
     "placement/attack_placement_generalization_Extend_visual_manipulation_42_dataset.pt",
-    #"placement/attack_placement_generalization_Noun_visual_manipulation_42_dataset.pt",
-    #"placement/attack_placement_generalization_Stealth_visual_manipulation_42_dataset.pt",
-    #"placement/base_placement_generalization_rearrange_42_dataset.pt"
+    "placement/attack_placement_generalization_Noun_visual_manipulation_42_dataset.pt",
+    "placement/attack_placement_generalization_Stealth_visual_manipulation_42_dataset.pt",
+    "placement/base_placement_generalization_rearrange_42_dataset.pt"
     ],
 }
 
